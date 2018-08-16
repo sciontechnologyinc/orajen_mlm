@@ -12,5 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('marketingPlan.pages.landingPage');
 });
+
+
+
+
+Route::get('newmember', function () {
+    return view('marketingPlan.pages.newmember');
+});
+
+Route::get('dashboard', function () {
+    return view('admin.index');
+});
+
+Route::get('newmember', function () {
+    return view('admin.pages.newmember');
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

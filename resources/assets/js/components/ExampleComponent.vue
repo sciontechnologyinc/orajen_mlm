@@ -1,16 +1,6 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card card-default">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class='link'>
+        <button v-on:click="reverseMessage" data-toggle="modal" data-target=".lg-login">Login</button>
     </div>
 </template>
 
@@ -18,6 +8,17 @@
     export default {
         mounted() {
             console.log('Component mounted.')
+        },
+        data: {
+            styleObject: {
+                display: 'flex'
+            }
+        },
+        methods:{
+            reverseMessage: function () {
+
+            }
         }
     }
+    
 </script>
