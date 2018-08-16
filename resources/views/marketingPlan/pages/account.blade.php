@@ -5,5 +5,12 @@
     @endsection
 
     @section('content')
-        <accounts></accounts>
+        <div class='account-page'>
+            <div class='account-content'>
+                <h1>Member</h1>
+                <div class='acount-details'>
+                    <account></account>
+                </div>
+            </div>
+        </div>
     @endsection
