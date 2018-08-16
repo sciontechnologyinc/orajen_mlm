@@ -26,6 +26,9 @@ Route::get('dashboard', function () {
     return view('admin.index');
 });
 
+Route::get('user', function () {
+    return view('user.index');
+});
 
 
 Auth::routes();
