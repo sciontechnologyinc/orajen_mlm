@@ -23,6 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('marketingPlan.pages.homePage');
+        return view('admin.index');
     }
 }
