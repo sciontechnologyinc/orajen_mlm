@@ -29,8 +29,8 @@
   <script src="vendors/js/vendor.bundle.addons.js"></script>
   <script src="js/off-canvas.js"></script>
   <script src="js/misc.js"></script>
-  <script src="{{ asset('js/app.js') }}" defer></script>
   <script src="js/dashboard.js"></script>
+  <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 
 </html>

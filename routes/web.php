@@ -31,6 +31,10 @@ Route::get('newmember', function () {
 });
 
 
+Route::get('account', function () {
+    return view('marketingPlan.pages.account');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
