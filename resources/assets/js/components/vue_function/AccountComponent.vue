@@ -1,13 +1,13 @@
 <template>
     <div class='newmember-container'>
         <div class='newmember-action'>
-            <button>
+            <button data-toggle="modal" data-target=".newmember-modal">
                 <i class='fa fa-plus'></i> Add Member
             </button>
         </div>
         <div class='newmember-view'>
             <div class='newmember-view-content'>
-                <table>
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <td>Firstname</td>
@@ -19,7 +19,7 @@
                             <td></td>
                         </tr>
                     </thead>
-                    <tbody :key="memberlist.id">
+                    <tbody  v-for = "memberlist in memberlists" :key="memberlist.id">
                         <tr>
                             <td>{{memberlist.firstname}}</td>
                             <td>{{memberlist.middlename}}</td>
@@ -31,32 +31,37 @@
                         </tr>
                     </tbody>
                 </table>
+                
             </div>
         </div>
         <div class='newmember-modal'>
             <div class='newmember-modal-content'>
-                <div class='newmember-modal-title'>Add Member</div>
-                <div class='newmember-modal-container'>
-                    <div class='newmember-modal-label'>Full Name:</div>
-                    <div class='newmember-group'>
-                        <input type='text' id='firstname' placeholder='First Name' v-model="firstname"/>
-                        <input type='text' id='middlename' placeholder='Middle Name' v-model="middlename"/>
-                        <input type='text' id='lastname' placeholder='Last Name' v-model="lastname"/>
+                <form id="form_validation" action="./api/memberlist" method="POST" @submit.prevent="saveMember()">
+                    <div class='newmember-modal-title'>Add Member</div>
+                    <div class='newmember-modal-container'>
+                        <div class='newmember-modal-label'>Full Name:</div>
+                        <div class='newmember-group'>
+                            <input type='text' id='firstname' class='form-control' placeholder='First Name' v-model="firstname"/>
+                            <input type='text' id='middlename' class='form-control' placeholder='Middle Name' v-model="middlename"/>
+                            <input type='text' id='lastname' class='form-control' placeholder='Last Name' v-model="lastname"/>
+                        </div>
+                        <div class='newmember-modal-label'>Address:</div>
+                        <textarea id='Address' class='form-control' v-model="address"></textarea>
+                        <div class='newmember-modal-label'>Email Address:</div>
+                        <input type='email' id='email' class='form-control' v-model="email"/>
+                        <div class='newmember-modal-label'>Mobile Number:</div>
+                        <input type='text' id='mobileno' class='form-control' v-model="mobileno"/>
+                        <div class='newmember-modal-label'>Sponsor ID:</div>
+                        <input type='text' id='sponsor_id' class='form-control' v-model="sponsorid"/>
+                        <div class='newmember-modal-label'>Placement ID:</div>
+                        <input type='text' id='placement_id' class='form-control' v-model="placementid"/>
+                        <div class='newmember-modal-label'>Activation Code:</div>
+                        <input type='text' id='activation_code' class='form-control' v-model="activationcode"/>
+                        <div class='newmember-button'>
+                            <button type='submit' class='btn btn-success mr-2'>Save</button>
+                        </div>
                     </div>
-                    <div class='newmember-modal-label'>Address:</div>
-                    <textarea id='Address' v-model="address"></textarea>
-                    <div class='newmember-modal-label'>Email Address:</div>
-                    <input type='email' id='email' v-model="email"/>
-                    <div class='newmember-modal-label'>Sponsor ID:</div>
-                    <input type='text' id='sponsor_id' v-model="sponsorid"/>
-                    <div class='newmember-modal-label'>Placement ID:</div>
-                    <input type='text' id='placement_id' v-model="placementid" disabled/>
-                    <div class='newmember-modal-label'>Activation Code:</div>
-                    <input type='text' id='activation_code' v-model="activationcode" disabled/>
-                    <div class='newmember-button'>
-                        <button @click="showAddModal = false; saveMember();">Save</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -74,7 +79,8 @@
                 mobileno:'',
                 sponsorid:'',
                 placementid:'',
-                activationcode:''
+                activationcode:'',
+                memberlists: []
             }
         },
         methods:{
@@ -98,7 +104,7 @@
         },
         created(){
             axios.get('./api/memberlist')
-            .then(response => this.teacherlists = response.data);
+            .then(response => this.memberlists = response.data);
         }
     }
 </script>
