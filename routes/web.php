@@ -30,6 +30,10 @@ Route::get('user', function () {
     return view('user.index');
 });
 
+Route::get('useraccounts', function () {
+    return view('user.pages.accounts');
+});
+
 
 Route::get('account', function () {
     return view('marketingPlan.pages.account');

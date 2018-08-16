@@ -14,7 +14,7 @@
         <!-- End plugin css for this page -->
         <!-- inject:css -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="{{ url('/css/custom.css') }}">
+        <link rel="stylesheet" href="css/user.css">
         <title>Orajen Marketing Corp</title>
 
     </head>

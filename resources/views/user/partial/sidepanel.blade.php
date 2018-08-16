@@ -10,7 +10,7 @@
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
             <i class="menu-icon mdi mdi-account"></i>
-            <span class="menu-title">Account</span>
+            <span class="menu-title">Accounts</span>
           </a>
         </li>
         <li class="nav-item">
