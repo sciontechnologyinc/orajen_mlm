@@ -26,6 +26,13 @@ Route::get('dashboard', function () {
     return view('admin.index');
 });
 
+Route::get('user', function () {
+    return view('user.index');
+});
+
+Route::get('useraccounts', function () {
+    return view('user.pages.accounts');
+});
 
 
 Route::get('account', function () {

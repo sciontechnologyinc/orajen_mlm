@@ -1,0 +1,127 @@
+/* custom.css */
+
+a.navbar-brand.brand-logo img {
+    width: auto !important;
+    height: 45px !important;
+}
+
+a.navbar-brand.brand-logo span {
+    font-size: 15px;
+    color: black !important;
+    margin: auto;
+}
+
+a.nav-link i {
+    color: #e49d00 !important;
+}
+
+a.nav-link:hover i {
+    color: black !important;
+}
+
+.dropdown-menu.dropdown-menu-right.navbar-dropdown.show {
+    display: block !important;
+}
+
+.d-none {
+    display: block !important;
+}
+
+.add-member-shortcut {
+    position: fixed;
+    top: 80px;
+    width: 300px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.member-title {
+    padding: 10px;
+    background: #e49d00;
+    color: white;
+    display: flex;
+}
+
+.main-panel {
+    margin-left: 255px;
+}
+
+.member-title-text {
+    width: 100%;
+}
+
+.member-content {
+    padding: 10px;
+}
+
+.member-content span {
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.member-content input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.action-button {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.action-button button {
+    padding: 5px 15px;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.isShow {
+    display: none;
+}
+
+.member-title i {
+    margin: auto;
+    cursor: pointer;
+}
+
+nav#sidebar {
+    position: fixed;
+}
+
+.add-member-shortcut {
+    transition: .5s;
+    transform: scale(0);
+}
+
+.add-member-shortcut.showed {
+    transform: scale(1) !important;
+}
+
+
+/* custom.css end  */
+
+p.account-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3.font-weight-medium.text-right.mb-0 {
+    color: #e49d00;
+}
+
+.accounts-total {
+    color: #e60801;
+    border: 1px solid;
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
