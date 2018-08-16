@@ -29,7 +29,7 @@ Route::get('dashboard', function () {
 
 
 Route::get('account', function () {
-    return view('marketingPlan.pages.account');
+    return view('admin.pages.newmember');
 });
 
 Auth::routes();
