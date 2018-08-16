@@ -19,7 +19,7 @@
                             <td></td>
                         </tr>
                     </thead>
-                    <tbody :key="memberlist.id">
+                    <tbody v-for = "memberlist in memberlists" :key="memberlist.id">
                         <tr>
                             <td>{{memberlist.firstname}}</td>
                             <td>{{memberlist.middlename}}</td>
@@ -47,14 +47,16 @@
                     <textarea id='Address' v-model="address"></textarea>
                     <div class='newmember-modal-label'>Email Address:</div>
                     <input type='email' id='email' v-model="email"/>
+                    <div class='newmember-modal-label'>Contact:</div>
+                    <input type='number' id='mobileno' v-model="mobileno"/>
                     <div class='newmember-modal-label'>Sponsor ID:</div>
                     <input type='text' id='sponsor_id' v-model="sponsorid"/>
                     <div class='newmember-modal-label'>Placement ID:</div>
-                    <input type='text' id='placement_id' v-model="placementid" disabled/>
+                    <input type='text' id='placement_id' v-model="placementid"/>
                     <div class='newmember-modal-label'>Activation Code:</div>
-                    <input type='text' id='activation_code' v-model="activationcode" disabled/>
+                    <input type='text' id='activation_code' v-model="activationcode"/>
                     <div class='newmember-button'>
-                        <button @click="showAddModal = false; saveMember();">Save</button>
+                        <button @click="saveMember();">Save</button>
                     </div>
                 </div>
             </div>
@@ -74,7 +76,8 @@
                 mobileno:'',
                 sponsorid:'',
                 placementid:'',
-                activationcode:''
+                activationcode:'',
+                memberlists: []
             }
         },
         methods:{
@@ -98,7 +101,7 @@
         },
         created(){
             axios.get('./api/memberlist')
-            .then(response => this.teacherlists = response.data);
+            .then(response => this.memberlists = response.data);
         }
     }
 </script>

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Memberlist;
 use Illuminate\Http\Request;
 
 class MemberListController extends Controller
@@ -34,7 +34,7 @@ class MemberListController extends Controller
      */
     public function store(Request $request)
     {
-        $memberList = new MemberList();
+        $memberlist = new MemberList();
 
         $memberlist->firstname=$request->input('firstname');
         $memberlist->middlename=$request->input('middlename');

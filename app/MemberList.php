@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class MemberList extends Model
 {
     
-    protected $table = 'memberlist';
+    protected $table = 'member_lists';
     protected $fillable =  ['firstname',
                             'middlename',
                             'lastname',
