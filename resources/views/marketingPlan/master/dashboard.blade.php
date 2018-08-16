@@ -22,6 +22,7 @@
 <body>
   <div class="container-scroller">
         @yield('header')
+        @yield('sidepanel')
         @yield('content')
   </div>
 

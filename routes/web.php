@@ -26,9 +26,6 @@ Route::get('dashboard', function () {
     return view('admin.index');
 });
 
-Route::get('newmember', function () {
-    return view('admin.pages.newmember');
-});
 
 
 Route::get('account', function () {
