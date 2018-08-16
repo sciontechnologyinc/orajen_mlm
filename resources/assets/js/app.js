@@ -17,6 +17,7 @@ window.Vue = require('vue');
 
 Vue.component('header-auth-button', require('./components/ExampleComponent.vue'));
 Vue.component('dashboard', require('./components/vue_function/DashboardComponent.vue'));
+Vue.component('account', require('./components/vue_function/AccountComponent.vue'));
 
 const app = new Vue({
     el: '.main,.container-scroller'
