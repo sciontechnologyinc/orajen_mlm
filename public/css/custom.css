@@ -99,3 +99,71 @@ nav#sidebar {
 .add-member-shortcut.showed{
     transform: scale(1) !important;
 }
+
+.nmf-title {
+    font-size: 35px;
+}
+
+.newmember-action {
+    text-align: right;
+}
+
+.newmember-action button {
+    background: #0072c6;
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.table {
+    margin-bottom: 0;
+    background: white;
+}
+
+.newmember-view tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.newmember-modal {
+    top: 63px;
+    position: fixed;
+    left: 255px;
+    width: calc(100% - 255px);
+    height: calc(100% - 63px);
+    display: none;
+    transition: 0.5s;
+    background: rgba(0,0,0,0.5);
+}
+
+.main-panel {
+    z-index: 9999;
+}
+
+.newmember-modal-content {
+    width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.newmember-group {
+    display: flex;
+    margin: 10px 0;
+}
+
+.newmember-group input {
+    margin: 0 5px;
+}
+
+.newmember-button {
+    text-align: right;
+    margin: 10px 0px;
+}
+
+.newmember-button button{
+    margin: 0px;
+}

@@ -1,13 +1,13 @@
 <template>
     <div class='newmember-container'>
         <div class='newmember-action'>
-            <button>
+            <button data-toggle="modal" data-target=".newmember-modal">
                 <i class='fa fa-plus'></i> Add Member
             </button>
         </div>
         <div class='newmember-view'>
             <div class='newmember-view-content'>
-                <table>
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <td>Firstname</td>
@@ -19,7 +19,7 @@
                             <td></td>
                         </tr>
                     </thead>
-                    <tbody v-for = "memberlist in memberlists" :key="memberlist.id">
+                    <tbody  v-for = "memberlist in memberlists" :key="memberlist.id">
                         <tr>
                             <td>{{memberlist.firstname}}</td>
                             <td>{{memberlist.middlename}}</td>
@@ -31,18 +31,20 @@
                         </tr>
                     </tbody>
                 </table>
+                
             </div>
         </div>
         <div class='newmember-modal'>
             <div class='newmember-modal-content'>
-                <div class='newmember-modal-title'>Add Member</div>
-                <div class='newmember-modal-container'>
-                    <div class='newmember-modal-label'>Full Name:</div>
-                    <div class='newmember-group'>
-                        <input type='text' id='firstname' placeholder='First Name' v-model="firstname"/>
-                        <input type='text' id='middlename' placeholder='Middle Name' v-model="middlename"/>
-                        <input type='text' id='lastname' placeholder='Last Name' v-model="lastname"/>
-                    </div>
+                <form id="form_validation" action="./api/memberlist" method="POST" @submit.prevent="saveMember()">
+                    <div class='newmember-modal-title'>Add Member</div>
+                    <div class='newmember-modal-container'>
+                        <div class='newmember-modal-label'>Full Name:</div>
+                        <div class='newmember-group'>
+                            <input type='text' id='firstname' class='form-control' placeholder='First Name' v-model="firstname"/>
+                            <input type='text' id='middlename' class='form-control' placeholder='Middle Name' v-model="middlename"/>
+                            <input type='text' id='lastname' class='form-control' placeholder='Last Name' v-model="lastname"/>
+                        </div>
                     <div class='newmember-modal-label'>Address:</div>
                     <textarea id='Address' v-model="address"></textarea>
                     <div class='newmember-modal-label'>Email Address:</div>
