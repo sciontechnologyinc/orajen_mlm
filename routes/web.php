@@ -34,6 +34,18 @@ Route::get('useraccounts', function () {
     return view('user.pages.accounts');
 });
 
+Route::get('waysofearning', function () {
+    return view('user.pages.waysofearning');
+});
+
+Route::get('companyinfo', function () {
+    return view('user.pages.companyinfo');
+});
+
+Route::get('personalsettings', function () {
+    return view('user.pages.personalsettings');
+});
+
 
 Route::get('account', function () {
     return view('marketingPlan.pages.account');

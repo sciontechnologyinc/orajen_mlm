@@ -15,20 +15,26 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down"></i>
+            <i class="menu-icon mdi mdi-format-list-bulleted"></i>
             <span class="menu-title">Ways of Earning</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down"></i>
+            <i class="menu-icon mdi mdi-settings"></i>
             <span class="menu-title">Personal Settings</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down"></i>
+            <i class="menu-icon mdi mdi-history"></i>
             <span class="menu-title">Order History</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="menu-icon mdi mdi-information-outline"></i>
+            <span class="menu-title">Company Information</span>
           </a>
         </li>
         <li class="nav-item nav-profile">
