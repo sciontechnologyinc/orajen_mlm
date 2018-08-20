@@ -43,10 +43,18 @@ Route::get('secondwoe', function () {
     return view('user.pages.secondwoe');
 });
 
+
 Route::get('thirdwoe', function () {
     return view('user.pages.thirdwoe');
 });
 
+Route::get('fourthwoe', function () {
+    return view('user.pages.fourthwoe');
+});
+
+Route::get('fivewoe', function () {
+    return view('user.pages.fivewoe');
+});
 
 Route::get('companyinfo', function () {
     return view('user.pages.companyinfo');

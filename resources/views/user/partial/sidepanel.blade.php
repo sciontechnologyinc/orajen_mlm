@@ -22,13 +22,13 @@
             <div class="collapse" id="auth1">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/samples/blank-page.html"> Discount on Repeat Purchase </a>
+                  <a class="nav-link" href="firstwoe"> Discount on Repeat Purchase </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/samples/login.html"> Direct Referral </a>
+                  <a class="nav-link" href="secondwoe"> Direct Referral </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/samples/register.html"> Global Pool Sharing </a>
+                  <a class="nav-link" href="thirdwoe"> Global Pool Sharing </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../../pages/samples/error-404.html"> Infinity Pass Up </a>
