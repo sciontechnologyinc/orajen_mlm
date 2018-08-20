@@ -37,30 +37,70 @@
         <div class='newmember-modal'>
             <div class='newmember-modal-content'>
                 <form id="form_validation" action="./api/memberlist" method="POST" @submit.prevent="saveMember()">
-                    <div class='newmember-modal-title'>Add Member</div>
+                   <label class="form-label">ADD MEMBER </label>
                     <div class='newmember-modal-container'>
-                        <div class='newmember-modal-label'>Full Name:</div>
+                        <div class='newmember-modal-label'>Full Name :</div>
                         <div class='newmember-group'>
-                            <input type='text' id='firstname' class='form-control' placeholder='First Name' v-model="firstname"/>
-                            <input type='text' id='middlename' class='form-control' placeholder='Middle Name' v-model="middlename"/>
-                            <input type='text' id='lastname' class='form-control' placeholder='Last Name' v-model="lastname"/>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="text" class="form-control" v-model = "firstname" name="firstname" placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="text" class="form-control" v-model = "middlename" name="middlename" placeholder="Middle Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="text" class="form-control" v-model = "lastname" name="lastname" placeholder="Last Name" required>
+                                </div>
+                            </div>
                         </div>
-                    <div class='newmember-modal-label'>Address:</div>
-                    <textarea id='Address' v-model="address"></textarea>
-                    <div class='newmember-modal-label'>Email Address:</div>
-                    <input type='email' id='email' v-model="email"/>
-                    <div class='newmember-modal-label'>Contact:</div>
-                    <input type='number' id='mobileno' v-model="mobileno"/>
-                    <div class='newmember-modal-label'>Sponsor ID:</div>
-                    <input type='text' id='sponsor_id' v-model="sponsorid"/>
-                    <div class='newmember-modal-label'>Placement ID:</div>
-                    <input type='text' id='placement_id' v-model="placementid"/>
-                    <div class='newmember-modal-label'>Activation Code:</div>
-                    <input type='text' id='activation_code' v-model="activationcode"/>
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label class="form-label">Address :</label>
+                            <input type="text" class="form-control" v-model = "address" name="address" required>
+                        </div>
+                    </div>
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label class="form-label">Email :</label>
+                            <input type="email" class="form-control" v-model = "email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label class="form-label">Contact :</label>
+                            <input type="number" class="form-control" v-model = "mobileno" name="mobileno" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label class="form-label">Sponsor ID :</label>
+                            <input type="text" class="form-control" v-model = "sponsor_id" name="sponsor_id" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label class="form-label">Placement ID :</label>
+                            <input type="text" class="form-control" v-model = "placementid" name="placementid" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label class="form-label">Activation Code :</label>
+                            <input type="text" class="form-control" v-model = "activation_code" name="activation_code" required>
+                        </div>
+                    </div>
                     <div class='newmember-button'>
                         <button @click="saveMember();">Save</button>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
     </div>

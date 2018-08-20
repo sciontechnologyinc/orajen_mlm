@@ -15,6 +15,7 @@
         <!-- inject:css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="{{ url('/css/custom.css') }}">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Orajen Marketing Corp</title>
 
     </head>

@@ -3,9 +3,9 @@
       <ul class="nav">
         <li class="nav-item nav-profile">
           <div class="nav-link">
-            <button class="btn btn-success btn-block">New Member
+            <a class="btn btn-success btn-block"  href="{{ url('account') }}">New Member
               <i class="mdi mdi-plus"></i>
-            </button>
+            </a>
           </div>
         </li>
         <li class="nav-item">
