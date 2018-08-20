@@ -14,17 +14,48 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-format-list-bulleted"></i>
-            <span class="menu-title">Ways of Earning</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-settings"></i>
-            <span class="menu-title">Personal Settings</span>
-          </a>
-        </li>
+            <a class="nav-link" data-toggle="collapse" href="#auth1" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-restart"></i>
+              <span class="menu-title">Ways of Earnings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth1">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="firstwoe"> Discount on Repeat Purchase </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secondwoe"> Direct Referral </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="thirdwoe"> Global Pool Sharing </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/samples/error-404.html"> Infinity Pass Up </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/samples/error-500.html"> Company Reward System </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth2" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-restart"></i>
+              <span class="menu-title">Personal Settings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth2">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/samples/blank-page.html"> View User Account </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/samples/login.html"> Change User Account </a>
+                </li>
+              </ul>
+            </div>
+          </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
             <i class="menu-icon mdi mdi-history"></i>

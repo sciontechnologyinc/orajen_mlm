@@ -141,13 +141,6 @@ h3.font-weight-medium.text-right.mb-0 {
     margin-bottom: 20px;
 }
 
-.card.card-statistics {
-    background: #ffffff;
-    border-radius: 100px;
-    background-color: white;
-    border: 1px solid #e49d00;
-}
-
 p.module-title {
     font-size: 20px;
 }
@@ -284,4 +277,32 @@ button.btn.btn-secondary.btn-fw.savechanges {
 
 button.btn.btn-secondary.btn-fw.savechanges:hover {
     background: #b57b00;
+}
+
+p.card-description {
+    color: #e49d00;
+}
+
+button.btn.btn-link.collapsed {
+    color: #e49d00;
+}
+
+button.btn.btn-link {
+    color: #e49d00;
+}
+
+.firstwoecontainer img {
+    width: 300px;
+}
+
+.firstwoecontainer {
+    text-align: center;
+}
+
+.secondwoecontainer img {
+    width: 300px;
+}
+
+.secondwoecontainer {
+    text-align: center;
 }

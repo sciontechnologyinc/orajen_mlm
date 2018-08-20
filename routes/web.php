@@ -35,12 +35,37 @@ Route::get('waysofearning', function () {
     return view('user.pages.waysofearning');
 });
 
+Route::get('firstwoe', function () {
+    return view('user.pages.firstwoe');
+});
+
+Route::get('secondwoe', function () {
+    return view('user.pages.secondwoe');
+});
+
+
+Route::get('thirdwoe', function () {
+    return view('user.pages.thirdwoe');
+});
+
+Route::get('fourthwoe', function () {
+    return view('user.pages.fourthwoe');
+});
+
+Route::get('fivewoe', function () {
+    return view('user.pages.fivewoe');
+});
+
 Route::get('companyinfo', function () {
     return view('user.pages.companyinfo');
 });
 
-Route::get('personalsettings', function () {
-    return view('user.pages.personalsettings');
+Route::get('changeuseraccount', function () {
+    return view('user.pages.changeuseraccount');
+});
+
+Route::get('orderhistory', function () {
+    return view('user.pages.orderhistory');
 });
 
 
