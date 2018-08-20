@@ -16,6 +16,7 @@
                           <th>Quantity</th>
                           <th>Sale</th>
                           <th>Status</th>
+                          <th>Date Purchased</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -29,6 +30,7 @@
                           <td>
                             <label class="badge badge-danger">Pending</label>
                           </td>
+                          <td>12 May 2017</td>
                         </tr>
                         <tr>
                           <td>Juan</td>
@@ -40,6 +42,7 @@
                           <td>
                             <label class="badge badge-warning">In progress</label>
                           </td>
+                          <td>12 June 2017</td>
                         </tr>
                         <tr>
                           <td>Juan</td>
@@ -51,6 +54,7 @@
                           <td>
                             <label class="badge badge-success">Completed</label>
                           </td>
+                          <td>27 January 2017</td>
                         </tr>
                         <tr>
                           <td>Juan</td>
@@ -62,6 +66,7 @@
                           <td>
                             <label class="badge badge-success">Completed</label>
                           </td>
+                          <td>8 December 2017</td>
                         </tr>
                         <tr>
                           <td>Juan</td>
@@ -73,6 +78,7 @@
                           <td>
                             <label class="badge badge-warning">In progress</label>
                           </td>
+                          <td>2 October 2017</td>
                         </tr>
                       </tbody>
                     </table>

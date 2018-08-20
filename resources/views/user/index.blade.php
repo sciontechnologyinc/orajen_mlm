@@ -46,7 +46,7 @@
                   <i class="mdi mdi-poll-box text-success icon-lg"></i>
                 </div>
                 <div class="float-right">
-                  <p class="mb-0 text-right">Registered Accounts</p>
+                  <p class="mb-0 text-right">No. Of Accounts</p>
                   <div class="fluid-container">
                     <h3 class="font-weight-medium text-right mb-0">41</h3>
                   </div>
@@ -63,7 +63,7 @@
                   <i class="mdi mdi-account-location text-info icon-lg"></i>
                 </div>
                 <div class="float-right">
-                  <p class="mb-0 text-right">Employees</p>
+                  <p class="mb-0 text-right">No. Of Referrals</p>
                   <div class="fluid-container">
                     <h3 class="font-weight-medium text-right mb-0">6</h3>
                   </div>

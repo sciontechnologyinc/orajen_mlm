@@ -39,6 +39,15 @@ Route::get('firstwoe', function () {
     return view('user.pages.firstwoe');
 });
 
+Route::get('secondwoe', function () {
+    return view('user.pages.secondwoe');
+});
+
+Route::get('thirdwoe', function () {
+    return view('user.pages.thirdwoe');
+});
+
+
 Route::get('companyinfo', function () {
     return view('user.pages.companyinfo');
 });

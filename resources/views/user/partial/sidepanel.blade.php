@@ -25,16 +25,16 @@
                   <a class="nav-link" href="../../pages/samples/blank-page.html"> Discount on Repeat Purchase </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/samples/login.html"> Login </a>
+                  <a class="nav-link" href="../../pages/samples/login.html"> Direct Referral </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/samples/register.html"> Register </a>
+                  <a class="nav-link" href="../../pages/samples/register.html"> Global Pool Sharing </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/samples/error-404.html"> 404 </a>
+                  <a class="nav-link" href="../../pages/samples/error-404.html"> Infinity Pass Up </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/samples/error-500.html"> 500 </a>
+                  <a class="nav-link" href="../../pages/samples/error-500.html"> Company Reward System </a>
                 </li>
               </ul>
             </div>
