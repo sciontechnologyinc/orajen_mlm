@@ -3,6 +3,7 @@
 @section('content')
 <div class="main-panel">
     <div class="content-wrapper">
+        Ways of Earning
     <div class="accordion" id="accordionExample">
         <div class="card">
             <div class="card-header" id="headingOne">
@@ -32,8 +33,8 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
                 Get unlimited 100 pesos everytime you refer to buy a product package worth 1,500.
-                <div class="firstwoecontainer">
-                    <img src="/images/firstwoe.jpg" alt="">
+                <div class="secondwoecontainer">
+                    <img src="/images/secondwoe.jpg" alt="">
                 </div>
             </div>
             </div>
@@ -50,8 +51,8 @@
             <div class="card-body">
                 Budget Allocation (Php 210.00/Package) <br><br>
                 Maximum Income (Php 4,900.00) per qualified account
-                <div class="secondwoecontainer">
-                    <img src="/images/secondwoe.jpg" alt="">
+                <div class="thirdwoecontainer">
+                    <img src="/images/thirdwoe.jpg" alt="">
                 </div>
             </div>
             </div>
@@ -66,10 +67,12 @@
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
             <div class="card-body">
-                Budget Allocation (Php 210.00/Package) <br><br>
-                Maximum Income (Php 4,900.00) per qualified account
-                <div class="secondwoecontainer">
-                    <img src="/images/secondwoe.jpg" alt="">
+                <b>UNLIMITED 150 PESOS</b>
+                    <div class="blue-label">UPLINE = 1 & 2</div>
+                    <div class="red-label">You = 3, 4, 5, 6, 8, 9, 10, 11, 12, 13</div>
+                    <div class="green-label">Product Voucher =5, 10, 15, 20</div>
+                <div class="fourthwoecontainer">
+                    <img src="/images/fourthwoe.jpg" alt="">
                 </div>
             </div>
             </div>
@@ -84,12 +87,23 @@
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
             <div class="card-body">
-                Budget Allocation (Php 210.00/Package) <br><br>
-                Maximum Income (Php 4,900.00) per qualified account
-                <div class="secondwoecontainer">
-                    <img src="/images/secondwoe.jpg" alt="">
+                <div class="fw-rewards"><b>Rewards</b></div><br>
+                <ul>
+                    <li>Gadget/Appliance Incentives (VIVO V9, Laptop, and TV LED 40 inches)</li>
+                    <li>Cash Incentives (Php 200,000.00, Php 1,000,000.00)</li>
+                    <li>Car Incentives Fully Paid</li>
+                    <li>Group Travel Incentives in Hongkong</li>
+                </ul>
+                <div class="fifthwoecontainer">
+                    <img src="/images/fifthwoe.jpg" alt="">
                 </div>
-            </div>
+                <div class="fw-whoarethey">
+                    Who are they?
+                </div>
+                        <div class="fwwat-list">Coreleader? Stockist? Top Earner?</div>
+                        <div class="fwwat-qualified">*THOSE WHO BUY THE 7 PACKAGE DISTRIBUTOR KIT ARE QUALIFIED TO JOIN THE COMPANY REWARD SYSTEM*
+</div>
+                </div>
             </div>
         </div>
     </div>

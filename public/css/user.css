@@ -58,7 +58,13 @@ a.nav-link:hover i {
 }
 
 .main-panel {
-    margin-left: 255px;
+    margin-left: 255px !important;
+}
+
+@media screen and (max-width:991px) {
+    .main-panel {
+        margin-left: 0px !important;
+    }
 }
 
 .member-title-text {
@@ -291,18 +297,64 @@ button.btn.btn-link {
     color: #e49d00;
 }
 
-.firstwoecontainer img {
-    width: 300px;
-}
-
-.firstwoecontainer {
-    text-align: center;
-}
-
 .secondwoecontainer img {
-    width: 300px;
+    width: 360px;
 }
 
 .secondwoecontainer {
     text-align: center;
+}
+
+.thirdwoecontainer img {
+    width: 360px;
+}
+
+.thirdwoecontainer {
+    text-align: center;
+}
+
+.fourthwoecontainer img {
+    width: 360px;
+}
+
+.fourthwoecontainer {
+    text-align: center;
+}
+
+.fifthwoecontainer img {
+    width: 420px;
+}
+
+.fifthwoecontainer {
+    text-align: center;
+}
+
+.blue-label {
+    color: #00abff;
+}
+
+.red-label {
+    color: red;
+}
+
+.green-label {
+    color: lime;
+}
+
+.fw-whoarethey {
+    font-size: 20px;
+    color: #b10000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fwwat-list {
+    text-decoration: line-through;
+}
+
+.fwwat-qualified {
+    text-align: center;
+    margin: 15px;
+    color: #e49d00;
+    font-size: 25px;
 }
