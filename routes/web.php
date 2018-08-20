@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('marketingPlan.pages.landingPage');
 });
 
-
-
-
 Route::get('newmember', function () {
     return view('marketingPlan.pages.newmember');
 });
