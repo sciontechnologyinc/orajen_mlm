@@ -38,12 +38,20 @@ Route::get('waysofearning', function () {
     return view('user.pages.waysofearning');
 });
 
+Route::get('firstwoe', function () {
+    return view('user.pages.firstwoe');
+});
+
 Route::get('companyinfo', function () {
     return view('user.pages.companyinfo');
 });
 
-Route::get('personalsettings', function () {
-    return view('user.pages.personalsettings');
+Route::get('changeuseraccount', function () {
+    return view('user.pages.changeuseraccount');
+});
+
+Route::get('orderhistory', function () {
+    return view('user.pages.orderhistory');
 });
 
 
