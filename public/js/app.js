@@ -47315,7 +47315,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/ExampleComponent.vue"
+Component.options.__file = "resources\\assets\\js\\components\\ExampleComponent.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47324,9 +47324,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7168fb6a", Component.options)
+    hotAPI.createRecord("data-v-0ca92eac", Component.options)
   } else {
-    hotAPI.reload("data-v-7168fb6a", Component.options)
+    hotAPI.reload("data-v-0ca92eac", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47389,7 +47389,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7168fb6a", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-0ca92eac", module.exports)
   }
 }
 
@@ -47419,7 +47419,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/vue_function/DashboardComponent.vue"
+Component.options.__file = "resources\\assets\\js\\components\\vue_function\\DashboardComponent.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47428,9 +47428,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-54febb00", Component.options)
+    hotAPI.createRecord("data-v-e9b7d3a6", Component.options)
   } else {
-    hotAPI.reload("data-v-54febb00", Component.options)
+    hotAPI.reload("data-v-e9b7d3a6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48629,7 +48629,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-54febb00", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-e9b7d3a6", module.exports)
   }
 }
 
@@ -48659,7 +48659,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/vue_function/AccountComponent.vue"
+Component.options.__file = "resources\\assets\\js\\components\\vue_function\\AccountComponent.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -48668,9 +48668,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2ce477c7", Component.options)
+    hotAPI.createRecord("data-v-85de8b98", Component.options)
   } else {
-    hotAPI.reload("data-v-2ce477c7", Component.options)
+    hotAPI.reload("data-v-85de8b98", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48686,6 +48686,9 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -48873,7 +48876,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("td", [_vm._v(_vm._s(memberlist.placementid))]),
                   _vm._v(" "),
-                  _c("td")
+                  _vm._m(2, true)
                 ])
               ])
             })
@@ -49104,19 +49107,19 @@ var render = function() {
                       {
                         name: "model",
                         rawName: "v-model",
-                        value: _vm.sponsor_id,
-                        expression: "sponsor_id"
+                        value: _vm.sponsorid,
+                        expression: "sponsorid"
                       }
                     ],
                     staticClass: "form-control",
-                    attrs: { type: "text", name: "sponsor_id", required: "" },
-                    domProps: { value: _vm.sponsor_id },
+                    attrs: { type: "text", name: "sponsorid", required: "" },
+                    domProps: { value: _vm.sponsorid },
                     on: {
                       input: function($event) {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.sponsor_id = $event.target.value
+                        _vm.sponsorid = $event.target.value
                       }
                     }
                   })
@@ -49164,23 +49167,23 @@ var render = function() {
                       {
                         name: "model",
                         rawName: "v-model",
-                        value: _vm.activation_code,
-                        expression: "activation_code"
+                        value: _vm.activationcode,
+                        expression: "activationcode"
                       }
                     ],
                     staticClass: "form-control",
                     attrs: {
                       type: "text",
-                      name: "activation_code",
+                      name: "activationcode",
                       required: ""
                     },
-                    domProps: { value: _vm.activation_code },
+                    domProps: { value: _vm.activationcode },
                     on: {
                       input: function($event) {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.activation_code = $event.target.value
+                        _vm.activationcode = $event.target.value
                       }
                     }
                   })
@@ -49246,6 +49249,20 @@ var staticRenderFns = [
         _c("td")
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("button", { staticClass: "edit" }, [
+        _c("i", { staticClass: "fas fa-pen-square" })
+      ]),
+      _vm._v(" "),
+      _c("button", { staticClass: "delete" }, [
+        _c("i", { staticClass: "fas fa-trash" })
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -49253,7 +49270,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2ce477c7", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-85de8b98", module.exports)
   }
 }
 

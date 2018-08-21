@@ -27,7 +27,10 @@
                             <td>{{memberlist.email}}</td>
                             <td>{{memberlist.sponsorid}}</td>
                             <td>{{memberlist.placementid}}</td>
-                            <td></td>
+                            <td>
+                                <button class='edit'><i class='fas fa-pen-square'></i></button>
+                                <button class='delete'><i class='fas fa-trash'></i></button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -79,7 +82,7 @@
                     <div class="form-group form-float">
                         <div class="form-line">
                             <label class="form-label">Sponsor ID :</label>
-                            <input type="text" class="form-control" v-model = "sponsor_id" name="sponsor_id" required>
+                            <input type="text" class="form-control" v-model = "sponsorid" name="sponsorid" required>
                         </div>
                     </div>
 
@@ -93,11 +96,11 @@
                     <div class="form-group form-float">
                         <div class="form-line">
                             <label class="form-label">Activation Code :</label>
-                            <input type="text" class="form-control" v-model = "activation_code" name="activation_code" required>
+                            <input type="text" class="form-control" v-model = "activationcode" name="activationcode" required>
                         </div>
                     </div>
                     <div class='newmember-button'>
-                        <button @click="saveMember();">Save</button>
+                        <button @click="saveMember()">Save</button>
                     </div>
                 </div>
                 </form>

@@ -15,8 +15,8 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down"></i>
+          <a class="nav-link" href="account">
+            <i class="menu-icon mdi mdi-account"></i>
             <span class="menu-title">Members</span>
           </a>
         </li>
@@ -39,35 +39,35 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down"></i>
+            <i class="menu-icon mdi mdi-arrow-down-bold-box-outline"></i>
             <span class="menu-title">Product</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down"></i>
+            <i class="menu-icon mdi mdi-clipboard"></i>
             <span class="menu-title">Catalog</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down"></i>
+            <i class="menu-icon mdi mdi-chart-line"></i>
             <span class="menu-title">Sales</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down"></i>
+            <i class="menu-icon mdi mdi-cash"></i>
             <span class="menu-title">Money</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-            <i class="menu-icon mdi mdi-content-copy"></i>
+          <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+            <i class="menu-icon mdi mdi-file"></i>
             <span class="menu-title">Reports Manager</span>
             <i class="menu-arrow"></i>
           </a>
-          <div class="collapse" id="ui-basic">
+          <div class="collapse" id="ui-basic2">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item">
                 <a class="nav-link" href="../../pages/ui-features/buttons.html">Income Sales (Yearly/Monthy/Weekly/Daily)</a>
@@ -83,7 +83,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down"></i>
+            <i class="menu-icon mdi mdi-settings"></i>
             <span class="menu-title">General Settings</span>
           </a>
         </li>
