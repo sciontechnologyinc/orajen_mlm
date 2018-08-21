@@ -360,19 +360,6 @@ button.btn.btn-link {
     font-size: 25px;
 }
 
-
-/* .navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links .nav-item {
-    display: inline-block !important;
-}
-
-.navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links .nav-item.active {
-    display: inline-block !important;
-}
-
-.navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links .nav-item .nav-link {
-    display: inline-flex !important;
-} */
-
 li.nav-item {
     display: inline-block !important;
 }
@@ -381,10 +368,8 @@ li.nav-item.active {
     display: inline-block !important;
 }
 
-.secondwoe-title {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+.navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links .nav-item .nav-link {
+    display: inline-flex !important;
 }
 
 
@@ -414,4 +399,34 @@ li.nav-item.active {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.firstwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.secondwoe-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.thirdwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.fourthwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.fifthwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
 }

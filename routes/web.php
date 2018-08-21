@@ -70,12 +70,12 @@ Route::get('fourthwoehw', function () {
 });
 
 
-Route::get('fivewoe', function () {
-    return view('user.pages.fivewoe');
+Route::get('fifthwoe', function () {
+    return view('user.pages.fifthwoe');
 });
 
-Route::get('fivewoehw', function () {
-    return view('user.pages.fivewoehw');
+Route::get('fifthwoehw', function () {
+    return view('user.pages.fifthwoehw');
 });
 
 Route::get('companyinfo', function () {

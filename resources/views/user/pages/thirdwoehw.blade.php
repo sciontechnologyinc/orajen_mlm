@@ -14,11 +14,11 @@
 @endsection
 <div class="main-panel">
     <div class="content-wrapper">
-        <div class="thirdwoehw">GLOBAL POOL SHARING INCENTIVES</div>
+        <div class="thirdwoe-title">GLOBAL POOL SHARING INCENTIVES</div>
                 Budget Allocation (Php 210.00/Package) <br><br>
                 Maximum Income (Php 4,900.00) per qualified account
                 <div class="thirdwoecontainer">
-                    <img src="/images/thirdwoe.jpg" alt="">
+                    <img src="/images/thirdwoe.png" alt="">
                 </div>
     </div>
 </div>
