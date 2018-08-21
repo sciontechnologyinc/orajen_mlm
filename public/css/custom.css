@@ -41,7 +41,7 @@ a.nav-link:hover i {
 }
 
 .main-panel {
-    margin-left: 255px;
+    margin-left: 255px !important;
 }
 
 .member-title-text {
@@ -166,4 +166,33 @@ nav#sidebar {
 
 .newmember-button button{
     margin: 0px;
+}
+
+.newmember-view-content {
+    overflow: auto;
+}
+
+.newmember-button button {
+    padding: 10px 15px;
+    background: #e49d00;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+td button {
+    padding: 10px;
+    border: 0px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+}
+
+button.edit {
+    background: #0072c6;
+}
+
+button.delete {
+    background: darkred;
 }

@@ -14,7 +14,10 @@
         <!-- End plugin css for this page -->
         <!-- inject:css -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{{ url('/css/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css') }}">
+        <link rel="stylesheet" href="{{ url('/css/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css') }}">
         <link rel="stylesheet" href="{{ url('/css/custom.css') }}">
+        <link rel="stylesheet" href="{{ url('/css/user.css') }}">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Orajen Marketing Corp</title>
 
