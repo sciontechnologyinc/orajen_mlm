@@ -196,3 +196,8 @@ button.edit {
 button.delete {
     background: darkred;
 }
+
+nav.navbar.default-layout.col-lg-12.col-12.p-0.fixed-top.d-flex.flex-row {
+    position: flex !important;
+    z-index: 10000;
+}

@@ -14010,7 +14010,9 @@ module.exports = __webpack_require__(49);
 __webpack_require__(15);
 
 window.Vue = __webpack_require__(37);
+window.Event = new Vue();
 window.axios = __webpack_require__(6);
+window.events = new Vue();
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -48831,6 +48833,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }).catch(function (error) {
                 console.log(error);
             });
+
+            Event.$emit('taskCreated', {
+                firstname: this.firstname,
+                middlename: this.middlename,
+                lastname: this.lastname,
+                address: this.address,
+                email: this.email,
+                mobileno: this.mobileno,
+                sponsorid: this.sponsorid,
+                placementid: this.placementid,
+                activationcode: this.activationcode
+            });
+
+            this.firstname = '';
+            this.middlename = '';
+            this.lastname = '';
+            this.address = '';
+            this.email = '';
+            this.mobileno = '';
+            this.sponsorid = '';
+            this.placementid = '';
+            this.activationcode = '';
         }
     },
     created: function created() {
@@ -48838,6 +48862,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         axios.get('./api/memberlist').then(function (response) {
             return _this.memberlists = response.data;
+        });
+
+        Event.$on('taskCreated', function (firstname, middlename, lastname, address, email, mobileno, sponsorid, placementid, activationcode) {
+            _this.memberlists.push(firstname, middlename, lastname, address, email, mobileno, sponsorid, placementid, activationcode);
         });
     }
 });
@@ -48855,34 +48883,30 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "newmember-view" }, [
       _c("div", { staticClass: "newmember-view-content" }, [
-        _c(
-          "table",
-          { staticClass: "table table-striped" },
-          [
-            _vm._m(1),
-            _vm._v(" "),
+        _c("table", { staticClass: "table table-striped" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "tbody",
             _vm._l(_vm.memberlists, function(memberlist) {
-              return _c("tbody", { key: memberlist.id }, [
-                _c("tr", [
-                  _c("td", [_vm._v(_vm._s(memberlist.firstname))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(memberlist.middlename))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(memberlist.lastname))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(memberlist.email))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(memberlist.sponsorid))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(memberlist.placementid))]),
-                  _vm._v(" "),
-                  _vm._m(2, true)
-                ])
+              return _c("tr", { key: memberlist.id }, [
+                _c("td", [_vm._v(_vm._s(memberlist.firstname))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(memberlist.middlename))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(memberlist.lastname))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(memberlist.email))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(memberlist.sponsorid))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(memberlist.placementid))]),
+                _vm._v(" "),
+                _vm._m(2, true)
               ])
             })
-          ],
-          2
-        )
+          )
+        ])
       ])
     ]),
     _vm._v(" "),
@@ -49190,19 +49214,7 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "newmember-button" }, [
-                _c(
-                  "button",
-                  {
-                    on: {
-                      click: function($event) {
-                        _vm.saveMember()
-                      }
-                    }
-                  },
-                  [_vm._v("Save")]
-                )
-              ])
+              _vm._m(3)
             ])
           ]
         )
@@ -49262,6 +49274,14 @@ var staticRenderFns = [
       _c("button", { staticClass: "delete" }, [
         _c("i", { staticClass: "fas fa-trash" })
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "newmember-button" }, [
+      _c("button", { attrs: { type: "submit" } }, [_vm._v("Save")])
     ])
   }
 ]

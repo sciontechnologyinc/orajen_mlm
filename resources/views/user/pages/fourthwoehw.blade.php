@@ -19,7 +19,7 @@
             <div class="red-label">You = 3, 4, 5, 6, 8, 9, 10, 11, 12, 13</div>
             <div class="green-label">Product Voucher =5, 10, 15, 20</div>
         <div class="fourthwoecontainer">
-            <img src="/images/fourthwoe.jpg" alt="">
+            <img src="/images/fourthwoe.png" alt="">
         </div>
     </div>
 </div>

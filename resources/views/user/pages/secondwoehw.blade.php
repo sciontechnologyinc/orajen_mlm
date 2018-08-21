@@ -16,7 +16,7 @@
     <div class="content-wrapper">
                 <div class="secondwoe-title">Get unlimited 100 pesos everytime you refer to buy a product package worth 1,500.</div>
                 <div class="secondwoecontainer">
-                    <img src="/images/secondwoe.jpg" alt="">
+                    <img src="/images/secondwoe.png" alt="">
                 </div>
     </div>
 </div>

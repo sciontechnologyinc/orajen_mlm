@@ -19,8 +19,8 @@
                             <td></td>
                         </tr>
                     </thead>
-                    <tbody  v-for = "memberlist in memberlists" :key="memberlist.id">
-                        <tr>
+                    <tbody>
+                        <tr  v-for = "memberlist in memberlists" :key="memberlist.id">
                             <td>{{memberlist.firstname}}</td>
                             <td>{{memberlist.middlename}}</td>
                             <td>{{memberlist.lastname}}</td>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class='newmember-button'>
-                        <button @click="saveMember()">Save</button>
+                        <button type='submit'>Save</button>
                     </div>
                 </div>
                 </form>
@@ -136,17 +136,44 @@
                     mobileno:this.mobileno,
                     sponsorid:this.sponsorid,
                     placementid:this.placementid,
-                    activationcode:this.activationcode,
+                    activationcode:this.activationcode
                 }).then(response => {
                     console.log(response);
                 }).catch(error =>{
                     console.log(error);
                 })
+
+                Event.$emit('taskCreated',{
+                    firstname:this.firstname,
+                    middlename:this.middlename,
+                    lastname:this.lastname,
+                    address:this.address,
+                    email:this.email,
+                    mobileno:this.mobileno,
+                    sponsorid:this.sponsorid,
+                    placementid:this.placementid,
+                    activationcode:this.activationcode
+                })
+
+                this.firstname='';
+                this.middlename='';
+                this.lastname='';
+                this.address='';
+                this.email='';
+                this.mobileno='';
+                this.sponsorid='';
+                this.placementid='';
+                this.activationcode='';
+
             }
         },
         created(){
             axios.get('./api/memberlist')
             .then(response => this.memberlists = response.data);
+
+            Event.$on('taskCreated',(firstname,middlename,lastname,address,email,mobileno,sponsorid,placementid,activationcode)=>{
+                this.memberlists.push(firstname,middlename,lastname,address,email,mobileno,sponsorid,placementid,activationcode);
+            })
         }
     }
 </script>

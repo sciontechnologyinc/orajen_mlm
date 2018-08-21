@@ -2,13 +2,13 @@
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="user">
             <i class="menu-icon mdi mdi-television"></i>
             <span class="menu-title">Dashboard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+        <a class="nav-link" href="useraccounts">
             <i class="menu-icon mdi mdi-account"></i>
             <span class="menu-title">Accounts</span>
           </a>
@@ -48,22 +48,22 @@
             <div class="collapse" id="auth2">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/samples/blank-page.html"> View User Account </a>
+                  <a class="nav-link" href="changeuseraccount"> View User Account </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/samples/login.html"> Change User Account </a>
+                  <a class="nav-link" href="changeuseraccount"> Change User Account </a>
                 </li>
               </ul>
             </div>
           </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="orderhistory">
             <i class="menu-icon mdi mdi-history"></i>
             <span class="menu-title">Order History</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="companyinfo">
             <i class="menu-icon mdi mdi-information-outline"></i>
             <span class="menu-title">Company Information</span>
           </a>
