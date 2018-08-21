@@ -307,6 +307,7 @@ button.btn.btn-link {
 
 .thirdwoecontainer img {
     width: 360px;
+    margin-top: 20px;
 }
 
 .thirdwoecontainer {
@@ -357,4 +358,31 @@ button.btn.btn-link {
     margin: 15px;
     color: #e49d00;
     font-size: 25px;
+}
+
+
+/* .navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links .nav-item {
+    display: inline-block !important;
+}
+
+.navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links .nav-item.active {
+    display: inline-block !important;
+}
+
+.navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links .nav-item .nav-link {
+    display: inline-flex !important;
+} */
+
+li.nav-item {
+    display: inline-block !important;
+}
+
+li.nav-item.active {
+    display: inline-block !important;
+}
+
+.secondwoe-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
