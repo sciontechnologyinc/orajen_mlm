@@ -7,7 +7,9 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+window.Event = new Vue();
 window.axios = require('axios');
+window.events = new Vue();
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
