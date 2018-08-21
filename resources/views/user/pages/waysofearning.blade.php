@@ -102,7 +102,7 @@
                 </div>
                         <div class="fwwat-list">Coreleader? Stockist? Top Earner?</div>
                         <div class="fwwat-qualified">*THOSE WHO BUY THE 7 PACKAGE DISTRIBUTOR KIT ARE QUALIFIED TO JOIN THE COMPANY REWARD SYSTEM*
-</div>
+                    </div>
                 </div>
             </div>
         </div>

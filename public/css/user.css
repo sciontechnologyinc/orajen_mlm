@@ -307,6 +307,7 @@ button.btn.btn-link {
 
 .thirdwoecontainer img {
     width: 360px;
+    margin-top: 20px;
 }
 
 .thirdwoecontainer {
@@ -359,25 +360,73 @@ button.btn.btn-link {
     font-size: 25px;
 }
 
+li.nav-item {
+    display: inline-block !important;
+}
+
+li.nav-item.active {
+    display: inline-block !important;
+}
+
+.navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links .nav-item .nav-link {
+    display: inline-flex !important;
+}
 
 
 /* width */
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
 
+
 /* Track */
+
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #e49d00; 
+    background: #f1f1f1;
 }
 
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #e49d00;
+}
+
+
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
+}
+
+.firstwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.secondwoe-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.thirdwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.fourthwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.fifthwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
 }

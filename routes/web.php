@@ -39,8 +39,17 @@ Route::get('firstwoe', function () {
     return view('user.pages.firstwoe');
 });
 
+Route::get('firstwoehw', function () {
+    return view('user.pages.firstwoehw');
+});
+
+
 Route::get('secondwoe', function () {
     return view('user.pages.secondwoe');
+});
+
+Route::get('secondwoehw', function () {
+    return view('user.pages.secondwoehw');
 });
 
 
@@ -48,12 +57,25 @@ Route::get('thirdwoe', function () {
     return view('user.pages.thirdwoe');
 });
 
+Route::get('thirdwoehw', function () {
+    return view('user.pages.thirdwoehw');
+});
+
 Route::get('fourthwoe', function () {
     return view('user.pages.fourthwoe');
 });
 
-Route::get('fivewoe', function () {
-    return view('user.pages.fivewoe');
+Route::get('fourthwoehw', function () {
+    return view('user.pages.fourthwoehw');
+});
+
+
+Route::get('fifthwoe', function () {
+    return view('user.pages.fifthwoe');
+});
+
+Route::get('fifthwoehw', function () {
+    return view('user.pages.fifthwoehw');
 });
 
 Route::get('companyinfo', function () {
