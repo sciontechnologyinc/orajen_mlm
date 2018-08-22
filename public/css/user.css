@@ -1,0 +1,466 @@
+/* custom.css */
+
+a.navbar-brand.brand-logo img {
+    width: auto !important;
+    height: 45px !important;
+}
+
+a.navbar-brand.brand-logo span {
+    font-size: 15px;
+    color: black !important;
+    margin: auto;
+}
+
+a.navbar-brand.brand-logo span {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+a.nav-link i {
+    color: #e49d00 !important;
+}
+
+a.nav-link:hover i {
+    color: black !important;
+}
+
+.dropdown-menu.dropdown-menu-right.navbar-dropdown.show {
+    display: block !important;
+}
+
+.d-none {
+    display: block !important;
+}
+
+.add-member-shortcut {
+    position: fixed;
+    top: 80px;
+    width: 300px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.member-title {
+    padding: 10px;
+    background: #e49d00;
+    color: white;
+    display: flex;
+}
+
+.main-panel {
+    margin-left: 255px !important;
+}
+
+@media screen and (max-width:991px) {
+    .main-panel {
+        margin-left: 0px !important;
+    }
+}
+
+.member-title-text {
+    width: 100%;
+}
+
+.member-content {
+    padding: 10px;
+}
+
+.member-content span {
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.member-content input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.action-button {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.action-button button {
+    padding: 5px 15px;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.isShow {
+    display: none;
+}
+
+.member-title i {
+    margin: auto;
+    cursor: pointer;
+}
+
+nav#sidebar {
+    position: fixed;
+}
+
+.add-member-shortcut {
+    transition: .5s;
+    transform: scale(0);
+}
+
+.add-member-shortcut.showed {
+    transform: scale(1) !important;
+}
+
+
+/* custom.css end  */
+
+p.account-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3.font-weight-medium.text-right.mb-0 {
+    color: #e49d00;
+}
+
+.accounts-total {
+    color: #e60801;
+    border: 1px solid;
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+p.module-title {
+    font-size: 20px;
+}
+
+.woe-one {
+    text-align: center;
+    margin: auto;
+    width: auto;
+    border: 1px solid #00636f;
+    padding: 10px;
+    border-radius: 5px;
+    background: #00BCD4;
+    color: white;
+}
+
+.woe-one:hover {
+    cursor: pointer;
+    background: white;
+    color: #00BCD4;
+}
+
+.woe-two {
+    text-align: center;
+    margin: auto;
+    width: auto;
+    border: 1px solid #a20404;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ff3737;
+    color: white;
+}
+
+.woe-two:hover {
+    cursor: pointer;
+    background: white;
+    color: #ff3737;
+}
+
+.woe-three {
+    text-align: center;
+    margin: auto;
+    width: auto;
+    border: 1px solid #8a5f01;
+    padding: 10px;
+    border-radius: 5px;
+    background: #e49d00;
+    color: white;
+}
+
+.woe-three:hover {
+    cursor: pointer;
+    background: white;
+    color: #e49d00;
+}
+
+.woe-four {
+    text-align: center;
+    margin: auto;
+    width: auto;
+    border: 1px solid #018610;
+    padding: 10px;
+    border-radius: 5px;
+    background: #01d201;
+    color: white;
+}
+
+.woe-four:hover {
+    cursor: pointer;
+    background: white;
+    color: #01d201;
+}
+
+.woe-five {
+    text-align: center;
+    margin: auto;
+    width: auto;
+    border: 1px solid #541313;
+    padding: 10px;
+    border-radius: 5px;
+    background: brown;
+    color: white;
+}
+
+.woe-five:hover {
+    cursor: pointer;
+    background: white;
+    color: brown;
+}
+
+.row {
+    margin: 10px;
+}
+
+.company-logo img {
+    width: 250px;
+}
+
+.company-logo {
+    margin: auto;
+}
+
+p.company-mission {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e49d00;
+    margin-bottom: 0px;
+}
+
+p.company-vision {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e49d00;
+    margin-bottom: 0px;
+}
+
+.col-xl-6.col-lg-6.col-md-6.col-sm-12.grid-margin.personalsettings {
+    text-align: right;
+}
+
+.personalsettings-container {
+    border: 1px solid #3f3f3f;
+}
+
+.personalsettings-container {
+    border: 1px solid #3f3f3f;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+button.btn.btn-secondary.btn-fw.savechanges {
+    background: #e49d00;
+    color: white;
+}
+
+button.btn.btn-secondary.btn-fw.savechanges:hover {
+    background: #b57b00;
+}
+
+p.card-description {
+    color: #e49d00;
+}
+
+button.btn.btn-link.collapsed {
+    color: #e49d00;
+}
+
+button.btn.btn-link {
+    color: #e49d00;
+}
+
+.secondwoecontainer img {
+    width: 360px;
+}
+
+.secondwoecontainer {
+    text-align: center;
+}
+
+.thirdwoecontainer img {
+    width: 360px;
+    margin-top: 20px;
+}
+
+.thirdwoecontainer {
+    text-align: center;
+}
+
+.fourthwoecontainer img {
+    width: 360px;
+}
+
+.fourthwoecontainer {
+    text-align: center;
+}
+
+.fifthwoecontainer img {
+    width: 420px;
+}
+
+.fifthwoecontainer {
+    text-align: center;
+}
+
+.blue-label {
+    color: #00abff;
+}
+
+.red-label {
+    color: red;
+}
+
+.green-label {
+    color: lime;
+}
+
+.fw-whoarethey {
+    font-size: 20px;
+    color: #b10000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fwwat-list {
+    text-decoration: line-through;
+}
+
+.fwwat-qualified {
+    text-align: center;
+    margin: 15px;
+    color: #e49d00;
+    font-size: 25px;
+}
+
+li.nav-item {
+    display: inline-block !important;
+}
+
+li.nav-item.active {
+    display: inline-block !important;
+}
+
+.navbar.default-layout .navbar-menu-wrapper .navbar-nav.header-links .nav-item .nav-link {
+    display: inline-flex !important;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #e49d00;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.firstwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.secondwoe-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.thirdwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.fourthwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.fifthwoe-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.product-img img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.sidebar .nav .nav-item.active>.nav-link {
+    color: #e49d00;
+}
+
+.per-product {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #a5a5a5;
+}
+
+.perproduct-title {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.perproduct-desc {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.perproduct-price {
+    background: #e49d00;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    margin-top: 20px;
+}

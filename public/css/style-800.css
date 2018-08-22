@@ -1,0 +1,39 @@
+@media screen and (max-width:800px){
+    .top-right.links{
+        display:block;
+    }
+
+    .link{
+        text-align: center;
+        margin:10px 0px;
+    }
+
+    .lp-container {
+        display: flex;
+        height: calc(100% - 128px);
+        position: relative;
+        /* top: 0; */
+        z-index: 1;
+    }
+
+    .lg-tagline h2 {
+        margin: 0px;
+        color: white;
+        font-size: 50px;
+        padding: 20px 30px;
+        font-weight: normal;
+    }
+
+    .lg-tagline span {
+        font-size: 18px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .flex-center.position-ref.full-height>div {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
