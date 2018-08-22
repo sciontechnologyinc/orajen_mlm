@@ -35,6 +35,48 @@ Route::get('catalog', function () {
     return view('admin.pages.catalog');
 });
 
+Route::get('addcategory', function () {
+    return view('admin.pages.categories.addcategory');
+});
+
+Route::get('categories', function () {
+    return view('admin.pages.categories.categories');
+});
+
+Route::get('adddistributor', function () {
+    return view('admin.pages.distributors.adddistributor');
+});
+
+Route::get('distributors', function () {
+    return view('admin.pages.distributors.distributors');
+});
+
+
+Route::get('addreview', function () {
+    return view('admin.pages.reviews.addreview');
+});
+
+Route::get('reviews', function () {
+    return view('admin.pages.reviews.reviews');
+});
+
+Route::get('addorder', function () {
+    return view('admin.pages.orders.addorder');
+});
+
+Route::get('orders', function () {
+    return view('admin.pages.orders.orders');
+});
+
+Route::get('addvoucher', function () {
+    return view('admin.pages.vouchers.addvoucher');
+});
+
+Route::get('vouchers', function () {
+    return view('admin.pages.vouchers.vouchers');
+});
+
+
 Route::get('user', function () {
     return view('user.index');
 });

@@ -41,13 +41,10 @@
             <div class="collapse" id="catalog">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Categories </a>
+                  <a class="nav-link" href="categories"> Categories </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Recurring Profiles </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Distributors </a>
+                  <a class="nav-link" href="distributors"> Distributors </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"> Reviews </a>
@@ -65,9 +62,6 @@
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
                   <a class="nav-link" href="#"> Orders </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Recurring Profiles </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"> Gift Vouchers </a>
