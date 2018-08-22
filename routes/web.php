@@ -23,6 +23,10 @@ Route::get('dashboard', function () {
     return view('admin.index');
 });
 
+Route::get('statistics', function () {
+    return view('admin.pages.statistics');
+});
+
 Route::get('products', function () {
     return view('admin.pages.products.products');
 });

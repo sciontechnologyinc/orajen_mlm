@@ -63,7 +63,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="vouchers"> Gift Vouchers </a>
                 </li>
-                
+                <li class="nav-item">
+                  <a class="nav-link" href="statistics"> Statistics </a>
+                </li>
               </ul>
             </div>
           </li>
