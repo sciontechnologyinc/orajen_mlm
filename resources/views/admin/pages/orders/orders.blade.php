@@ -1,10 +1,10 @@
 @extends('admin.master.template')
 @section('headerButton')
             <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                     <a href="addorder" class="nav-link">Add Order</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="#" class="nav-link">Orders List</a>
                     </li>
             </ul>

@@ -24,7 +24,11 @@ Route::get('dashboard', function () {
 });
 
 Route::get('products', function () {
-    return view('admin.pages.product');
+    return view('admin.pages.products.products');
+});
+
+Route::get('addproduct', function () {
+    return view('admin.pages.products.addproduct');
 });
 
 Route::get('sales', function () {
@@ -67,6 +71,7 @@ Route::get('addorder', function () {
 Route::get('orders', function () {
     return view('admin.pages.orders.orders');
 });
+
 
 Route::get('addvoucher', function () {
     return view('admin.pages.vouchers.addvoucher');

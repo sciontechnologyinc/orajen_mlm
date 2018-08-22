@@ -44,7 +44,7 @@
                         </div>
                         <div class="form-group">
                         <label for="orderdate">Order Date</label>
-                          <input class="form-control" placeholder="dd/mm/yyyy" />
+                          <input type="date" class="form-control"/>
                         </div>
                         <p class="card-description">
                         Products

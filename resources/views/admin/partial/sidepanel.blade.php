@@ -27,12 +27,6 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="products">
-            <i class="menu-icon mdi mdi-arrow-down-bold-box-outline"></i>
-            <span class="menu-title">Product</span>
-          </a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#catalog" aria-expanded="false" aria-controls="auth">
               <i class="menu-icon mdi mdi-clipboard"></i>
               <span class="menu-title">Catalog</span>
@@ -40,6 +34,9 @@
             </a>
             <div class="collapse" id="catalog">
               <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                  <a class="nav-link" href="products"> Products </a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="categories"> Categories </a>
                 </li>
@@ -47,7 +44,7 @@
                   <a class="nav-link" href="distributors"> Distributors </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Reviews </a>
+                  <a class="nav-link" href="reviews"> Reviews </a>
                 </li>
               </ul>
             </div>
@@ -61,10 +58,10 @@
             <div class="collapse" id="sales">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Orders </a>
+                  <a class="nav-link" href="order"> Orders </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Gift Vouchers </a>
+                  <a class="nav-link" href="vouchers"> Gift Vouchers </a>
                 </li>
                 
               </ul>
