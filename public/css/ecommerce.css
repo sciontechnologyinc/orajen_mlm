@@ -1,0 +1,148 @@
+footer.py-5.bg-dark {
+    background: #101010 !important;
+}
+
+.col-sm-4.footer-poweredby {
+    color: #d6d6d6;
+}
+
+.col-sm-4.footer-poweredby span {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.footer-img img {
+    width: auto;
+    height: 45px;
+}
+
+.col-sm-4 {
+    text-align: center;
+}
+
+.footer-powe#e49d00by {
+    color: #909090;
+}
+
+.footer-powe#e49d00by span {
+    color: red;
+}
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.fa-facebook:hover {
+    color: #3B5998 !important;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.fa-twitter:hover {
+    color: #55ACEE !important;
+}
+
+.fa-instagram {
+    color: #bf3780;
+}
+
+.fa-instagram:hover {
+    color: #bf3780;
+}
+
+.fa {
+    font-size: 25px !important;
+    margin: 8px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+a.navbar-brand img {
+    width: auto;
+    height: 45px;
+}
+
+a.nav-link {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: gray !important;
+}
+
+a.navbar-brand span {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: white !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+    background-color: #1d1d1d !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+    /* font-weight: bold; */
+}
+
+a.navbar-brand span {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+a.nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, red 0%, #e49d00 100%), -webkit-linear-gradient(left, red 0%, #e49d00 100%);
+    background-image: -moz-linear-gradient(left, red 0%, #e49d00 100%), -moz-linear-gradient(left, red 0%, #e49d00 100%);
+    background-image: -o-linear-gradient(left, red 0%, #e49d00 100%), -o-linear-gradient(left, red 0%, #e49d00 100%);
+    background-image: linear-gradient(to right, red 0%, #e49d00 100%), linear-gradient(to right, red 0%, #e49d00 100%);
+}
+
+a.nav-link:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

@@ -35,7 +35,7 @@
             </div>
         </div>
     </body>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="../../vendors/js/vendor.bundle.base.js"></script>
     <script src="../../vendors/js/vendor.bundle.addons.js"></script>
     <script src="../../js/off-canvas.js"></script>
