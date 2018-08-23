@@ -20,6 +20,9 @@ Route::get('ecommercehome', function () {
     return view('ecommerce.pages.home');
 });
 
+Route::get('ecommerceproducts', function () {
+    return view('ecommerce.pages.products');
+});
 
 Route::get('newmember', function () {
     return view('marketingPlan.pages.newmember');

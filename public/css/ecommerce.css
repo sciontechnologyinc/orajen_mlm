@@ -72,6 +72,10 @@ footer.py-5.bg-dark {
     text-decoration: none;
 }
 
+a.navbar-brand:hover {
+    cursor: pointer;
+}
+
 a.navbar-brand img {
     width: auto;
     height: 45px;
@@ -145,4 +149,75 @@ a.nav-link:hover:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+.jumbotron {
+    background-color: #eab02d !important;
+    color: white !important;
+}
+
+.productpage-cover {
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.productpage-cover {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    background-image: url(/images/ecommerce-cover.jpeg);
+}
+
+.productpage-title {
+    text-align: center;
+    padding: 100px 30px 15px;
+    font-size: 65px;
+}
+
+.productpage-subtitle {
+    text-align: center;
+    color: gray;
+    font-size: 36px;
+}
+
+.button-container {
+    text-align: center;
+    padding: 60px;
+}
+
+button.shop-now {
+    background: none;
+    border: none;
+    background: #e49d00;
+    color: white;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 100px;
+    font-size: 15px;
+    outline: none !important;
+}
+
+button.shop-now:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.ppcover-overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.productpage-intro {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.productpage-introtitle {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    font-size: 20px;
+}
+
+.productpage-subintro {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 30px;
 }

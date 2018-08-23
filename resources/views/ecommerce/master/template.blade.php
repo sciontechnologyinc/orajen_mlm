@@ -21,4 +21,5 @@
 
     <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="js/ecommerce.js"></script>
 </html>
