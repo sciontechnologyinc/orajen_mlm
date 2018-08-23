@@ -1,0 +1,1 @@
+@extends('ecommerce.master.template')

@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('marketingPlan.pages.landingPage');
 });
 
+
+Route::get('ecommercehome', function () {
+    return view('ecommerce.pages.home');
+});
+
+
 Route::get('newmember', function () {
     return view('marketingPlan.pages.newmember');
 });
