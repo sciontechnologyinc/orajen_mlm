@@ -27,6 +27,10 @@ Route::get('statistics', function () {
     return view('admin.pages.statistics');
 });
 
+Route::get('generalsettings', function () {
+    return view('admin.pages.generalsettings');
+});
+
 Route::get('products', function () {
     return view('admin.pages.products.products');
 });
