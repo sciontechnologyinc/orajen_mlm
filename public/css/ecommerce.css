@@ -261,3 +261,8 @@ span.new-products {
         border-color: orange
     }
 }
+
+.btn-primary {
+    background-color: #e49d00 !important;
+    border-color: #e49d00 !important;
+}
