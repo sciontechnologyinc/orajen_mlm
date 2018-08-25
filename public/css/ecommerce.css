@@ -261,3 +261,51 @@ span.new-products {
         border-color: orange
     }
 }
+
+.featured-products {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.col-sm-4.featured-products {
+    border: 1px solid #bbb8b8;
+    border-radius: 5px;
+}
+
+.fp-label {
+    font-size: 20px;
+    text-align: right;
+    background: orange;
+    color: white;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+}
+
+.row.featured-product {
+    padding-top: 15px;
+}
+
+.cover-home {
+    background-image: url(/images/perfume-cover.jpg);
+    height: -webkit-fill-available;
+    margin: 20px 0px 20px;
+}
+
+.coverhome-label {
+    text-align: right;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    font-size: 34px;
+}
+
+.cover-home {
+    background-image: url(/images/perfume-cover.jpg);
+    height: -webkit-fill-available;
+    margin: 20px 0px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
