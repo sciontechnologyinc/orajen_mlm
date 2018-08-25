@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//Jude
 Route::get('/', function () {
     return view('marketingPlan.pages.landingPage');
 });
