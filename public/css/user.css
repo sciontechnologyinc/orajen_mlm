@@ -430,3 +430,47 @@ li.nav-item.active {
     margin-bottom: 20px;
     font-size: 20px;
 }
+
+.product-img img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.sidebar .nav .nav-item.active>.nav-link {
+    color: #e49d00;
+}
+
+.per-product {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #a5a5a5;
+}
+
+.perproduct-title {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.perproduct-desc {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.perproduct-price {
+    background: #e49d00;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button.btn.btn-dark.btn-fw {
+    background: #e49d00;
+    border: 1px solid #ffc649;
+}
+
+button.file-upload-browse.btn.btn-info {
+    background: #e49d00;
+    border: 1px solid #ffc649;
+}

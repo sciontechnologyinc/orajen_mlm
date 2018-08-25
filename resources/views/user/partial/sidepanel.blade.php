@@ -15,7 +15,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth1" aria-expanded="false" aria-controls="auth">
-              <i class="menu-icon mdi mdi-restart"></i>
+              <i class="menu-icon mdi mdi-content-copy"></i>
               <span class="menu-title">Ways of Earnings</span>
               <i class="menu-arrow"></i>
             </a>
@@ -41,7 +41,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth2" aria-expanded="false" aria-controls="auth">
-              <i class="menu-icon mdi mdi-restart"></i>
+              <i class="menu-icon mdi mdi-account-settings"></i>
               <span class="menu-title">Personal Settings</span>
               <i class="menu-arrow"></i>
             </a>

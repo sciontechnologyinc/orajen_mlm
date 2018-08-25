@@ -21,40 +21,54 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+          <a class="nav-link" href="waysofearning">
             <i class="menu-icon mdi mdi-content-copy"></i>
             <span class="menu-title">Ways of Earnings</span>
-            <i class="menu-arrow"></i>
           </a>
-          <div class="collapse" id="ui-basic">
-            <ul class="nav flex-column sub-menu">
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#catalog" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-clipboard"></i>
+              <span class="menu-title">Catalog</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="catalog">
+              <ul class="nav flex-column sub-menu">
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a>
-              </li>
-            </ul>
-          </div>
-        </li>
+                  <a class="nav-link" href="products"> Products </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="categories"> Categories </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="distributors"> Distributors </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="reviews"> Reviews </a>
+                </li>
+              </ul>
+            </div>
+          </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-arrow-down-bold-box-outline"></i>
-            <span class="menu-title">Product</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-clipboard"></i>
-            <span class="menu-title">Catalog</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-chart-line"></i>
-            <span class="menu-title">Sales</span>
-          </a>
-        </li>
+            <a class="nav-link" data-toggle="collapse" href="#sales" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-cart-outline"></i>
+              <span class="menu-title">Sales</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="sales">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="orders"> Orders </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="vouchers"> Gift Vouchers </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="statistics"> Statistics </a>
+                </li>
+              </ul>
+            </div>
+          </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
             <i class="menu-icon mdi mdi-cash"></i>
@@ -62,12 +76,12 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+          <a class="nav-link" data-toggle="collapse" href="#reportsmanager" aria-expanded="false" aria-controls="auth">
             <i class="menu-icon mdi mdi-file"></i>
             <span class="menu-title">Reports Manager</span>
             <i class="menu-arrow"></i>
           </a>
-          <div class="collapse" id="ui-basic2">
+          <div class="collapse" id="reportsmanager">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item">
                 <a class="nav-link" href="../../pages/ui-features/buttons.html">Income Sales (Yearly/Monthy/Weekly/Daily)</a>
@@ -82,7 +96,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="generalsettings">
             <i class="menu-icon mdi mdi-settings"></i>
             <span class="menu-title">General Settings</span>
           </a>
