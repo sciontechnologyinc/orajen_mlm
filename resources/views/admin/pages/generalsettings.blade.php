@@ -3,7 +3,7 @@
 @section('content')
 <div class="main-panel">
     <div class="content-wrapper">
-    <div class="col-md-6 d-flex align-items-stretch grid-margin">
+    <div class="col-md-12 d-flex align-items-stretch grid-margin">
               <div class="row flex-grow">
                 <div class="col-12">
                   <div class="card">

@@ -84,13 +84,13 @@
           <div class="collapse" id="reportsmanager">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/ui-features/buttons.html">Income Sales (Yearly/Monthy/Weekly/Daily)</a>
+                <a class="nav-link" href="#l">Income Sales (Yearly/Monthy/Weekly/Daily)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/ui-features/typography.html">Sales (Yearly/Monthy/Weekly/Daily)</a>
+                <a class="nav-link" href="#">Sales (Yearly/Monthy/Weekly/Daily)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/ui-features/typography.html">Top Earners</a>
+                <a class="nav-link" href="#">Top Earners</a>
               </li>
             </ul>
           </div>
