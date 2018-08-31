@@ -42,7 +42,7 @@
               Check Inbox
             </a>
             <a class="dropdown-item" onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">>
+            document.getElementById('logout-form').submit();">
               Sign Out
             </a>
             
