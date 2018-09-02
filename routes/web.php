@@ -111,9 +111,9 @@ Route::get('vouchers', function () {
 });
 
 
-Route::get('user', function () {
-    return view('user.index');
-});
+// Route::get('user', function () {
+//     return view('user.index');
+// });
 
 Route::get('useraccounts', function () {
     return view('user.pages.accounts');

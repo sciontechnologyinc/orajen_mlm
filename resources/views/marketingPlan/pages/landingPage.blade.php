@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class = 'lg-login' v-bind:style="styleObject">
-            <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
+            <form method="POST" action="{{ route('user.index') }}" aria-label="{{ __('Login') }}">
                 @csrf
 
                 <div class="form-group row">
