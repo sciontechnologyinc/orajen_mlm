@@ -13,13 +13,13 @@
               <a class="nav-link" href="{{url('ecommerceproducts')}}">PRODUCTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT US</a>
+              <a class="nav-link" href="{{url('ecommerceaboutus')}}">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="{{url('ecommercecontact')}}">CONTACT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">LOG-IN</a>
+                <a class="nav-link" href="{{url('login')}}">LOG-IN</a>
               </li>
           </ul>
         </div>

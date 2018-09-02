@@ -11,20 +11,35 @@
 |
 */
 
-Route::get('/', function () {
-    return view('marketingPlan.pages.landingPage');
+Route::get('', function () {
+    return view('welcome');
 });
+Route::resource('dashboard','DashboardController');
+
+Route::resource('/home','EcommerceController');
 
 
 Route::get('ecommercehome', function () {
     return view('ecommerce.pages.home');
 });
 
+<<<<<<< HEAD
 
+Route::get('ecommercelogin', function () {
+    return view('ecommerce.login');
+});
+
+
+
+=======
+>>>>>>> 35f27faf6f4e231f9fa64751cec0da18b513e426
 Route::get('ecommerceaboutus', function () {
     return view('ecommerce.pages.aboutus');
 });
 
+Route::get('ecommercecontact', function () {
+    return view('ecommerce.pages.contact');
+});
 
 Route::get('ecommerceproducts', function () {
     return view('ecommerce.pages.products');
@@ -34,9 +49,6 @@ Route::get('newmember', function () {
     return view('marketingPlan.pages.newmember');
 });
 
-Route::get('dashboard', function () {
-    return view('dashboard.index');
-});
 
 Route::get('statistics', function () {
     return view('admin.pages.statistics');
@@ -103,11 +115,6 @@ Route::get('addvoucher', function () {
 Route::get('vouchers', function () {
     return view('admin.pages.vouchers.vouchers');
 });
-
-
-// Route::get('user', function () {
-//     return view('user.index');
-// });
 
 Route::get('useraccounts', function () {
     return view('user.pages.accounts');
@@ -176,22 +183,22 @@ Route::get('orderhistory', function () {
 Route::get('account', function () {
     return view('admin.pages.newmember');
 });
+// Route::resource('dashboard','DashboardController');
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::post('/user', [
+Route::post('/home', [
     'uses' => 'LoginController@login',
-    'as'   => 'user.index'
+    'as'   => 'home.index'
 ]);
 
 
 Route::group(['middleware' => 'auth'], function(){
-    Route::get('user.index', function(){
-          return view('user.index');
-    })->name('user');;
+    Route::get('home.index', function(){
+          return view('home.index');
+    })->name('home');;
 
     Route::get('dashboard.index', function(){
         return view('dashboard.index');
