@@ -20,11 +20,13 @@ Route::get('ecommercehome', function () {
     return view('ecommerce.pages.home');
 });
 
-
 Route::get('ecommerceaboutus', function () {
     return view('ecommerce.pages.aboutus');
 });
 
+Route::get('ecommercecontact', function () {
+    return view('ecommerce.pages.contact');
+});
 
 Route::get('ecommerceproducts', function () {
     return view('ecommerce.pages.products');
