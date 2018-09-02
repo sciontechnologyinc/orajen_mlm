@@ -22,59 +22,86 @@
 <div class="productpage-subintro">Popular Products</div>
 </div>
 
-<div class="row text-center">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <!-- Card Light -->
+      <div class="card">
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <!-- Card content -->
+      <div class="card-body">
+        <!-- Social shares button -->
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <!-- Title -->
+        <h4 class="card-title">Card title</h4>
+        <hr>
+        <!-- Text -->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Link -->
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+      <!-- Card Light -->
+          </div>
 
-<div class="col-lg-3 col-md-6 mb-4">
-  <div class="card">
-    <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+    <div class="col-sm">
+      <!-- Card Light -->
+      <div class="card">
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <!-- Card content -->
+      <div class="card-body">
+        <!-- Social shares button -->
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <!-- Title -->
+        <h4 class="card-title">Card title</h4>
+        <hr>
+        <!-- Text -->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Link -->
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+      <!-- Card Light -->
     </div>
-    <div class="card-footer">
-      <a href="#" class="btn btn-primary">Find Out More!</a>
+
+    <div class="col-sm">
+      <!-- Card Light -->
+      <div class="card">
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <!-- Card content -->
+      <div class="card-body">
+        <!-- Social shares button -->
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <!-- Title -->
+        <h4 class="card-title">Card title</h4>
+        <hr>
+        <!-- Text -->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Link -->
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+      <!-- Card Light -->
     </div>
   </div>
 </div>
 
-<div class="col-lg-3 col-md-6 mb-4">
-  <div class="card">
-    <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-    </div>
-    <div class="card-footer">
-      <a href="#" class="btn btn-primary">Find Out More!</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-6 mb-4">
-  <div class="card">
-    <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-    </div>
-    <div class="card-footer">
-      <a href="#" class="btn btn-primary">Find Out More!</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-lg-3 col-md-6 mb-4">
-  <div class="card">
-    <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-    </div>
-    <div class="card-footer">
-      <a href="#" class="btn btn-primary">Find Out More!</a>
-    </div>
-  </div>
-</div>
-
-</div>
 @endsection

@@ -273,9 +273,9 @@ span.new-products {
 }
 
 .fp-label {
-    font-size: 20px;
+    font-size: 15px;
     text-align: right;
-    background: orange;
+    background: #543700;
     color: white;
     margin-bottom: 10px;
     border-bottom-left-radius: 5px;
@@ -341,8 +341,30 @@ span.new-products {
 
 .mission {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    padding: 30px 0px 30px;
+    color: gray;
 }
 
 .vision {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    padding: 30px 0px 30px;
+    color: gray;
+}
+
+p.company-mission {
+    font-size: 40px;
+    color: #252525;
+}
+
+p.company-vision {
+    font-size: 40px;
+    color: #252525;
+}
+
+a.black-text.d-flex.justify-content-end h5 {
+    color: #ffc801 !important;
+}
+
+a.black-text.d-flex.justify-content-end:hover {
+    color: #ad7001 !important;
 }
