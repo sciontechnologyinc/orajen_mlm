@@ -23,16 +23,12 @@ Route::get('ecommercehome', function () {
     return view('ecommerce.pages.home');
 });
 
-<<<<<<< HEAD
-=======
+
 
 Route::get('ecommercelogin', function () {
     return view('ecommerce.login');
 });
 
-
-
->>>>>>> c3192acffa01cf7929e03e7a590dce607dc8a3a6
 Route::get('ecommerceaboutus', function () {
     return view('ecommerce.pages.aboutus');
 });
