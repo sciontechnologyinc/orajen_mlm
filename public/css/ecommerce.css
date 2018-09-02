@@ -309,3 +309,40 @@ span.new-products {
     background-size: cover;
     height: 500px;
 }
+
+.cover-video video {
+    width: 100%;
+    height: auto;
+}
+
+.cover-video {
+    padding-top: 15px;
+}
+
+.aboutus-cover {
+    background-image: url(/images/our-company.jpg);
+    height: -webkit-fill-available;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutuscover-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 200px;
+    height: -webkit-fill-available;
+    width: 100%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.mission {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.vision {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}

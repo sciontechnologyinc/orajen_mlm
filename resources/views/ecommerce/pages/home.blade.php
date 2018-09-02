@@ -1,8 +1,14 @@
 @extends('ecommerce.master.template')
 
 @section('content')
-<div class="container">
+<div class="cover-video">
+<video autoplay muted loop id="myVideo">
+  <source src="/videos/Cover_Video.mp4" type="video/mp4">
+</video>
+</div>
 
+
+<div class="container">
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
         <h1 class="display-3">Welcome to ORAJEN ECOMMERCE!</h1>
