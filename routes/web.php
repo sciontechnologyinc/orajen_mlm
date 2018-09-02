@@ -20,6 +20,12 @@ Route::get('ecommercehome', function () {
     return view('ecommerce.pages.home');
 });
 
+
+Route::get('ecommerceaboutus', function () {
+    return view('ecommerce.pages.aboutus');
+});
+
+
 Route::get('ecommerceproducts', function () {
     return view('ecommerce.pages.products');
 });
@@ -29,7 +35,7 @@ Route::get('newmember', function () {
 });
 
 Route::get('dashboard', function () {
-    return view('admin.index');
+    return view('dashboard.index');
 });
 
 Route::get('statistics', function () {
@@ -99,9 +105,9 @@ Route::get('vouchers', function () {
 });
 
 
-Route::get('user', function () {
-    return view('user.index');
-});
+// Route::get('user', function () {
+//     return view('user.index');
+// });
 
 Route::get('useraccounts', function () {
     return view('user.pages.accounts');
@@ -174,3 +180,21 @@ Route::get('account', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::post('/user', [
+    'uses' => 'LoginController@login',
+    'as'   => 'user.index'
+]);
+
+
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('user.index', function(){
+          return view('user.index');
+    })->name('user');;
+
+    Route::get('dashboard.index', function(){
+        return view('dashboard.index');
+    })->name('dashboard');
+
+});
