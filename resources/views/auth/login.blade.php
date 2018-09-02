@@ -2,6 +2,10 @@
 
 @section('content')
 <div class="container">
+<div class='title'>
+                <img src='{{ url('/img/logo.png') }}'> 
+                <span>ORAJEN MARKETING CORP</span>
+            </div>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

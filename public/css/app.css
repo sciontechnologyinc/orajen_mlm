@@ -9808,3 +9808,13 @@ main.py-4 {
 a.navbar-brand {
     display: none;
 }
+
+.title img {
+    width: 100px;
+}
+
+.title span {
+    width: 300px !important;
+    text-align: center;
+    color: #000000 !important;
+}
