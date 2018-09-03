@@ -19,7 +19,7 @@
               <a class="nav-link" href="#">CONTACT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">LOG-IN</a>
+                <a class="nav-link" href="{{url('login')}}">LOG-IN</a>
               </li>
           </ul>
         </div>
