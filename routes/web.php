@@ -20,6 +20,18 @@ Route::get('ecommercehome', function () {
     return view('ecommerce.pages.home');
 });
 
+
+Route::get('ecommercelogin', function () {
+    return view('ecommerce.login');
+});
+
+
+
+Route::get('ecommerceaboutus', function () {
+    return view('ecommerce.pages.aboutus');
+});
+
+
 Route::get('ecommerceproducts', function () {
     return view('ecommerce.pages.products');
 });
