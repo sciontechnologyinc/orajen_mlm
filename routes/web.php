@@ -24,11 +24,10 @@ Route::get('ecommercehome', function () {
 });
 
 
+
 Route::get('ecommercelogin', function () {
     return view('ecommerce.login');
 });
-
-
 
 Route::get('ecommerceaboutus', function () {
     return view('ecommerce.pages.aboutus');
