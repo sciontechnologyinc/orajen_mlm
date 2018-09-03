@@ -29,7 +29,7 @@ Route::get('newmember', function () {
 });
 
 Route::get('dashboard', function () {
-    return view('admin.index');
+    return view('dashboard.index');
 });
 
 Route::get('statistics', function () {
@@ -174,3 +174,21 @@ Route::get('account', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::post('/user', [
+    'uses' => 'LoginController@login',
+    'as'   => 'user.index'
+]);
+
+
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('user.index', function(){
+          return view('user.index');
+    })->name('user');;
+
+    Route::get('dashboard.index', function(){
+        return view('dashboard.index');
+    })->name('dashboard');
+
+});
