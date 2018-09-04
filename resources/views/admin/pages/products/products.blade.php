@@ -141,12 +141,6 @@
                             Per Box
                           </td>
                         </tr>
-                      
-                     
-                    
-                      
-
-                       
                       </tbody>
                     </table>
                   </div>

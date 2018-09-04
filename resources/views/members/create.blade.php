@@ -1,6 +1,8 @@
 @extends('admin.master.template')
 
 @section('content')
+<link rel="stylesheet" href="{!! ('/css/members.css') !!}">
+
  @if($message = Session::get('success'))
     <div class="alert alert-success">
         <p>{{ $message }}</p>
@@ -17,10 +19,6 @@
         </ul>
     </div>
  @endif
- <link rel="stylesheet" href="{!! ('/css/members.css') !!}">
-
-   
-     
  <div class="main-panel">
     <div class="content-wrapper">
          <div class="col-12">
@@ -35,12 +33,12 @@
 								{!!Form::label('firstname', 'First Name', array('class' => 'form-control-label'))!!}
 								{!!Form::text('firstname',null, ['placeholder' => 'First Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 				
-                         <div class="middlename">
+                         <div class="form-group">
 								{!!Form::label('middlename', 'Middle Name', array('class' => 'form-control-label'))!!}
 								{!!Form::text('middlename',null, ['placeholder' => 'Middle Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						 </div>
 
-                           <div class="lastname">
+                           <div class="form-group">
 								{!!Form::label('lastname', 'Last Name', array('class' => 'form-control-label'))!!}
 								{!!Form::text('lastname',null, ['placeholder' => 'Last Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
@@ -76,13 +74,12 @@
                           </div>
                           <br>
                                 {!!Form::submit('Create Member', ['id' => 'addForm','class' => 'btn btn-primary  col-lg-3 offset-9']) !!}
-                                                      
+                    {!! Form::close() !!}    
                         </div>
                  </div>
         </div>
     </div>
 </div>
-{!! Form::close() !!}    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
      $("#dataForm").submit(function (event) {
