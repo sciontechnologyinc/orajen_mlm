@@ -2,7 +2,12 @@
     margin-top: -58px;
     margin-left: 298px;
 }
+
 .lastname {
     margin-top: -58px;
     margin-left: 654px;
+}
+
+a.btn.btn-success.btn-sm.mr-1 {
+    margin-right: 0px !important;
 }

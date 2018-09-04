@@ -23,12 +23,12 @@
      
  <div class="main-panel">
     <div class="content-wrapper">
-{!! Form::open(['id' => 'dataForm', 'method' => 'PATCH', 'url' => '/members/' . $member->id ]) !!}
 
          <div class="col-12">
                  <div class="card">
                     <div class="card-header"><strong>Create</strong><small> Member</small></div>
                       <div class="card-body card-block">
+                        {!! Form::open(['id' => 'dataForm', 'method' => 'PATCH', 'url' => '/members/' . $member->id ]) !!}
                      
 
                         <div class="fullname-group">
@@ -78,13 +78,12 @@
                           </div>
                           <br>
                                 {!!Form::submit('Create Member', ['id' => 'addForm','class' => 'btn btn-primary  col-lg-3 offset-9']) !!}
-                                                      
+                                {!! Form::close() !!}    
                         </div>
                  </div>
         </div>
     </div>
 </div>
-{!! Form::close() !!}    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
      $("#dataForm").submit(function (event) {
