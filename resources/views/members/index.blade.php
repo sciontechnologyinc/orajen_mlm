@@ -21,12 +21,10 @@
 
  
  <div class="main-panel">
-        <div class="content-wrapper">
-    
-
-   <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
+    <div class="content-wrapper">
+    <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
                             <strong class="card-title">Member List</strong>
                         </div>
                         <div class="card-body">
@@ -66,11 +64,14 @@
                     </tbody>
                      @endforeach
                   </table>
-                        </div>
-                    </div>
+
+
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
+    </div>
+</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script type="text/javascript">
      $("#deleteForm").submit(function (event) {
