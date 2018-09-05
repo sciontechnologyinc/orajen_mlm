@@ -21803,3 +21803,7 @@ body {
 .nmf-column2 {
     display: inline-block;
 }
+
+a.btn.btn-success.btn-sm.mr-1 {
+    margin-right: 0px !important;
+}
