@@ -1,0 +1,111 @@
+@extends('admin.master.template')
+
+@section('content')
+ @if($message = Session::get('success'))
+    <div class="alert alert-success">
+        <p>{{ $message }}</p>
+    </div>
+@endif
+
+ @if(count($errors) > 0 )
+    <div class="alert alert-danger">
+        <strong>Whoooppss !!</strong> There were some problem with your input. <br>
+        <ul>
+          @foreach($errors->all() as $error)
+              <li> {{ $error }} </li>
+          @endforeach
+        </ul>
+    </div>
+ @endif
+ <link rel="stylesheet" href="{!! ('/css/members.css') !!}">
+
+ {!! Form::open(['id' => 'dataForm', 'method' => 'PATCH', 'url' => '/members/' . $member->id ]) !!}
+     
+ <div class="main-panel">
+        <div class="content-wrapper">
+                <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-header"><strong>Create</strong><small> Member</small></div>
+                      <div class="card-body card-block">
+
+                        <div class="fullname-group">
+                          <div class="form-group">
+                          
+								{!!Form::label('firstname', 'First Name', array('class' => 'form-control-label'))!!}
+								{!!Form::text('firstname',$member->firstname, ['placeholder' => 'First Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+				
+                         <div class="middlename">
+								{!!Form::label('middlename', 'Middle Name', array('class' => 'form-control-label'))!!}
+								{!!Form::text('middlename',$member->middlename, ['placeholder' => 'Middle Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+						 </div>
+
+                           <div class="lastname">
+								{!!Form::label('lastname', 'Last Name', array('class' => 'form-control-label'))!!}
+								{!!Form::text('lastname',$member->lastname, ['placeholder' => 'Last Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+						  </div>
+                        </div>
+                  
+                </div>
+
+                          <div class="form-group">
+								{!!Form::label('address', 'Address', array('class' => 'form-control-label'))!!}
+								{!!Form::text('address',$member->address, ['placeholder' => 'Address', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+						  </div>
+                          
+                          <div class="form-group">
+								{!!Form::label('email', 'Email', array('class' => 'form-control-label'))!!}
+								{!!Form::text('email',$member->email, ['placeholder' => 'Email', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+						  </div>
+
+                          <div class="form-group">
+								{!!Form::label('contact', 'Contact', array('class' => 'form-control-label'))!!}
+								{!!Form::text('contact',$member->contact, ['placeholder' => 'Contact', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+						  </div>
+					
+                          <div class="form-group">
+								{!!Form::label('sponsorid', 'Sponsor ID', array('class' => 'form-control-label'))!!}
+								{!!Form::text('sponsorid',$member->sponsorid, ['placeholder' => 'Sponsor ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+						  </div>
+
+                          <div class="form-group">
+								{!!Form::label('placementid', 'Placement ID', array('class' => 'form-control-label'))!!}
+								{!!Form::text('placementid',$member->placementid, ['placeholder' => 'Placement ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+						  </div>
+
+                         <div class="form-group">
+								{!!Form::label('activationcode', 'Activation Code', array('class' => 'form-control-label'))!!}
+								{!!Form::text('activationcode',$member->activationcode, ['placeholder' => 'Activation Code', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+						  </div>
+
+
+                                <br>
+                                {!!Form::submit('Create Member', ['id' => 'addForm','class' => 'btn btn-primary  col-lg-2 offset-10']) !!}
+
+                              </div>
+                            </div>
+                          </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    {!! Form::close() !!}
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+     $("#dataForm").submit(function (event) {
+                 var x = confirm("Are you sure you want to add?");
+                    if (x) {
+                        return true;
+                    }
+                    else {
+
+                        event.preventDefault();
+                        return false;
+                    }
+
+                });
+</script>
+    
+@endsection()

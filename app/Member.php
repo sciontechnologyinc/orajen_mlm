@@ -4,10 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class MemberList extends Model
+class Member extends Model
 {
-    
-    protected $table = 'member_lists';
+    protected $table = 'members';
     protected $fillable =  ['firstname',
                             'middlename',
                             'lastname',

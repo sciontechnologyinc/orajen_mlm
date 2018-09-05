@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Memberlist;
+use App\Member;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class MemberListController extends Controller
+class MemberController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class MemberListController extends Controller
      */
     public function index()
     {
-        return MemberList::all();
+        $members = Member::orderBy('id')->get();
+        return view('members.index', ['members' => $members]);
     }
 
     /**
@@ -23,7 +25,7 @@ class MemberListController extends Controller
      */
     public function create()
     {
-        //
+        return view('members.create');
     }
 
     /**
@@ -34,19 +36,22 @@ class MemberListController extends Controller
      */
     public function store(Request $request)
     {
-        $memberlist = new MemberList();
+        $member = $request->all();
+        $data = $request->validate([
+           'firstname' => 'required',
+           'middlename' => 'required',
+           'lastname' => 'required',
+           'address' => 'required',
+           'email' => 'required',
+           'mobileno' => 'required',
+           'sponsorid' => 'required',
+           'placementid' => 'required',
+           'activationcode' => 'required',
 
-        $memberlist->firstname=$request->input('firstname');
-        $memberlist->middlename=$request->input('middlename');
-        $memberlist->lastname=$request->input('lastname');
-        $memberlist->address=$request->input('address');
-        $memberlist->email=$request->input('email');
-        $memberlist->mobileno=$request->input('mobileno');
-        $memberlist->sponsorid=$request->input('sponsorid');
-        $memberlist->placementid=$request->input('placementid');
-        $memberlist->activationcode=$request->input('activationcode');
-
-        $memberlist->save();
+           
+       ]);
+       Member::create($data);
+       return redirect()->back()->with('success','Added successfuly');
     }
 
     /**
@@ -68,7 +73,8 @@ class MemberListController extends Controller
      */
     public function edit($id)
     {
-        //
+        $member = Member::find($id);
+        return view('members/edit', ['member' => $member]);
     }
 
     /**
@@ -80,7 +86,11 @@ class MemberListController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $member = Member::find($id);
+        $data = $request->all();
+        $member->update($data);
+
+        return redirect('/members')->with('success','Updated successfuly');
     }
 
     /**
@@ -91,6 +101,9 @@ class MemberListController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $member = Member::find($id);
+	    $member->destroy($id);
+
+	    return redirect()->back()->with('success','Deleted successfuly');
     }
 }
