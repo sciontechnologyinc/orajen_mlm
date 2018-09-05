@@ -2,7 +2,7 @@
       <div class="container">
       <div class="row">
             <div class="col-sm-4 footer-img"><img src="{{ url('/img/logo.png') }}" alt="logo" /></div>
-            <div class="col-sm-4 footer-poweredby">© 2018 <span>ORAJEN</span>. Powered by ScionTechnologyInc</div>
+            <div class="col-sm-4 footer-poweredby">© 2018 <span>ORAJEN Marketing</span>. Powered by ScionTechnologyInc</div>
             <div class="col-sm-4">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
