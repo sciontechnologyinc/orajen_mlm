@@ -2,20 +2,17 @@
 @section('headerButton')
           <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
                     <li class="nav-item active">
-                    <a href="#" class="nav-link">Add Product</a>
+                    <a href="{{ url('create') }}" class="nav-link">Add Product</a>
                     </li>
                     <li class="nav-item">
-                        <a href="products" class="nav-link">Products List</a>
+                        <a href="{{ url('members') }}" class="nav-link">Products List</a>
                     </li>
             </ul>
 @endsection
 @section('content')
-<<<<<<< HEAD
- <link rel="stylesheet" href="{!! ('/css/members.css') !!}">
 
    
      
-=======
 <link rel="stylesheet" href="{!! ('/css/members.css') !!}">
 
  @if($message = Session::get('success'))
@@ -34,7 +31,6 @@
         </ul>
     </div>
  @endif
->>>>>>> 5fa32f54f191c541d6d17c2e86835c03a5b3d477
  <div class="main-panel">
  {!! Form::open(['id' => 'dataForm', 'url' => '/members']) !!}
     <div class="content-wrapper">
@@ -44,22 +40,24 @@
                     <div class="card-body">
                      
 
-                       
+                        <div class="fullname-group">
                           <div class="form-group">
                           
 								{!!Form::label('firstname', 'First Name', array('class' => 'form-control-label'))!!}
 								{!!Form::text('firstname',null, ['placeholder' => 'First Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 				
-                         <div class="form-group">
+                         <div class="middlename">
 								{!!Form::label('middlename', 'Middle Name', array('class' => 'form-control-label'))!!}
 								{!!Form::text('middlename',null, ['placeholder' => 'Middle Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						 </div>
 
-                           <div class="form-group">
+                           <div class="lastname">
 								{!!Form::label('lastname', 'Last Name', array('class' => 'form-control-label'))!!}
 								{!!Form::text('lastname',null, ['placeholder' => 'Last Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
                         </div>
+                  
+                    </div>
                   
                 
                           <div class="form-group">
@@ -97,10 +95,8 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
 {!! Form::close() !!}    
 
-=======
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
      $("#dataForm").submit(function (event) {
@@ -114,6 +110,5 @@
                     }
                 });
 </script>
->>>>>>> 5fa32f54f191c541d6d17c2e86835c03a5b3d477
     
 @endsection()
