@@ -146,7 +146,7 @@
       </div>
       <div class="card-body">
         <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
-        <h4 class="card-title">Bleaching Organic Soap</h4>
+        <h4 class="card-title">Blake</h4>
         <hr>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
@@ -164,7 +164,7 @@
       </div>
       <div class="card-body">
         <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
-        <h4 class="card-title">Real Detergent Powder</h4>
+        <h4 class="card-title">Borgx</h4>
         <hr>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
@@ -182,7 +182,7 @@
       </div>
       <div class="card-body">
         <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
-        <h4 class="card-title">Tawas Organic Soap</h4>
+        <h4 class="card-title">Dhane</h4>
         <hr>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
@@ -200,7 +200,7 @@
       </div>
       <div class="card-body">
         <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
-        <h4 class="card-title">Bleaching Organic Soap</h4>
+        <h4 class="card-title">Yhonarich</h4>
         <hr>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
@@ -225,7 +225,7 @@
       </div>
       <div class="card-body">
         <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
-        <h4 class="card-title">Real Detergent Powder</h4>
+        <h4 class="card-title">Arya</h4>
         <hr>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
