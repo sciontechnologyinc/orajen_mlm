@@ -14,20 +14,14 @@
             <span class="menu-title">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="account">
-            <i class="menu-icon mdi mdi-account"></i>
-            <span class="menu-title">Members</span>
-          </a>
-        </li>
 
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#catalog" aria-expanded="false" aria-controls="auth">
+            <a class="nav-link" data-toggle="collapse" href="#member" aria-expanded="false" aria-controls="auth">
               <i class="menu-icon mdi mdi-clipboard"></i>
               <span class="menu-title">Members</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="catalog">
+            <div class="collapse" id="member">
               <ul class="nav flex-column sub-menu">
               <li class="nav-item">
                   <a class="nav-link" href="{{ url('create') }}"> Add Member </a>

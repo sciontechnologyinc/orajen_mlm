@@ -1,35 +1,29 @@
 @extends('admin.master.template')
-
+@section('headerButton')
+          <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+                    <li class="nav-item active">
+                    <a href="#" class="nav-link">Add Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products" class="nav-link">Products List</a>
+                    </li>
+            </ul>
+@endsection
 @section('content')
- @if($message = Session::get('success'))
-    <div class="alert alert-success">
-        <p>{{ $message }}</p>
-    </div>
-@endif
-
- @if(count($errors) > 0 )
-    <div class="alert alert-danger">
-        <strong>Whoooppss !!</strong> There were some problem with your input. <br>
-        <ul>
-          @foreach($errors->all() as $error)
-              <li> {{ $error }} </li>
-          @endforeach
-        </ul>
-    </div>
- @endif
  <link rel="stylesheet" href="{!! ('/css/members.css') !!}">
 
    
      
  <div class="main-panel">
+ {!! Form::open(['id' => 'dataForm', 'url' => '/members']) !!}
     <div class="content-wrapper">
          <div class="col-12">
-                 <div class="card">
+                  <div class="card">
                     <div class="card-header"><strong>Create</strong><small> Member</small></div>
-                      <div class="card-body card-block">
-                      {!! Form::open(['id' => 'dataForm', 'url' => '/members']) !!}
+                    <div class="card-body">
+                     
 
-                        <div class="fullname-group">
+                       
                           <div class="form-group">
                           
 								{!!Form::label('firstname', 'First Name', array('class' => 'form-control-label'))!!}
@@ -46,14 +40,14 @@
 						  </div>
                         </div>
                   
-                    </div>
+                
                           <div class="form-group">
 								{!!Form::label('address', 'Address', array('class' => 'form-control-label'))!!}
 								{!!Form::text('address',null, ['placeholder' => 'Address', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
                           <div class="form-group">
 								{!!Form::label('email', 'Email', array('class' => 'form-control-label'))!!}
-								{!!Form::text('email',null, ['placeholder' => 'Email', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::email('email',null, ['placeholder' => 'Email', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
                           <div class="form-group">
 								{!!Form::label('mobileno', 'Contact', array('class' => 'form-control-label'))!!}
@@ -83,18 +77,6 @@
     </div>
 </div>
 {!! Form::close() !!}    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript">
-     $("#dataForm").submit(function (event) {
-                 var x = confirm("Are you sure you want to add?");
-                    if (x) {
-                        return true;
-                    }
-                    else {
-                        event.preventDefault();
-                        return false;
-                    }
-                });
-</script>
+
     
 @endsection()
