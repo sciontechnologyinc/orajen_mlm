@@ -28,18 +28,25 @@
                     <div class="card-header"><strong>Create</strong><small> Member</small></div>
                       <div class="card-body card-block">
                       {!! Form::open(['id' => 'dataForm', 'url' => '/members']) !!}
+
+                        <div class="fullname-group">
                           <div class="form-group">
+                          
 								{!!Form::label('firstname', 'First Name', array('class' => 'form-control-label'))!!}
 								{!!Form::text('firstname',null, ['placeholder' => 'First Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
-                         <div class="form-group">
+				
+                         <div class="middlename">
 								{!!Form::label('middlename', 'Middle Name', array('class' => 'form-control-label'))!!}
 								{!!Form::text('middlename',null, ['placeholder' => 'Middle Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						 </div>
-                           <div class="form-group">
+
+                           <div class="lastname">
 								{!!Form::label('lastname', 'Last Name', array('class' => 'form-control-label'))!!}
 								{!!Form::text('lastname',null, ['placeholder' => 'Last Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
-                          </div>
+						  </div>
                         </div>
+                  
+                    </div>
                           <div class="form-group">
 								{!!Form::label('address', 'Address', array('class' => 'form-control-label'))!!}
 								{!!Form::text('address',null, ['placeholder' => 'Address', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
@@ -50,31 +57,32 @@
 						  </div>
                           <div class="form-group">
 								{!!Form::label('mobileno', 'Contact', array('class' => 'form-control-label'))!!}
-								{!!Form::text('mobileno',null, ['placeholder' => 'Contact', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::number('mobileno',null, ['placeholder' => 'Contact', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
 					
                           <div class="form-group">
 								{!!Form::label('sponsorid', 'Sponsor ID', array('class' => 'form-control-label'))!!}
-								{!!Form::text('sponsorid',null, ['placeholder' => 'Sponsor ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::number('sponsorid',null, ['placeholder' => 'Sponsor ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
 
                           <div class="form-group">
 								{!!Form::label('placementid', 'Placement ID', array('class' => 'form-control-label'))!!}
-								{!!Form::text('placementid',null, ['placeholder' => 'Placement ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::number('placementid',null, ['placeholder' => 'Placement ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
 
                          <div class="form-group">
 								{!!Form::label('activationcode', 'Activation Code', array('class' => 'form-control-label'))!!}
-								{!!Form::text('activationcode',null, ['placeholder' => 'Activation Code', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::number('activationcode',null, ['placeholder' => 'Activation Code', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                           </div>
                           <br>
-                                {!!Form::submit('Create Member', ['id' => 'addForm','class' => 'btn btn-primary  col-lg-3 offset-10']) !!}
-                            {!! Form::close() !!}                                
+                                {!!Form::submit('Create Member', ['id' => 'addForm','class' => 'btn btn-primary  col-lg-3 offset-9']) !!}
+                                                      
                         </div>
                  </div>
         </div>
     </div>
 </div>
+{!! Form::close() !!}    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
      $("#dataForm").submit(function (event) {
