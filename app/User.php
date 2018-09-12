@@ -37,4 +37,10 @@ class User extends Authenticatable
         }
             return false;
     }
+
+    public $primaryKey = 'id';
+    public $timestamps = true;
+    public function members() {
+        return $this->hasMany('App\Member');
+    }
 }

@@ -19,9 +19,7 @@ Route::resource('dashboard','DashboardController');
 Route::resource('/home','EcommerceController');
 
 //crud
-Route::get('create', function () {
-    return view('members.create');
-});
+Route::get('create', 'MemberController@create');
 Route::resource('members','MemberController');
 
 

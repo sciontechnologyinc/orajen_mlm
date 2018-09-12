@@ -24,6 +24,8 @@ class CreateMembersTable extends Migration
             $table->string('sponsorid');
             $table->string('placementid');
             $table->string('activationcode');
+            $table->string('user_id');
+            $table->string('node_address');
             $table->timestamps();
         });
     }
