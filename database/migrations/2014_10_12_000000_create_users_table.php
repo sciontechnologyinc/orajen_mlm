@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->boolean('admin')->default(0);
             $table->decimal('income', 19, 4)->default(0);
+            $table->integer('counter')->default(0);
+            $table->integer('user_counter')->default(1);
             $table->rememberToken();
             $table->timestamps();
         });
