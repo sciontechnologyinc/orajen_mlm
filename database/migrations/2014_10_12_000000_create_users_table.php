@@ -21,6 +21,10 @@ class CreateUsersTable extends Migration
             $table->boolean('admin')->default(0);
             $table->decimal('income', 19, 4)->default(0);
             $table->integer('counter')->default(0);
+<<<<<<< HEAD
+=======
+            $table->integer('user_counter')->default(1);
+>>>>>>> ceb57712d69c2b734cc8cc1dee4fc698cd6a3378
             $table->rememberToken();
             $table->timestamps();
         });

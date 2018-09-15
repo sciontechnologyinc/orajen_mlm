@@ -35,46 +35,46 @@
                           <div class="form-group">
                           
 								{!!Form::label('firstname', 'First Name', array('class' => 'form-control-label'))!!}
-								{!!Form::text('firstname',null, ['placeholder' => 'First Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::text('firstname',$member->firstname, ['placeholder' => 'First Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 				
                          <div class="middlename">
 								{!!Form::label('middlename', 'Middle Name', array('class' => 'form-control-label'))!!}
-								{!!Form::text('middlename',null, ['placeholder' => 'Middle Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::text('middlename',$member->middlename, ['placeholder' => 'Middle Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						 </div>
 
                            <div class="lastname">
 								{!!Form::label('lastname', 'Last Name', array('class' => 'form-control-label'))!!}
-								{!!Form::text('lastname',null, ['placeholder' => 'Last Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::text('lastname',$member->lastname, ['placeholder' => 'Last Name', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
                         </div>
                   
                     </div>
                           <div class="form-group">
 								{!!Form::label('address', 'Address', array('class' => 'form-control-label'))!!}
-								{!!Form::text('address',null, ['placeholder' => 'Address', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::text('address',$member->address, ['placeholder' => 'Address', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
                           <div class="form-group">
 								{!!Form::label('email', 'Email', array('class' => 'form-control-label'))!!}
-								{!!Form::text('email',null, ['placeholder' => 'Email', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::text('email',$member->email, ['placeholder' => 'Email', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
                           <div class="form-group">
 								{!!Form::label('mobileno', 'Contact', array('class' => 'form-control-label'))!!}
-								{!!Form::number('mobileno',null, ['placeholder' => 'Contact', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::number('mobileno',$member->mobileno, ['placeholder' => 'Contact', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
 					
                           <div class="form-group">
 								{!!Form::label('sponsorid', 'Sponsor ID', array('class' => 'form-control-label'))!!}
-								{!!Form::number('sponsorid',null, ['placeholder' => 'Sponsor ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::number('sponsorid',$member->sponsorid, ['placeholder' => 'Sponsor ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
 
                           <div class="form-group">
 								{!!Form::label('placementid', 'Placement ID', array('class' => 'form-control-label'))!!}
-								{!!Form::number('placementid',null, ['placeholder' => 'Placement ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::number('placementid',$member->placementid, ['placeholder' => 'Placement ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
 
                          <div class="form-group">
 								{!!Form::label('activationcode', 'Activation Code', array('class' => 'form-control-label'))!!}
-								{!!Form::number('activationcode',null, ['placeholder' => 'Activation Code', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::number('activationcode',$member->activationcode, ['placeholder' => 'Activation Code', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                           </div>
                           <br>
                                 {!!Form::submit('Create Member', ['id' => 'addForm','class' => 'btn btn-primary  col-lg-3 offset-9']) !!}
