@@ -20,18 +20,13 @@ Route::resource('/home','EcommerceController');
 
 //crud
 Route::get('create', 'MemberController@create');
+Route::get('genpool', 'MemberController@generateRule2');
+Route::get('passup', 'MemberController@generateRule3');
 Route::resource('members','MemberController');
-
-
-
-
-
 
 Route::get('ecommercehome', function () {
     return view('ecommerce.pages.home');
 });
-
-
 
 Route::get('ecommercelogin', function () {
     return view('ecommerce.login');
