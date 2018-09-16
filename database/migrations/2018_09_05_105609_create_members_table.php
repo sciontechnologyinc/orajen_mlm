@@ -24,6 +24,12 @@ class CreateMembersTable extends Migration
             $table->string('sponsorid');
             $table->string('placementid');
             $table->string('activationcode');
+            $table->string('user_id');
+            $table->string('node_address');
+            $table->boolean('active')->default(0);
+            $table->boolean('qualified')->default(0);
+            $table->decimal('income', 19, 4)->default(0);
+            $table->decimal('product_voucher', 19, 4)->default(0);
             $table->timestamps();
         });
     }

@@ -74,18 +74,24 @@
 						  </div>
 					
                           <div class="form-group">
-								{!!Form::label('sponsorid', 'Sponsor ID', array('class' => 'form-control-label'))!!}
-								{!!Form::number('sponsorid',null, ['placeholder' => 'Sponsor ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                                {!!Form::label('sponsorid', 'Sponsor', array('class' => 'form-control-label'))!!}
+                                <select name="sponsorid" class="form-control">
+                                    <option value="" disabled="true">Select a Sponsor</option>
+                                    <option value="main">Main Account ({{auth()->user()->name}})</option>
+                                    @foreach($members as $member)
+                                        <option value="{{$member->id}}">{{$member->lastname}}, {{$member->firstname}} {{$member->middlename}}</option>
+                                    @endforeach
+                                </select>
 						  </div>
 
                           <div class="form-group">
 								{!!Form::label('placementid', 'Placement ID', array('class' => 'form-control-label'))!!}
-								{!!Form::number('placementid',null, ['placeholder' => 'Placement ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::text('placementid',uniqid(), ['placeholder' => 'Placement ID', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
 
                          <div class="form-group">
 								{!!Form::label('activationcode', 'Activation Code', array('class' => 'form-control-label'))!!}
-								{!!Form::number('activationcode',null, ['placeholder' => 'Activation Code', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::text('activationcode', null, ['placeholder' => 'Activation Code', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                           </div>
                           <br>
                                 {!!Form::submit('Create Member', ['id' => 'addForm','class' => 'btn btn-primary  col-lg-3 offset-9']) !!}

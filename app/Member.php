@@ -15,5 +15,12 @@ class Member extends Model
                             'mobileno',
                             'sponsorid',
                             'placementid',
-                            'activationcode'];
+                            'activationcode',
+                            'node_address',
+                            'user_id'];
+    public $primaryKey = 'id';
+    public $timestamps = true;
+    public function user() {
+        return $this->belongsTo('App\User');
+    }
 }
