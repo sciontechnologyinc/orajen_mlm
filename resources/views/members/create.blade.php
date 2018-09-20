@@ -1,10 +1,21 @@
 @extends('admin.master.template')
 @section('headerButton')
+<<<<<<< HEAD
           <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
                     <li class="nav-item active">
                     <a href="{{ url('create') }}" class="nav-link">Member</a>
                     </li>
             </ul>
+=======
+<ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+    <li class="nav-item active">
+    <a href="{{ url('create') }}" class="nav-link">Add Member</a>
+    </li>
+    <li class="nav-item">
+        <a href="{{ url('members') }}" class="nav-link">Generate Activation</a>
+    </li>
+</ul>
+>>>>>>> 999cb7ab5d9b069e81f220fd679f79c45badcd52
 @endsection
 @section('content')
 

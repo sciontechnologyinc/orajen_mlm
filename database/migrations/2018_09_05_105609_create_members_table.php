@@ -15,19 +15,13 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('firstname');
-            $table->string('middlename');
-            $table->string('lastname');
-            $table->string('address');
-            $table->string('email');
-            $table->string('mobileno');
-            $table->string('sponsorid');
-            $table->string('placementid');
-            $table->string('activationcode');
             $table->string('user_id');
+            $table->string('placement_id');
             $table->string('node_address');
-            $table->boolean('active')->default(0);
-            $table->boolean('qualified')->default(0);
+            $table->string('activationcode');
+            $table->boolean('is_main')->default(0);
+            $table->boolean('is_active')->default(0);
+            $table->boolean('is_qualified')->default(0);
             $table->decimal('income', 19, 4)->default(0);
             $table->decimal('product_voucher', 19, 4)->default(0);
             $table->timestamps();

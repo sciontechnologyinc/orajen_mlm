@@ -68,10 +68,6 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-        $usercount = User::where('name', $data['name'])->get();
-        if (count($usercount) != 0) { $user->user_counter = count($usercount); }
-        else { $user->user_counter = 1; }
-        $user->save();
         return $user;
 
     }

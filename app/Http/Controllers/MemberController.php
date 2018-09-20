@@ -25,8 +25,7 @@ class MemberController extends Controller
      */
     public function create()
     {
-        $user_id = auth()->user()->id;
-        $members = Member::where('user_id', '=', $user_id)->get();
+        $members = Member::all();
         return view('members.create',['members' => $members]);
     }
 
@@ -51,26 +50,6 @@ class MemberController extends Controller
            'placementid' => 'required',
            'activationcode' => 'required',
        ]);
-
-       if ($request->sponsorid != "main") {  
-            $ismain = true;      
-            $member = Member::find($request->sponsorid);
-            $sponsorid = $member->id;
-            $nodeaddress = $member->node_address.'.'.$request->sponsorid;
-       } else {
-            $ismain = false;
-            $sponsorid = $main->id;
-            $nodeaddress = $main->id;
-       }
-
-       $data['sponsorid'] = $sponsorid;
-       $data['node_address'] = $nodeaddress;
-       $data['user_id'] = $main->id;
-       Member::create($data);
-
-       $this->checkIfQualified($sponsorid);
-       $this->packageIncome($main, $sponsorid, $ismain);
-       $this->infinityPassUp($main, $sponsorid, $ismain);
        return redirect()->back()->with('success','Added successfuly');
     }
 
