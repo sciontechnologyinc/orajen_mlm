@@ -2,10 +2,7 @@
 @section('headerButton')
           <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
                     <li class="nav-item active">
-                    <a href="{{ url('create') }}" class="nav-link">Add Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url('members') }}" class="nav-link">Products List</a>
+                    <a href="{{ url('create') }}" class="nav-link">Member</a>
                     </li>
             </ul>
 @endsection

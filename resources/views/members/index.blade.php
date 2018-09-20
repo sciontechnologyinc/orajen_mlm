@@ -4,9 +4,6 @@
                     <li class="nav-item">
                     <a href="{{ url('create') }}" class="nav-link">Add Member</a>
                     </li>
-                    <li class="nav-item active">
-                        <a href="{{ url('members') }}" class="nav-link">Member`s List</a>
-                    </li>
             </ul>
 @endsection
 @section('content')
