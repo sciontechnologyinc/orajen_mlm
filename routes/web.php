@@ -19,10 +19,14 @@ Route::resource('dashboard','DashboardController');
 Route::resource('/home','EcommerceController');
 
 //crud
-Route::get('create', 'MemberController@create');
-Route::get('genpool', 'MemberController@generateRule2');
-Route::get('passup', 'MemberController@generateRule3');
-Route::resource('members','MemberController');
+Route::get('members', 'MemberController@index');
+Route::post('members/display', 'MemberController@display');
+Route::post('members/get/{id}', 'MemberController@get');
+Route::post('members/edit', 'MemberController@edit');
+Route::post('members/add', 'MemberController@add');
+
+Route::get('codes', 'CodeController@index');
+Route::post('codes/add', 'CodeController@add');
 
 Route::get('ecommercehome', function () {
     return view('ecommerce.pages.home');
@@ -115,9 +119,7 @@ Route::get('vouchers', function () {
     return view('admin.pages.vouchers.vouchers');
 });
 
-Route::get('useraccounts', function () {
-    return view('user.pages.accounts');
-});
+Route::get('useraccounts', 'MemberController@view');
 
 Route::get('waysofearning', function () {
     return view('admin.pages.waysofearning');

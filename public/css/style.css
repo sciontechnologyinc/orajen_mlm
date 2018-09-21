@@ -13898,7 +13898,7 @@ button.close {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1050;
+    z-index: 99999;
     display: none;
     overflow: hidden;
     outline: 0;
@@ -13914,6 +13914,7 @@ button.close {
     width: auto;
     margin: 10px;
     pointer-events: none;
+    width: 900px;
 }
 
 .modal.fade .modal-dialog {
@@ -13956,7 +13957,7 @@ button.close {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1040;
+    z-index: 99998;
     background-color: #000;
 }
 
@@ -21806,4 +21807,10 @@ body {
 
 a.btn.btn-success.btn-sm.mr-1 {
     margin-right: 0px !important;
+}
+
+.table.table-bordered td,
+.table.table-bordered th {
+    padding: 1.2mm;
+    text-align:center;
 }

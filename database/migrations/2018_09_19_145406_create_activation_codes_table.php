@@ -16,7 +16,7 @@ class CreateActivationCodesTable extends Migration
         Schema::create('activation_codes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('code')->unique();
-            $table->string('type')->unique();
+            $table->string('type');
             $table->boolean('is_used')->default(0);
             $table->timestamps();
         });
