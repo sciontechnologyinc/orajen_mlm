@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <link href="{{url('/css/landing.css')}}" rel="stylesheet" type='text/css'>
         <link href="{{url('/css/style-800.css')}}" rel="stylesheet" type='text/css'>
         <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
@@ -15,6 +16,7 @@
         <!-- inject:css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/user.css">
+        <link rel="stylesheet" href="{!! asset('css/treant.css') !!}"/>
         <title>Orajen Marketing Corp</title>
 
     </head>
@@ -30,6 +32,8 @@
                 </div>
             </div>
         </div>
+        @yield('modal')
     </body>
     <script src="{{ asset('js/app.js') }}" defer></script>
+    @yield('scripts')
 </html>

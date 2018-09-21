@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="{!! asset('css/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css') !!}">
         <link rel="stylesheet" href="{!! asset('css/custom.css') !!}">
         <link rel="stylesheet" href="{!! asset('css/user.css') !!}">
+        <link rel="stylesheet" href="{!! asset('css/treant.css') !!}"/>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Orajen Marketing Corp</title>
 
@@ -28,12 +29,14 @@
                 <div class="container-scroller">
                         @include('admin.partial.headerPage')
                         <div class="container-fluid page-body-wrapper">
-                        @include('admin.partial.sidepanel')
-                        @yield('content')
+                            @include('admin.partial.sidepanel')
+                            @yield('content')
                         </div>
                 </div>
             </div>
         </div>
+        @yield('modal')
     </body>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{!! asset('js/app.js') !!}" defer></script>
+    @yield('scripts')
 </html>

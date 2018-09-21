@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('address')->nullable();
             $table->string('gender')->nullable();
             $table->string('password');
-            $table->string('sponsor_id');
+            $table->string('sponsor_id')->nullable();
             $table->boolean('admin')->default(0);
             $table->rememberToken();
             $table->timestamps();
