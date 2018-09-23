@@ -185,9 +185,28 @@ Route::get('orderhistory', function () {
     return view('user.pages.orderhistory');
 });
 
-
 Route::get('account', function () {
     return view('admin.pages.newmember');
+});
+
+Route::get('incomesales', function () {
+    return view('admin.pages.incomesales');
+});
+
+Route::get('rmsales', function () {
+    return view('admin.pages.rmsales');
+});
+
+Route::get('money', function () {
+    return view('admin.pages.money');
+});
+
+Route::get('topearners', function () {
+    return view('admin.pages.topearners');
+});
+
+Route::get('adminaccount', function () {
+    return view('admin.pages.adminaccount');
 });
 
 
