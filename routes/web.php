@@ -40,6 +40,10 @@ Route::get('ecommerceaboutus', function () {
     return view('ecommerce.pages.aboutus');
 });
 
+Route::get('undermaintenance', function () {
+    return view('ecommerce.partial.maintenance');
+});
+
 Route::get('ecommercecontact', function () {
     return view('ecommerce.pages.contact');
 });

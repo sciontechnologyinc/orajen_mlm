@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="cover-video">
-<video autoplay muted loop id="myVideo">
-  <source src="/videos/Cover_Video.mp4" type="video/mp4">
+<video autoplay controls id="myVideo">
+  <source src="/videos/Cover_Video.MP4" type="video/mp4">
 </video>
 </div>
 
@@ -11,84 +11,244 @@
 <div class="container">
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3">Welcome to ORAJEN ECOMMERCE!</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+        <h1 class="display-3" id="scroll-to">Welcome to ORAJEN ECOMMERCE!</h1>
+        <p class="lead"></p>
         <a href="#" class="btn btn-primary btn-lg joinNow">Join Now !</a>
       </header>
 
 <div class="featured-products">
-  Packages
-  <div class="row featured-product">
-    <div class="card-deck">
-        <div class="card mb-4">
-            <div class="view overlay">
-                <img class="card-img-top" src="/images/packages/package_1.jpg" alt="Package 1">
-                <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title package">Package 1</h4>
-                <p class="card-text package">1 Bottle of Perfume<br> 1 pc Guava Soap<br> 2 packs 350 Real Detergent Powder<br> 2 pcs sachet 50g Real Detergent Powder(Free)</p>
-            </div>
-        </div>
-        <div class="card mb-4">
-            <div class="view overlay">
-                <img class="card-img-top" src="/images/packages/package_2.jpg" alt="Package 2">
-                <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title package">Package 2</h4>
-                <p class="card-text package">1 Set Perfume Tester<br> 1 pc Tawas Soap<br> 3 packs 350g Real Detergent Powder<br> 3 pcs sachet 50g Real Detergent Powder<br> 1 pc Papaya Soap(Free)</p>
-            </div>
-        </div>
-        <div class="card mb-4">
-            <div class="view overlay">
-                <img class="card-img-top" src="/images/packages/package_3.jpg" alt="Package 3">
-                <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title package">Package 3</h4>
-                <p class="card-text package">1 bot of Perfume 50ml for Men<br> 1 bot of Perfume 35ml for Women<br> 1 pc Glutamansi Soap<br> 1 pack 350g Real Detergent Powder<br> 2 pcs sachet 50g Real Detergnet Powder(Free)</p>
-            </div>
-        </div>
+  Featured Products
+  <div class="row product-list">
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top" src="/images/products/1.JPG" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Placenta Organic Soap</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+          </div>
+
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top" src="/images/products/2.JPG" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Guava Organic Soap</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top" src="/images/products/3.JPG" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Glutamansi Organic Soap</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
     </div>
   </div>
-  <div class="row featured-product">
-    <div class="card-deck">
-        <div class="card mb-4">
-            <div class="view overlay">
-                <img class="card-img-top" src="/images/packages/package_4.jpg" alt="Package 4">
-                <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title package">Package 4</h4>
-                <p class="card-text package">2 bot of Perfume 35ml for Women<br> 1 pc Placenta Soap<br> 1 pack 350g Real Detergent Powder<br> 2 pcs sachet 50g Real Detergent Powder(Free)</p>
-            </div>
-        </div>
-        <div class="card mb-4">
-            <div class="view overlay">
-                <img class="card-img-top" src="/images/packages/package_5.jpg" alt="Package 5">
-                <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title package">Package 5</h4>
-                <p class="card-text package">1 bot of Perfume 35ml for Women<br> 1 bot of Perfume 50ml for Men<br> 1 pc Bleaching Soap<br> 1 pack 350g Real Powder Detergent<br> 2 pcs sachet 50g Real Detergent Powder(Free)</p>
-            </div>
-        </div>
-        <div class="card mb-4">
-        </div>
+
+  <div class="row product-list">
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top" src="/images/products/4.JPG" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Bleaching Organic Soap</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+          </div>
+
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top" src="/images/products/6.JPG" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Real Detergent Powder</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top" src="/images/products/5.JPG" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Tawas Organic Soap</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
     </div>
   </div>
+
+  <div class="row product-list">
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top perfume" src="/images/products/10.jpg" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Blake</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+          </div>
+
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top perfume" src="/images/products/11.jpg" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Borgx</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top perfume" src="/images/products/12.jpg" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Dhane</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+    </div>
+    
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top perfume" src="/images/products/13.jpg" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Yhonarich</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row product-list">
+   
+  <div class="col-sm">
+      
+      </div>
+
+    <div class="col-sm">
+      <div class="card">
+      <div class="view overlay">
+        <img class="card-img-top perfume" src="/images/products/9.jpg" alt="Card image cap">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+        <h4 class="card-title">Arya</h4>
+        <hr>
+        <p class="card-text package">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="black-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      
+  </div>
+</div>
 </div>
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+$(window).scroll(function() {
+   var hT = $('#scroll-to').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+    $('#myVideo').trigger('pause');
+   }
+});
+
+</script>
 @endsection

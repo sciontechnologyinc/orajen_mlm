@@ -31,10 +31,10 @@
                   <a class="nav-link" href="thirdwoe"> Global Pool Sharing </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Infinity Pass Up </a>
+                  <a class="nav-link" href="fourthwoe"> Infinity Pass Up </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Company Reward System </a>
+                  <a class="nav-link" href="fifthwoe"> Company Reward System </a>
                 </li>
               </ul>
             </div>
