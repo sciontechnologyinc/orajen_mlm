@@ -164,6 +164,7 @@ a.nav-link:hover:after {
 .productpage-cover {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     background-image: url(/images/ecommerce-cover.jpeg);
+    background-attachment: fixed;
 }
 
 .productpage-title {
@@ -326,6 +327,7 @@ span.new-products {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .aboutuscover-title {
@@ -388,7 +390,6 @@ a.black-text.d-flex.justify-content-end:hover {
     border-radius: 6rem;
     width: 11%;
     margin-top: -3%;
-    transform: rotate(29deg);
 }
 
 .contact-form form {
