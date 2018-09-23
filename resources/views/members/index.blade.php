@@ -127,6 +127,10 @@
                         console.log($('#editshow [name=code]')[0]);
                         $('[name="code"]').val(data.activationcode);
                         $('[name="name"]').val(data.user.name);
+                        $('[name="direct_referral"]').val(data.direct_referral);
+                        $('[name="global_pool"]').val(data.global_pool);
+                        $('[name="pass_up"]').val(data.pass_up);
+                        $('[name="product_voucher"]').val(data.product_voucher);
                         $('[name="income"]').val(data.income);
                       },
                       error: function (data, textStatus, errorThrown) {

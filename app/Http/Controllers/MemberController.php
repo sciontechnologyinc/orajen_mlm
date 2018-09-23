@@ -185,6 +185,7 @@ class MemberController extends Controller
         $member->direct_referral = $request->direct_referral;
         $member->global_pool = $request->global_pool;
         $member->pass_up = $request->pass_up;
+        $member->product_voucher = $request->product_voucher;
         $member->user->save();
         $member->save();
         return $request;
