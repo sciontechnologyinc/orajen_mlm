@@ -15,12 +15,26 @@
           </a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="members">
-            <i class="menu-icon mdi mdi-content-copy"></i>
-            <span class="menu-title">Members</span>
-          </a>
-        </li>
+       <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#members" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-content-copy"></i>
+              <span class="menu-title">Members</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="members">
+              <ul class="nav flex-column sub-menu">
+              <li class="nav-item">
+                  <a class="nav-link" href="products"> Hierarchical Tree </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="categories"> Generate Code </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="distributors"> Manage Payout </a>
+                </li>
+              </ul>
+            </div>
+          </li>
 
         <li class="nav-item">
           <a class="nav-link" href="waysofearning">

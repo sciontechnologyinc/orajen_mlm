@@ -12,7 +12,19 @@
 @section('content')
 <div class="main-panel">
     <div class="content-wrapper">
-    <div class="col-lg-12 grid-margin stretch-card">
+
+    
+    <div class="um-img">
+    <img src="/images/undermaintenance-img.png" alt="">
+    </div>
+
+   <div class="um-img">PAGE UNDER CONSTRUCTION</div>
+
+
+    <div class="company-logo"><img src="/img/logo.png" alt=""></div>
+    <div class="page-desc">Our website is coming soon. </div>
+    <div class="page-desc1">"This page will show, create, edit and delete distributors."</div>
+    <!-- <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Distributor List</h4>
@@ -55,7 +67,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
     </div>
 </div>
 @endsection
