@@ -12,7 +12,7 @@
 */
 Route::get('dashboard/{id}', 'UserDashboardController@summary');
 Route::get('', function () {
-    return view('ecommerce.pages.home');
+    return view('ecommerce.pages.maintenance');
 });
 Route::resource('dashboard','DashboardController');
 

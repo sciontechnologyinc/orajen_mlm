@@ -22,7 +22,7 @@ body {
 
 .page-desc {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     color: #FFC107;
     font-size: 20px;
 }
@@ -85,6 +85,15 @@ body {
     margin-top: 10px;
 }
 
+.company-logo {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.company-logo img {
+    width: 100px;
+}
+
 </style>
 
 <!DOCTYPE html>
@@ -104,6 +113,8 @@ body {
 
    <div class="um-img">WEBSITE UNDER CONSTRUCTION</div>
 
+
+    <div class="company-logo"><img src="/img/logo.png" alt=""></div>
     <div class="page-desc">Our website is coming soon. </div>
     <div class="page-desc1">In the mean time connect with us through the information below</div>
 
