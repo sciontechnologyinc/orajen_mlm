@@ -31,7 +31,7 @@ body {
     text-align: center;
     font-style: italic;
     font-family: 'Pacifico', cursive;
-    font-size: 13px;
+    font-size: 20px;
     padding:5px;
 }
 
@@ -96,17 +96,7 @@ body {
 
 </style>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Under Maintenance</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
+
     <div class="um-img">
     <img src="/images/undermaintenance-img.png" alt="">
     </div>
@@ -116,7 +106,7 @@ body {
 
     <div class="company-logo"><img src="/img/logo.png" alt=""></div>
     <div class="page-desc">Our website is coming soon. </div>
-    <div class="page-desc1">In the mean time connect with us through the information below</div>
+    <div class="page-desc1">@yield('umcontent')</div>
 
     <div class="social-media">Social Media</div>
     <div class="socialmedia-icons">
@@ -124,5 +114,3 @@ body {
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-instagram"></a>
     </div>
-</body>
-</html>
