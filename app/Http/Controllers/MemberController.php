@@ -40,7 +40,6 @@ class MemberController extends Controller
             "income"=>'P '.$member->income,
             "data-editable"=>$value
         );
-        
         return $member;
     }
 

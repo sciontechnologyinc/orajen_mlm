@@ -80,7 +80,6 @@
         var tree = {
           chart: {
             container: "#tree-simple",
-            rootOrientation:  'WEST',
             node: {
                 collapsable: true
             },

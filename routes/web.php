@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('dashboard/{id}', 'UserDashboardController@summary');
 Route::get('', function () {
     return view('ecommerce.pages.home');
 });
@@ -196,9 +196,9 @@ Route::post('/home', [
 
 
 Route::group(['middleware' => 'auth'], function(){
-    Route::get('home.index', function(){
-          return view('home.index');
-    })->name('home');;
+    Route::get('home.index', function () {
+        return view('home.index');
+    });
 
     Route::get('dashboard.index', function(){
         return view('dashboard.index');

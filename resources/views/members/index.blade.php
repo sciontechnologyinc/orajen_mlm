@@ -1,12 +1,6 @@
 @extends('admin.master.template')
 @section('headerButton')
 <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
-<<<<<<< HEAD
-    <li class="nav-item">
-      <a href="{{ url('create') }}" class="nav-link">Add Member</a>
-    </li>
-=======
->>>>>>> 01d4a7544fbdb1d6095373d36176b9693577d637
     <li class="nav-item active">
         <a href="{{ url('codes') }}" class="nav-link">Generate Code</a>
     </li>
@@ -85,7 +79,6 @@
         var tree = {
           chart: {
             container: "#tree-simple",
-            rootOrientation:  'WEST',
             node: {
                 collapsable: true
             },

@@ -22,8 +22,11 @@ class CreateMembersTable extends Migration
             $table->boolean('is_main')->default(0);
             $table->boolean('is_active')->default(0);
             $table->boolean('is_qualified')->default(0);
-            $table->decimal('income', 19, 4)->default(0);
-            $table->decimal('product_voucher', 19, 4)->default(0);
+            $table->decimal('income', 19, 2)->default(0);
+            $table->decimal('product_voucher', 19, 2)->default(0);
+            $table->decimal('direct_referral', 19, 2)->default(0);
+            $table->decimal('pass_up', 19, 2)->default(0);
+            $table->decimal('global_pool', 19, 2)->default(0);
             $table->timestamps();
         });
     }
