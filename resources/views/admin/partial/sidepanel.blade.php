@@ -9,7 +9,11 @@
           </div>
         </li>
         <li class="nav-item">
+<<<<<<< HEAD
           <a class="nav-link" href="dashboard">
+=======
+          <a class="nav-link" href="{{ url('dashboard.index') }}">
+>>>>>>> 4ec50b4c5e692d89aa3187097fa3c876df87f317
             <i class="menu-icon mdi mdi-television"></i>
             <span class="menu-title">Dashboard</span>
           </a>
@@ -24,13 +28,13 @@
             <div class="collapse" id="members">
               <ul class="nav flex-column sub-menu">
               <li class="nav-item">
-                  <a class="nav-link" href="products"> Hierarchical Tree </a>
+                  <a class="nav-link" href="{{ url('members')}}"> Hierarchical Tree </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="categories"> Generate Code </a>
+                  <a class="nav-link" href="{{ url('codes')}}"> Generate Code </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="distributors"> Manage Payout </a>
+                <a class="nav-link" href="{{ url('managepayout')}}"> Manage Payout </a>
                 </li>
               </ul>
             </div>

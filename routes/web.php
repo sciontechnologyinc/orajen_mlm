@@ -20,6 +20,7 @@ Route::resource('/home','EcommerceController');
 
 //crud
 Route::get('members', 'MemberController@index');
+Route::get('managepayout', 'ManagePayoutController@index');
 Route::post('members/display', 'MemberController@display');
 Route::post('members/get/{id}', 'MemberController@get');
 Route::post('members/edit', 'MemberController@edit');
