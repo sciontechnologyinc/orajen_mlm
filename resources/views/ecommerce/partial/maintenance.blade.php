@@ -111,7 +111,7 @@ body {
     <img src="/images/undermaintenance-img.png" alt="">
     </div>
 
-   <div class="um-img">WEBSITE UNDER CONSTRUCTION</div>
+   <div class="um-img">PAGE UNDER CONSTRUCTION</div>
 
 
     <div class="company-logo"><img src="/img/logo.png" alt=""></div>

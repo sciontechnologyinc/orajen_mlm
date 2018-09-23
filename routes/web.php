@@ -12,7 +12,7 @@
 */
 Route::get('dashboard/{id}', 'UserDashboardController@summary');
 Route::get('', function () {
-    return view('ecommerce.pages.maintenance');
+    return view('ecommerce.pages.home');
 });
 Route::resource('dashboard','DashboardController');
 
@@ -41,7 +41,7 @@ Route::get('ecommerceaboutus', function () {
 });
 
 Route::get('undermaintenance', function () {
-    return view('ecommerce.pages.maintenance');
+    return view('ecommerce.partial.maintenance');
 });
 
 Route::get('ecommercecontact', function () {
