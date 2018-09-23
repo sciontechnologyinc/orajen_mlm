@@ -32,24 +32,48 @@
                       {!! Form::open(['id' => 'dataForm', 'method' => 'POST', 'url' => '/members/edit']) !!}
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text" style="width:100px;">Code</span>
+                          <span class="input-group-text" style="width:170px;">Code</span>
                         </div>
                         {!!Form::text('code', null, ['placeholder' => 'Code', 'class' => 'form-control', 'readOnly' => true ])!!}
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text" style="width:100px;">Name</span>
+                          <span class="input-group-text" style="width:170px;">Name</span>
                         </div>
                         {!!Form::text('name', null, ['placeholder' => 'Name', 'class' => 'form-control' ])!!}
                       </div>
                       <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" style="width:170px;">Direct Referral</span>
+                          </div>
+                          {!!Form::text('direct_referral', null, ['placeholder' => 'Direct Referral', 'class' => 'form-control' ])!!}
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" style="width:170px;">Global Pool</span>
+                            </div>
+                            {!!Form::text('global_pool', null, ['placeholder' => 'Global Pool', 'class' => 'form-control' ])!!}
+                          </div>
+                          <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" style="width:170px;">Pass-up</span>
+                              </div>
+                              {!!Form::text('pass_up', null, ['placeholder' => 'Pass up', 'class' => 'form-control' ])!!}
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" style="width:170px;">Product Voucher</span>
+                                </div>
+                                {!!Form::text('product_voucher', null, ['placeholder' => 'Product Voucher', 'class' => 'form-control' ])!!}
+                              </div>
+                      <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text" style="width:100px;">Income</span>
+                          <span class="input-group-text" style="width:150px;">Income</span>
                         </div>
                         {!!Form::text('income', null, ['placeholder' => 'Income', 'class' => 'form-control' ])!!}
                       </div>
                       <br />
-                      {!!Form::submit('Edit Account', ['class' => 'btn btn-primary float-right']) !!}
+                      {!!Form::submit('Update Account', ['class' => 'btn btn-primary float-right']) !!}
                       {!! Form::close() !!}
                   </div>
                   <div class="input-group mb-1">
@@ -103,6 +127,10 @@
                         console.log($('#editshow [name=code]')[0]);
                         $('[name="code"]').val(data.activationcode);
                         $('[name="name"]').val(data.user.name);
+                        $('[name="direct_referral"]').val(data.direct_referral);
+                        $('[name="global_pool"]').val(data.global_pool);
+                        $('[name="pass_up"]').val(data.pass_up);
+                        $('[name="product_voucher"]').val(data.product_voucher);
                         $('[name="income"]').val(data.income);
                       },
                       error: function (data, textStatus, errorThrown) {

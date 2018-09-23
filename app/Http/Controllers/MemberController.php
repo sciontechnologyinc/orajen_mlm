@@ -157,20 +157,19 @@ class MemberController extends Controller
                     $member = $this->get($request->code);
                     $member->user->name = $request->name;
                     $count = count($this->getMembers($member->id));
+                    
+                    if ($code[0]->type == "Green" && $count != 0) return "Green Code is for Left Node only.";
+                    if($count >= 2) return "You can only put same account in 1 and 2 Nodes.";
                     $new_member = new Member();
                     $new_member->user_id = $member->user_id;
                     $new_member->activationcode = $request->activationcode;
                     $new_member->placement_id = $member->id;
                     $new_member->node_address = $count+1;
-    
-                    if ($code[0]->type == "Blue" && $count != 0) 
-                        return "Blue Code is for only Left node.";
-    
+                }
                     $new_member->save();
                     $code[0]->is_used = 1;
                     $code[0]->save();
                     return $request;
-                }
             }
         } else {
             return "Code is not exist.";
@@ -183,6 +182,10 @@ class MemberController extends Controller
         $member = $this->get($request->code);
         $member->user->name = $request->name;
         $member->income = $request->income;
+        $member->direct_referral = $request->direct_referral;
+        $member->global_pool = $request->global_pool;
+        $member->pass_up = $request->pass_up;
+        $member->product_voucher = $request->product_voucher;
         $member->user->save();
         $member->save();
         return $request;
