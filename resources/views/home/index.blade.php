@@ -135,7 +135,7 @@
                   var data2 = response.sponsor[0];
                   $('.income').append(data.income);
                   $('.account').append(data.account);
-                  $('.sponsor').append(data2.sponsor);
+                  $('.sponsor').val(data2.sponsor);
                   $('#netIncome').val(data2.netincome);
                   $('#payout').val(data2.payout);
                   $('#productVoucher').val(data.voucher);

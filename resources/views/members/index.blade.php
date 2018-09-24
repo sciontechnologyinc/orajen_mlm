@@ -68,7 +68,7 @@
                               </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text" style="width:150px;">Income</span>
+                          <span class="input-group-text" style="width:170px;">Income</span>
                         </div>
                         {!!Form::text('income', null, ['placeholder' => 'Income', 'class' => 'form-control' ])!!}
                       </div>
@@ -119,6 +119,9 @@
               onAfterPositionNode: function(data){
                 data.nodeDOM.addEventListener('click', function(){
                   $.ajax({
+                    headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
                       type: "POST",
                       url: 'members/get/'+data.text["data-id"],
                       data: {  _token: '{{csrf_token()}}' },
@@ -146,6 +149,9 @@
         
         function loadTree() {
           $.ajax({
+            headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
               type: "POST",
               url: 'members/display',
               data: {  _token: '{{csrf_token()}}' },
@@ -162,6 +168,9 @@
         $('#dataForm').on('submit', function(e) {
             e.preventDefault(); 
             $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
                 type: "POST",
                 url: 'members/edit',
                 data: $(this).serialize(),
@@ -175,6 +184,9 @@
         $('#addForm').on('submit', function(e) {
             e.preventDefault(); 
             $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
                 type: "POST",
                 url: 'members/add',
                 data: $(this).serialize(),

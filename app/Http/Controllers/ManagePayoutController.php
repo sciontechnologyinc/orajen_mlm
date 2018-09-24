@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\User;
 class ManagePayoutController extends Controller
 {
     /**
@@ -13,7 +13,10 @@ class ManagePayoutController extends Controller
      */
     public function index()
     {
-        return view('managepayout.index');
+        $users = User::orderBy('id')->get();    
+
+        return view('managepayout.index', ['users' => $users]);
+        
     }
 
     /**
@@ -45,7 +48,8 @@ class ManagePayoutController extends Controller
      */
     public function show($id)
     {
-        //
+        $username = User::where("id", $id)->select('netincome','payout')->get();
+        return response()->json(['success' => true, 'username' => $username]);
     }
 
     /**
@@ -66,9 +70,11 @@ class ManagePayoutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($id)
     {
-        //
+        $users = User::orderBy('id')->get();
+        $income = User::where('id', $id)->update(request()->all());
+        return view('managepayout.index',['users' => $users]);
     }
 
     /**

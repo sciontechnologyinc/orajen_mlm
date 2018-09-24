@@ -22,6 +22,8 @@ class User extends Authenticatable
         'address',
         'gender',
         'password',
+        'netincome',
+        'payout',
     ];
 
     /**

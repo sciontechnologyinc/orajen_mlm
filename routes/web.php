@@ -19,7 +19,12 @@ Route::resource('dashboard','DashboardController');
 Route::resource('/home','EcommerceController');
 
 //crud
-Route::get('members', 'MemberController@index');
+Route::get('members', 'ManagePayoutController@index');
+Route::get('member', 'MemberController@index');
+Route::post('users/{id}', 'ManagePayoutController@show');
+Route::post('updateusers/{id}', 'ManagePayoutController@update');
+
+
 Route::get('managepayout', 'ManagePayoutController@index');
 Route::post('members/display', 'MemberController@display');
 Route::post('members/get/{id}', 'MemberController@get');

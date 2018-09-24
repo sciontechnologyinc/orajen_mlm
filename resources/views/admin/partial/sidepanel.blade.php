@@ -24,7 +24,7 @@
             <div class="collapse" id="members">
               <ul class="nav flex-column sub-menu">
               <li class="nav-item">
-                  <a class="nav-link" href="{{ url('members')}}"> Hierarchical Tree </a>
+                  <a class="nav-link" href="{{ url('member')}}"> Hierarchical Tree </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{ url('codes')}}"> Generate Code </a>

@@ -29,7 +29,7 @@ class UserDashboardController extends Controller
 
         $sponsor = $orders = DB::table('users')
         ->selectRaw('count(sponsor_id) as sponsor, sum(netincome) as netincome,sum(payout) as payout')
-        ->where('sponsor_id',$id)
+        ->where('id',$id)
         ->get();
         return response()->json(['success' => true, 'summary' => $summary, 'sponsor'=>$sponsor]);
     }

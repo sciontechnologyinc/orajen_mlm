@@ -69,12 +69,17 @@
           </a>
         </li>
         <li class="nav-item nav-profile">
-        <div class="nav-link">
-          <button class="btn btn-success btn-block">Logout
+            <a class="nav-link" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+                          <i class="fa fa-sign-out"></i> {{ __('Logout') }}
+            </a>
+         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+             @csrf
+         </form>
             <i class="mdi mdi-logout"></i>
           </button>
-        </div>
-      </li>
+       </li>
       </ul>
     </nav>
     <!-- partial -->
