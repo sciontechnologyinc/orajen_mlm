@@ -569,3 +569,7 @@ button.file-upload-browse.btn.btn-info {
 .company-logo img {
     width: 100px;
 }
+
+i.fa.fa-sign-out.side {
+    padding: 0px !important;
+}
