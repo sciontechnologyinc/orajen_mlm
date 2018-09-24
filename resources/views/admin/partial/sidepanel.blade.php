@@ -86,7 +86,7 @@
             </div>
           </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="money">
             <i class="menu-icon mdi mdi-cash"></i>
             <span class="menu-title">Money</span>
           </a>
@@ -100,13 +100,13 @@
           <div class="collapse" id="reportsmanager">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item">
-                <a class="nav-link" href="#l">Income Sales (Yearly/Monthy/Weekly/Daily)</a>
+                <a class="nav-link" href="incomesales">Income Sales (Yearly/Monthy/Weekly/Daily)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sales (Yearly/Monthy/Weekly/Daily)</a>
+                <a class="nav-link" href="rmsales">Sales (Yearly/Monthy/Weekly/Daily)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Top Earners</a>
+                <a class="nav-link" href="topearners">Top Earners</a>
               </li>
             </ul>
           </div>
@@ -118,7 +118,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+        <a class="nav-link" href="adminaccount">
             <i class="menu-icon mdi mdi-account"></i>
             <span class="menu-title">Admin Account</span>
           </a>

@@ -3,7 +3,18 @@
 @section('content')
 <div class="main-panel">
     <div class="content-wrapper">
-    <div class="row">
+
+    <div class="um-img">
+    <img src="/images/undermaintenance-img.png" alt="">
+    </div>
+
+   <div class="um-img">PAGE UNDER CONSTRUCTION</div>
+
+
+    <div class="company-logo"><img src="/img/logo.png" alt=""></div>
+    <div class="page-desc">Our website is coming soon. </div>
+    <div class="page-desc1">"This page will show your dashboard."</div>
+    <!-- <div class="row">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
           <div class="card card-statistics">
             <div class="card-body">
@@ -75,7 +86,6 @@
       </div>
       <div class="row">
         <div class="col-lg-7 grid-margin stretch-card">
-          <!--weather card-->
           <div class="card card-weather">
             <div class="card-body">
               <div class="weather-date-location">
@@ -163,7 +173,6 @@
               </div>
             </div>
           </div>
-          <!--weather card ends-->
         </div>
         <div class="col-lg-5 grid-margin stretch-card">
           <div class="card">
@@ -210,7 +219,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 @endsection
