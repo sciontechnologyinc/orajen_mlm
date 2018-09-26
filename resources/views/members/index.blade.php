@@ -37,7 +37,7 @@
                     <td> {{ $member->firstname }}</td>
                     <td> {{ $member->middlename }}</td>
                     <td> {{ $member->lastname }}</td>
-                    <td> {{ $member->email }}</td>
+                    <td> {{ $member->memberemail }}</td>
                     <td> {{ $member->sponsorid }}</td>
                     <td> {{ $member->placementid }}</td>
                       <td>

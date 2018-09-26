@@ -64,9 +64,10 @@
 								{!!Form::label('address', 'Address', array('class' => 'form-control-label'))!!}
 								{!!Form::text('address',null, ['placeholder' => 'Address', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
+                          
                           <div class="form-group">
-								{!!Form::label('email', 'Email', array('class' => 'form-control-label'))!!}
-								{!!Form::email('email',null, ['placeholder' => 'Email', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+								{!!Form::label('memberemail', 'Email', array('class' => 'form-control-label'))!!}
+								{!!Form::email('memberemail',null, ['placeholder' => 'Email', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
                           <div class="form-group">
 								{!!Form::label('mobileno', 'Contact', array('class' => 'form-control-label'))!!}

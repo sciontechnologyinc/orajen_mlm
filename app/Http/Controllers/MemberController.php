@@ -45,7 +45,7 @@ class MemberController extends Controller
            'middlename' => 'required',
            'lastname' => 'required',
            'address' => 'required',
-           'email' => 'required',
+           'memberemail' => 'required',
            'mobileno' => 'required',
            'sponsorid' => 'required',
            'placementid' => 'required',
