@@ -2,7 +2,7 @@
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" href="user">
+        <a class="nav-link" href="{{url('home.index')}}">
             <i class="menu-icon mdi mdi-television"></i>
             <span class="menu-title">Dashboard</span>
           </a>
@@ -31,10 +31,10 @@
                   <a class="nav-link" href="thirdwoe"> Global Pool Sharing </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Infinity Pass Up </a>
+                  <a class="nav-link" href="fourthwoe"> Infinity Pass Up </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Company Reward System </a>
+                  <a class="nav-link" href="fifthwoe"> Company Reward System </a>
                 </li>
               </ul>
             </div>
@@ -69,12 +69,17 @@
           </a>
         </li>
         <li class="nav-item nav-profile">
-        <div class="nav-link">
-          <button class="btn btn-success btn-block">Logout
+            <a class="nav-link" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+                          <i class="fa fa-sign-out side"></i> {{ __('Logout') }}
+            </a>
+         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+             @csrf
+         </form>
             <i class="mdi mdi-logout"></i>
           </button>
-        </div>
-      </li>
+       </li>
       </ul>
     </nav>
     <!-- partial -->

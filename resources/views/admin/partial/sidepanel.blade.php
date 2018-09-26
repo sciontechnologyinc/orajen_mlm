@@ -9,27 +9,29 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="{{ url('dashboard.index') }}">
             <i class="menu-icon mdi mdi-television"></i>
             <span class="menu-title">Dashboard</span>
           </a>
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#member" aria-expanded="false" aria-controls="auth">
-              <i class="menu-icon mdi mdi-clipboard"></i>
+       <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#members" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-content-copy"></i>
               <span class="menu-title">Members</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="member">
+            <div class="collapse" id="members">
               <ul class="nav flex-column sub-menu">
               <li class="nav-item">
-                  <a class="nav-link" href="{{ url('create') }}"> Add Member </a>
+                  <a class="nav-link" href="{{ url('member')}}"> Hierarchical Tree </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url('members') }}"> Member List </a>
+                  <a class="nav-link" href="{{ url('codes')}}"> Generate Code </a>
                 </li>
-  
+                <li class="nav-item">
+                <a class="nav-link" href="{{ url('managepayout')}}"> Manage Payout </a>
+                </li>
               </ul>
             </div>
           </li>
@@ -84,7 +86,7 @@
             </div>
           </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="money">
             <i class="menu-icon mdi mdi-cash"></i>
             <span class="menu-title">Money</span>
           </a>
@@ -98,13 +100,13 @@
           <div class="collapse" id="reportsmanager">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item">
-                <a class="nav-link" href="#l">Income Sales (Yearly/Monthy/Weekly/Daily)</a>
+                <a class="nav-link" href="incomesales">Income Sales (Yearly/Monthy/Weekly/Daily)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sales (Yearly/Monthy/Weekly/Daily)</a>
+                <a class="nav-link" href="rmsales">Sales (Yearly/Monthy/Weekly/Daily)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Top Earners</a>
+                <a class="nav-link" href="topearners">Top Earners</a>
               </li>
             </ul>
           </div>
@@ -116,7 +118,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+        <a class="nav-link" href="adminaccount">
             <i class="menu-icon mdi mdi-account"></i>
             <span class="menu-title">Admin Account</span>
           </a>

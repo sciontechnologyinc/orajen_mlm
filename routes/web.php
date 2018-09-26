@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('dashboard/{id}', 'UserDashboardController@summary');
 Route::get('', function () {
     return view('ecommerce.pages.home');
 });
@@ -19,10 +19,20 @@ Route::resource('dashboard','DashboardController');
 Route::resource('/home','EcommerceController');
 
 //crud
-Route::get('create', 'MemberController@create');
-Route::get('genpool', 'MemberController@generateRule2');
-Route::get('passup', 'MemberController@generateRule3');
-Route::resource('members','MemberController');
+Route::get('members', 'ManagePayoutController@index');
+Route::get('member', 'MemberController@index');
+Route::post('users/{id}', 'ManagePayoutController@show');
+Route::post('updateusers/{id}', 'ManagePayoutController@update');
+
+
+Route::get('managepayout', 'ManagePayoutController@index');
+Route::post('members/display', 'MemberController@display');
+Route::post('members/get/{id}', 'MemberController@get');
+Route::post('members/edit', 'MemberController@edit');
+Route::post('members/add', 'MemberController@add');
+
+Route::get('codes', 'CodeController@index');
+Route::post('codes/add', 'CodeController@add');
 
 Route::get('ecommercehome', function () {
     return view('ecommerce.pages.home');
@@ -34,6 +44,10 @@ Route::get('ecommercelogin', function () {
 
 Route::get('ecommerceaboutus', function () {
     return view('ecommerce.pages.aboutus');
+});
+
+Route::get('undermaintenance', function () {
+    return view('ecommerce.partial.maintenance');
 });
 
 Route::get('ecommercecontact', function () {
@@ -115,9 +129,7 @@ Route::get('vouchers', function () {
     return view('admin.pages.vouchers.vouchers');
 });
 
-Route::get('useraccounts', function () {
-    return view('user.pages.accounts');
-});
+Route::get('useraccounts', 'MemberController@view');
 
 Route::get('waysofearning', function () {
     return view('admin.pages.waysofearning');
@@ -178,9 +190,28 @@ Route::get('orderhistory', function () {
     return view('user.pages.orderhistory');
 });
 
-
 Route::get('account', function () {
     return view('admin.pages.newmember');
+});
+
+Route::get('incomesales', function () {
+    return view('admin.pages.incomesales');
+});
+
+Route::get('rmsales', function () {
+    return view('admin.pages.rmsales');
+});
+
+Route::get('money', function () {
+    return view('admin.pages.money');
+});
+
+Route::get('topearners', function () {
+    return view('admin.pages.topearners');
+});
+
+Route::get('adminaccount', function () {
+    return view('admin.pages.adminaccount');
 });
 
 
@@ -194,9 +225,9 @@ Route::post('/home', [
 
 
 Route::group(['middleware' => 'auth'], function(){
-    Route::get('home.index', function(){
-          return view('home.index');
-    })->name('home');;
+    Route::get('home.index', function () {
+        return view('home.index');
+    });
 
     Route::get('dashboard.index', function(){
         return view('dashboard.index');
