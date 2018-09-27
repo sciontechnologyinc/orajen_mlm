@@ -194,11 +194,12 @@ a.nav-link:hover:after {
     text-align: center;
     padding: 100px 30px 15px;
     font-size: 65px;
+    color: white;
 }
 
 .productpage-subtitle {
     text-align: center;
-    color: gray;
+    color: #b9b9b9;
     font-size: 36px;
 }
 
@@ -225,7 +226,7 @@ button.shop-now:hover {
 }
 
 .ppcover-overlay {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .productpage-intro {
@@ -288,7 +289,7 @@ span.new-products {
 
 .featured-products {
     font-size: 30px;
-    padding-top: 20px;
+    padding: 15px 0px;
 }
 
 .col-sm-4.featured-products {
@@ -357,7 +358,8 @@ span.new-products {
     height: -webkit-fill-available;
     width: 100%;
     margin: auto;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
 }
 
 .mission {
@@ -712,4 +714,104 @@ h2.sv-maindesc {
 video#myVideo {
     width: 100%;
     height: auto;
+}
+
+.col-sm.sv2 {
+    padding: 60px 0px 120px;
+    text-align: center;
+}
+
+span.fp-title {
+    font-weight: 200;
+}
+
+.package1 {
+    background: url(/images/packages/package_1.jpg);
+    height: -webkit-fill-available;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.package1-overlay {
+    height: -webkit-fill-available;
+    opacity: 0;
+    transition: 500ms ease;
+}
+
+.package1-overlay:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transition: 800ms ease;
+    opacity: 1;
+}
+
+.col-sm.pckg1 {
+    text-align: center;
+}
+
+.col-sm.pckg1 {
+    padding: 100px 0px 0px;
+}
+
+span.package1-hover {
+    background: #e4b300;
+    padding: 12px 20px;
+    /* border-radius: 8px; */
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.package-desc {
+    padding: 60px 20px 0px;
+}
+
+h5.packge1-inc {
+    color: #3f3f3f;
+    font-size: 30px;
+    text-align: left;
+}
+
+.card-deck.products {
+    padding: 10px 0px;
+}
+
+.product-det {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    padding: 30px 10px 0px;
+    color: transparent;
+}
+
+.product-det:hover {
+    color: #3f3f3f;
+    transition: 500ms ease;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+span.product-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+span.product-name:hover {
+    color: #e49400;
+    transition: 500ms ease;
+}
+
+.p-md {
+    width: 120px;
+    margin: auto;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.p-md:hover {
+    color: white;
+    background: #ffc800;
+    cursor: pointer;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
