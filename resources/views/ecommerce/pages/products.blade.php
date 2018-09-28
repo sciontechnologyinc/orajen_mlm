@@ -35,12 +35,14 @@
       <img class="card-img" src="/images/products/9-re.jpg" alt="Card image">
       <div class="product-det"><span class="product-name">Arya Perfume</span>
         <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md">More Details</div>
       </div>
     </div>
     <div class="card product">
       <img class="card-img" src="/images/products/10-re.jpg" alt="Card image">
        <div class="product-det"><span class="product-name">Blake Perfume</span>
         <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md">More Details</div>
       </div>
     </div>
   </div>
@@ -50,18 +52,21 @@
       <img class="card-img" src="/images/products/11-re.jpg" alt="Card image">
       <div class="product-det"><span class="product-name">borgX Perfume</span>
         <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md">More Details</div>
       </div>
     </div>
     <div class="card product">
       <img class="card-img" src="/images/products/12-re.jpg" alt="Card image">
       <div class="product-det"><span class="product-name">Dhane Perfume</span>
         <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md">More Details</div>
       </div>
     </div>
     <div class="card product">
       <img class="card-img" src="/images/products/13-re.jpg" alt="Card image">
       <div class="product-det"><span class="product-name">Yhonarich Perfume</span>
         <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md">More Details</div>
       </div>
     </div>
   </div>
