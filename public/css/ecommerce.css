@@ -860,3 +860,28 @@ h5.packge2-inc {
     font-weight: 100;
     text-align: center;
 }
+
+.text-center.right {
+    text-align: right !important;
+}
+
+h2.h2-responsive.product-name {
+    text-align: center;
+}
+
+h2.h2-responsive.product-name strong {
+    color: #525252;
+}
+
+h5.mb-0 {
+    color: #FF9800;
+}
+
+a.product-a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+span.green-text {
+    color: red;
+}
