@@ -156,6 +156,7 @@
               url: 'members/display',
               data: {  _token: '{{csrf_token()}}' },
               success: function (data) {
+                console.log(data);
                   tree.nodeStructure = data;
                   var chart = new Treant(tree, function(){}, $);
               },
