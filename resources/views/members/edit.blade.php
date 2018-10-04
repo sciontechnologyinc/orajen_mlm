@@ -54,8 +54,13 @@
 								{!!Form::text('address',null, ['placeholder' => 'Address', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
 						  </div>
                           <div class="form-group">
+<<<<<<< HEAD
+								{!!Form::label('memberemail', 'Email', array('class' => 'form-control-label'))!!}
+								{!!Form::text('memberemail',$member->email, ['placeholder' => 'Email', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+=======
 								{!!Form::label('email', 'Email', array('class' => 'form-control-label'))!!}
 								{!!Form::text('email',null, ['placeholder' => 'Email', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+>>>>>>> a8662098407b17fbdbdb1cb92579e9beeb1937d1
 						  </div>
                           <div class="form-group">
 								{!!Form::label('mobileno', 'Contact', array('class' => 'form-control-label'))!!}

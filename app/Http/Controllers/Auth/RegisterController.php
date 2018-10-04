@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Member;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -50,8 +51,8 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+            'memberemail' => 'required|string|email|max:255|unique:users',
+            'memberpassword' => 'required|string|min:6|confirmed',
         ]);
     }
 
@@ -63,10 +64,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+<<<<<<< HEAD
+        return Member::create([
+=======
         $user = User::create([
+>>>>>>> a8662098407b17fbdbdb1cb92579e9beeb1937d1
             'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+            'memberemail' => $data['memberemail'],
+            'memberpassword' => $data['memberpassword'],
         ]);
         return $user;
 

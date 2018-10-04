@@ -15,6 +15,19 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->increments('id');
+<<<<<<< HEAD
+            $table->string('firstname');
+            $table->string('middlename');
+            $table->string('lastname');
+            $table->string('address');
+            $table->string('memberemail');
+            $table->string('memberpassword')->default('password');
+            $table->string('mobileno');
+            $table->string('sponsorid');
+            $table->string('placementid');
+            $table->string('activationcode');
+=======
+>>>>>>> a8662098407b17fbdbdb1cb92579e9beeb1937d1
             $table->string('user_id');
             $table->string('placement_id');
             $table->string('node_address');
