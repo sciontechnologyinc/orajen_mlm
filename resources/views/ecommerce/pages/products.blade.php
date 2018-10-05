@@ -24,6 +24,8 @@
 
 <div class="container">
   <div class="card-deck products">
+
+  <div class="col-sm-6 col-lg-3">
     <div class="card product">
       <img class="card-img" src="/images/products/8-re.jpg" alt="Card image">
       <div class="product-det"><span class="product-name">Orajen Cee</span>
@@ -31,6 +33,58 @@
         <div class="p-md" data-toggle="modal" data-target="#modalQuickView">More Details</div>
       </div>
     </div>
+  </div>
+  
+  <div class="col-sm-6 col-lg-3">
+    <div class="card product">
+      <img class="card-img" src="/images/products/8-re.jpg" alt="Card image">
+      <div class="product-det"><span class="product-name">Orajen Cee</span>
+        <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md" data-toggle="modal" data-target="#modalQuickView">More Details</div>
+      </div>
+    </div>
+  </div>
+
+   <div class="col-sm-6 col-lg-3">
+    <div class="card product">
+      <img class="card-img" src="/images/products/8-re.jpg" alt="Card image">
+      <div class="product-det"><span class="product-name">Orajen Cee</span>
+        <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md" data-toggle="modal" data-target="#modalQuickView">More Details</div>
+      </div>
+    </div>
+  </div>
+
+   <div class="col-sm-6 col-lg-3">
+    <div class="card product">
+      <img class="card-img" src="/images/products/8-re.jpg" alt="Card image">
+      <div class="product-det"><span class="product-name">Orajen Cee</span>
+        <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md" data-toggle="modal" data-target="#modalQuickView">More Details</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6 col-lg-3">
+    <div class="card product">
+      <img class="card-img" src="/images/products/8-re.jpg" alt="Card image">
+      <div class="product-det"><span class="product-name">Orajen Cee</span>
+        <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md" data-toggle="modal" data-target="#modalQuickView">More Details</div>
+      </div>
+    </div>
+  </div>
+
+   <div class="col-sm-6 col-lg-3">
+    <div class="card product">
+      <img class="card-img" src="/images/products/8-re.jpg" alt="Card image">
+      <div class="product-det"><span class="product-name">Orajen Cee</span>
+        <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+        <div class="p-md" data-toggle="modal" data-target="#modalQuickView">More Details</div>
+      </div>
+    </div>
+  </div>
+    
   </div>
 </div>
 
