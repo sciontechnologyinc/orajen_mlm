@@ -136,11 +136,6 @@
               <span class="green-text">
                 <strong>$49</strong>
               </span>
-              <span class="grey-text">
-                <small>
-                  <s>$89</s>
-                </small>
-              </span>
             </h4>
 
             <!--Accordion wrapper-->
