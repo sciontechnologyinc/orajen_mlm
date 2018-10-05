@@ -78,6 +78,7 @@ Route::get('products', function () {
 Route::get('addproduct', function () {
     return view('admin.pages.products.addproduct');
 });
+Route::resource('products', 'ProductController');
 
 Route::get('sales', function () {
     return view('admin.pages.mainsales');

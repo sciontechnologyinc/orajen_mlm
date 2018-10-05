@@ -24,13 +24,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('sponsor_id')->nullable();
             $table->boolean('admin')->default(0);
-<<<<<<< HEAD
-            $table->decimal('income', 19, 4)->default(0);
-            $table->integer('counter')->default(0);
-=======
             $table->decimal('netincome', 19, 2)->default(0);
             $table->decimal('payout', 19, 2)->default(0);
->>>>>>> a8662098407b17fbdbdb1cb92579e9beeb1937d1
             $table->rememberToken();
             $table->timestamps();
         });
