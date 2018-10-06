@@ -53,10 +53,6 @@ class ProductController extends Controller
             'value' => 'required|numeric',
             'serving' => 'required',
             'photo' => 'image|nullable|max:1999'
-
-            
-
-            
         ],[
             'productcode.required' => ' The product code field is required.',
             'productname.required' => ' The product name is required.',
@@ -64,7 +60,6 @@ class ProductController extends Controller
             'productdetails.required' => ' The product details field is required.',
             'value.required' => ' The value field is required.',
             'serving.required' => ' The serving field is required.',
-  
 
         ]);
 
@@ -140,8 +135,7 @@ class ProductController extends Controller
             'productdetails' => 'required',
             'value' => 'required|numeric',
             'serving' => 'required',
-            'photo' => 'image|nullable|max:1999'
-            
+            'photo' => 'image|nullable|max:1999'            
         ]);
 
         if($request->hasFile('photo')){
