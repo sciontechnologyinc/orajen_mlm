@@ -793,7 +793,7 @@ h5.packge1-inc {
 }
 
 span.product-name {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -802,11 +802,16 @@ span.product-name:hover {
     transition: 500ms ease;
 }
 
+.pd-desc {
+    font-size: 13px;
+}
+
 .p-md {
     width: 120px;
     margin: auto;
     padding: 8px;
     text-align: center;
+    font-size: 15px;
     margin-top: 10px;
 }
 
@@ -859,4 +864,33 @@ h5.packge2-inc {
     font-size: 30px;
     font-weight: 100;
     text-align: center;
+}
+
+.text-center.right {
+    text-align: right !important;
+}
+
+h2.h2-responsive.product-name {
+    text-align: center;
+}
+
+h2.h2-responsive.product-name strong {
+    color: #525252;
+}
+
+h5.mb-0 {
+    color: #FF9800;
+}
+
+a.product-a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+span.green-text {
+    color: red;
+}
+
+.col-sm-6.col-lg-3 {
+    padding: 10px 0px;
 }

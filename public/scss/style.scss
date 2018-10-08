@@ -5,6 +5,7 @@
   Version:	2.0.0
 -------------------------------------------------------------------*/
 
+
 /*-------------------------------------------------------------------
   ===== Table of Contents =====
 
@@ -53,29 +54,39 @@
     + Error
 -------------------------------------------------------------------*/
 
+
 /*-------------------------------------------------------------------*/
+
 
 /* === Import Bootstrap functions and variables === */
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
+
 /*-------------------------------------------------------------------*/
+
 
 /* === Import template variables === */
 
 @import "variables";
+
 /*-------------------------------------------------------------------*/
+
 
 /* === SCSS Compass Functions === */
 
 @import "../node_modules/compass-mixins/lib/compass";
 @import "../node_modules/compass-mixins/lib/animate";
+
 /*-------------------------------------------------------------------*/
+
 
 /* === Boostrap Main SCSS === */
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 /*-------------------------------------------------------------------*/
+
 
 /* === Template mixins === */
 
@@ -87,7 +98,9 @@
 @import "mixins/cards";
 @import "mixins/misc";
 @import "mixins/text";
+
 /*-------------------------------------------------------------------*/
+
 
 /* === Core Styles === */
 
@@ -102,7 +115,9 @@
 @import "utilities";
 @import "demo";
 @import "dashboard";
+
 /*-------------------------------------------------------------------*/
+
 
 /* === Components === */
 
@@ -119,7 +134,9 @@
 @import "components/new-account";
 @import "components/preview";
 @import "components/tables";
+
 /*-------------------------------------------------------------------*/
+
 
 /* === Landing screens === */
 

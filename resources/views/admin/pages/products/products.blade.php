@@ -1,6 +1,6 @@
 @extends('admin.master.template')
 @section('headerButton')
-<ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+<ul class="navbar-nav navbar-nav-left">
                     <li class="nav-item">
                     <a href="addproduct" class="nav-link">Add Product</a>
                     </li>
