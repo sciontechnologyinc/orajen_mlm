@@ -63,6 +63,7 @@ class ProductController extends Controller
 
         ]);
 
+        
         if($request->hasFile('photo')){
             
             $filenameWithExt = $request->file('photo')->getClientOriginalName();
@@ -75,7 +76,7 @@ class ProductController extends Controller
             
             $path = $request->file('photo')->storeAs('public/uploads', $fileNameToStore);
         }else{
-            $fileNameToStore = 'default_img.png';
+            $fileNameToStore = 'user_icon.png';
         }
 
         
@@ -138,6 +139,7 @@ class ProductController extends Controller
             'photo' => 'image|nullable|max:1999'            
         ]);
 
+        
         if($request->hasFile('photo')){
             
             $filenameWithExt = $request->file('photo')->getClientOriginalName();
@@ -150,7 +152,7 @@ class ProductController extends Controller
             
             $path = $request->file('photo')->storeAs('public/uploads', $fileNameToStore);
         }else{
-            $fileNameToStore = 'default_img.png';
+            $fileNameToStore = 'user_icon.png';
         }
 
         

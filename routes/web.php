@@ -54,9 +54,9 @@ Route::get('ecommercecontact', function () {
     return view('ecommerce.pages.contact');
 });
 
-Route::get('ecommerceproducts', function () {
-    return view('ecommerce.pages.products');
-});
+
+Route::resource('ecommerceproducts','EcommerceProductController');
+
 
 Route::get('newmember', function () {
     return view('marketingPlan.pages.newmember');
@@ -215,7 +215,10 @@ Route::get('adminaccount', function () {
     return view('admin.pages.adminaccount');
 });
 
+Route::get('/changePassword','ChangepasswordController@showChangePasswordForm');
 
+Route::post('/changepassword','ChangepasswordController@changePassword')->name('changePassword');
+ 
 Auth::routes();
 
 

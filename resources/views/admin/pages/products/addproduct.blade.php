@@ -64,7 +64,7 @@
                           <div class="form-group">
                           {!!Form::label('photo', 'Photo', array('class' => 'form-control-label'))!!}
                               <div class="row">
-                                <input id="file-upload" name="digitalphoto" class="digitalphoto" type="file" accept="image/x-png,image/gif,image/jpeg">
+                                <input id="photo" name="photo" class="photo" type="file" accept="image/x-png,image/gif,image/jpeg">
                               </div>
                               <div class="row">
                                 <img class="pre_img" src="https://yourprogramming.com/library/images/no_img.jpg">
@@ -105,23 +105,23 @@ $(function () {
 			reader.onload = function(e){
 				$('.pre_img').hide();
 				$('.image_view').after('<img src="'+e.target.result+'" />');
-				$('.digitalphotos img').css('max-width','100%');
+				$('.photos img').css('max-width','100%');
 				$("#remove_photo").show(200);
 				$(".custom-file-upload").slideUp(0);
 			}
 			reader.readAsDataURL(input.files[0]);
 		}
 	}
-	$('.digitalphoto').change(function(){
+	$('.photo').change(function(){
 		filePreview(this);	
 		$('.upload_photo').show();
 	});
 
 	//remove logo img 
 	$("#remove_photo").click(function(){
-		$('.digitalphotos img').hide();
+		$('.photos img').hide();
 		$('.pre_img').show();
-		$('.digitalphoto').val('');
+		$('.photo').val('');
 		$("#remove_photo").slideUp(300);
 		$('.upload_photo').slideUp();
 		$('.custom-file-upload').slideDown(0);
@@ -130,7 +130,7 @@ $(function () {
 	$(".upload_photo").click(function(){
 		var new_img = $('.new_img').attr('src');
 		$('.pre_img_main').attr('src',new_img);
-		var mainPhto = $('.digitalphoto').val();
+		var mainPhto = $('.photo').val();
 		alert(mainPhto);
 	});
 	//check is one of the check-box chosen or not

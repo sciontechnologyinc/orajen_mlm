@@ -19,6 +19,8 @@ class User extends Authenticatable
         'email',
         'birthdate',
         'contactnumbers',
+        'gcashnumber',
+        'photo',
         'address',
         'gender',
         'password',

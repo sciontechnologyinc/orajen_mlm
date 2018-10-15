@@ -40,22 +40,12 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#auth2" aria-expanded="false" aria-controls="auth">
-              <i class="menu-icon mdi mdi-account-settings"></i>
-              <span class="menu-title">Personal Settings</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth2">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item">
-                  <a class="nav-link" href="changeuseraccount"> View User Account </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="changeuseraccount"> Change User Account </a>
-                </li>
-              </ul>
-            </div>
-          </li>
+          <a class="nav-link" href="{{ url('changePassword') }}">
+          <i class="menu-icon mdi mdi-account-settings"></i>
+            <span class="menu-title">Personal Settings</span>
+          </a>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="orderhistory">
             <i class="menu-icon mdi mdi-history"></i>
