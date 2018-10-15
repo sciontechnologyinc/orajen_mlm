@@ -29,7 +29,6 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
-
         DB::table('users')->insert(
             array(
                 array('name' => 'Orajen','email' => 'orajen@gmail.com', 'sponsor_id'=>'0', 'password'=>'$2y$10$3zKG3VuE6wZJAjvG3pHKVuEDRCRuZHn1GylnMm9fdG26z6uzjVQoW'),
