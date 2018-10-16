@@ -8,10 +8,10 @@
             Christmas Is Coming
         </div>
         <div class="productpage-subtitle">
-            New Products <span class="new-products">Supplements</span>
+            New Products <span class="new-products">Available</span>
         </div>
         <div class="button-container">
-            <button class="shop-now">SHOP NOW</button>
+            <button class="shop-now" id="shopnow-btn">SHOP NOW</button>
         </div>  
     </div>
 </div>
@@ -181,5 +181,12 @@
     </div>
   </div>
 </div>
+<script>
+$("#shopnow-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".productpage-intro").offset().top
+    }, 2000);
+});
+</script>
 @endforeach
 @endsection
