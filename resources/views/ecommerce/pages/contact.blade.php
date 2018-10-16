@@ -1,7 +1,7 @@
 @extends('ecommerce.master.template')
 
 @section('content')
-
+<div class="nav-pad"></div>
 <div class="container contact-form">
             <div class="contact-image">
                 <img src="/img/logo.png" alt="orajen_logo"/>
