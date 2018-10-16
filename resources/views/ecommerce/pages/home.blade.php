@@ -11,7 +11,7 @@
               <div class="full-width-left"> 
                 <h4 class="makeiteasy">Make it easy with</h4>
                   <h1 class="orajen">
-                    <span class="orajen-txt">ORAJEN</span><span class="ecommerce-txt"> eCommerce</span>
+                    <span class="orajen-txt">ORAJEN</span><span class="ecommerce-txt"> Marketing</span>
                   </h1>
                   <span class="cover-desc">A best place to create, discover and share opportunities.</span>
               </div>
@@ -40,9 +40,9 @@
     <div class="container">
       <div class="row">
         <div class="col-sm sv1">
-          <h6 class="sv-predesc">A MUST-HAVE OF EVERY HOUSEHOLD</h6>
-          <h2 class="sv-maindesc">WHAT CAN YOU DO WITH ORAJEN eCOMMERCE</h2>
-          <p class="sv-postdesc">Pay your bills, buy load, game credits, sattelite subscriptions, etc and shop online - do it with rewards</p>
+          <h6 class="sv-predesc">CHALLENGING THE STATUS QUO OF FINANCIAL FREEDOM</h6>
+          <h2 class="sv-maindesc">WHAT CAN YOU DO WITH ORAJEN MARKETING</h2>
+          <p class="sv-postdesc">Be one of us, BE ORAJEN!</p>
         </div>
         <div class="col-sm sv2">
         <video controls id="myVideo">
@@ -67,7 +67,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm pckg1">
-          <span class="package1-hover">Package Inclusions</span>
+          <span class="package1-hover">Package 1 Inclusions</span>
             <div class="package-desc">
               <h5 class="packge1-inc">Php 1,500.00</h5>
               <h5 class="packge1-inc">1 Bottle of Perfume</h5>
@@ -86,13 +86,14 @@
       <div class="container">
         <div class="row">
           <div class="col-sm pckg2">
-          <span class="package2-hover">Package Inclusions</span>
+          <span class="package2-hover">Package 2 Inclusions</span>
             <div class="package-desc">
               <h5 class="packge2-inc">Php 1,500.00</h5>
-              <h5 class="packge2-inc">1 Bottle of Perfume</h5>
-              <h5 class="packge2-inc">1 pc Guava Soap</h5>
-              <h5 class="packge2-inc">2 Packs 350g Real Detergent Powder</h5>
-              <h5 class="packge2-inc">+2 pcs sachet 50g Real Detergent Powder(Free)</h5>
+              <h5 class="packge2-inc">1 Set Perfume Tester</h5>
+              <h5 class="packge2-inc">1 pc Tawas Soap</h5>
+              <h5 class="packge2-inc">3 Packs 350g Real Detergent Powder</h5>
+              <h5 class="packge2-inc">3 Packs 50g Real Detergent Powder</h5>
+              <h5 class="packge2-inc">1 pc Papaya Soap(Free)</h5>
             </div>
           </div>
         </div>
@@ -100,6 +101,25 @@
     </div>
   </div>
 
+
+  <div class="package2">
+    <div class="package1-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm pckg1">
+          <span class="package1-hover">Package 1 Inclusions</span>
+            <div class="package-desc">
+              <h5 class="packge1-inc">Php 1,500.00</h5>
+              <h5 class="packge1-inc">1 Bottle of Perfume</h5>
+              <h5 class="packge1-inc">1 pc Guava Soap</h5>
+              <h5 class="packge1-inc">2 Packs 350g Real Detergent Powder</h5>
+              <h5 class="packge1-inc">+2 pcs sachet 50g Real Detergent Powder(Free)</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

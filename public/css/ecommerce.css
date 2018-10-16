@@ -226,7 +226,7 @@ button.shop-now:hover {
 }
 
 .ppcover-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .productpage-intro {
@@ -289,7 +289,8 @@ span.new-products {
 
 .featured-products {
     font-size: 30px;
-    padding: 15px 0px;
+    padding: 15px 0px 25px;
+    font-weight: bold;
 }
 
 .col-sm-4.featured-products {
@@ -733,6 +734,14 @@ span.fp-title {
     background-position: center;
 }
 
+.package3 {
+    background: url(/images/perfume-cover.jpg);
+    height: -webkit-fill-available;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .package1-overlay {
     height: -webkit-fill-available;
     opacity: 0;
@@ -754,10 +763,8 @@ span.fp-title {
 }
 
 span.package1-hover {
-    background: #e4b300;
     padding: 12px 20px;
-    /* border-radius: 8px; */
-    font-size: 15px;
+    font-size: 25px;
     color: white;
     text-align: center;
 }
@@ -851,10 +858,8 @@ span.product-name:hover {
 }
 
 span.package2-hover {
-    background: #e4b300;
     padding: 12px 20px;
-    /* border-radius: 8px; */
-    font-size: 15px;
+    font-size: 25px;
     color: white;
     text-align: center;
 }
