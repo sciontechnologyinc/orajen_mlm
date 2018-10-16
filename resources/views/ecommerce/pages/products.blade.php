@@ -28,9 +28,9 @@
   <div class="col-sm-6 col-lg-3">
     <div class="card product">
       <img class="card-img" src="{{asset('storage/uploads/'.$product->photo)}}" alt="Card image">
-      <div class="product-det"><span class="product-name">Orajen Cee</span>
-        <div class="pd-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-        <div class="p-md" data-toggle="modal" data-target="#modalQuickView">More Details</div>
+      <div class="product-det"><span class="product-name"> {{ $product->productname }}</span>
+        <div class="pd-desc"> {{ $product->productdescription }}</div>
+        <div class="p-md" data-toggle="modal" data-target="#{{ $product->id }}">More Details</div>
       </div>
     </div>
   </div>
@@ -41,9 +41,9 @@
   </div>
 </div>
 
-
+             @foreach($products as $product)
 <!-- Modal: modalQuickView -->
-<div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -51,19 +51,20 @@
         <div class="row">
           <div class="col-lg-5">
             <!--Carousel Wrapper-->
+      
             <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
               <!--Slides-->
               <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                  <img class="d-block w-100"  src="/images/products/8-re.jpg" 
+                  <img class="d-block w-100"  src="{{asset('storage/uploads/'.$product->photo)}}" 
                     alt="First slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100"  src="/images/products/8-re.jpg" 
+                  <img class="d-block w-100"  src="{{asset('storage/uploads/'.$product->photo)}}" 
                     alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100"  src="/images/products/8-re.jpg" 
+                  <img class="d-block w-100"  src="{{asset('storage/uploads/'.$product->photo)}}" 
                     alt="Third slide">
                 </div>
               </div>
@@ -81,13 +82,14 @@
             </div>
             <!--/.Carousel Wrapper-->
           </div>
+ 
           <div class="col-lg-7">
             <h2 class="h2-responsive product-name">
-              <strong>Orajen Cee</strong>
+              <strong> {{ $product->productname }}</strong>
             </h2>
             <h4 class="h4-responsive">
               <span class="green-text">
-                <strong>$49</strong>
+                <strong> Php. {{ $product->value }}</strong>
               </span>
             </h4>
 
@@ -101,16 +103,16 @@
                 <div class="card-header" role="tab" id="headingOne">
                   <a class="product-a" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <h5 class="mb-0">
-                      Description <i class="fa fa-angle-down rotate-icon"></i>
+                      Product Code <i class="fa fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
-@foreach($products as $product)
+      
                 <!-- Card body -->
                 <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne"
                   data-parent="#accordion">
                   <div class="card-body">
-                  {{ $product->productdescription }}
+                  {{ $product->productcode }}
                   </div>
                 </div>
               </div>
@@ -124,7 +126,7 @@
                   <a class="product-a" class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo">
                     <h5 class="mb-0">
-                      Details <i class="fa fa-angle-down rotate-icon"></i>
+                      Description <i class="fa fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
@@ -132,7 +134,7 @@
                 <!-- Card body -->
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
-                  {{ $product->productdetails }}
+                  {{ $product->productdescription }}
                   </div>
                 </div>
               </div>
@@ -146,7 +148,7 @@
                   <a class="product-a" class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
                     aria-controls="collapseThree">
                     <h5 class="mb-0">
-                      Shipping <i class="fa fa-angle-down rotate-icon"></i>
+                      Details <i class="fa fa-angle-down rotate-icon"></i>
                     </h5>
                   </a>
                 </div>
@@ -155,14 +157,12 @@
                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
                   data-parent="#accordion">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                    squid. 3 wolf moon officia aute,
-                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  {{ $product->productdetails }}
                   </div>
                 </div>
 
               </div>
-@endforeach
+
               
               <!-- Accordion card -->
             </div>
@@ -181,4 +181,5 @@
     </div>
   </div>
 </div>
+@endforeach
 @endsection
