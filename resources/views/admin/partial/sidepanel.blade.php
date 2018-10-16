@@ -63,6 +63,9 @@
                   <a class="nav-link" href="distributors"> Distributors </a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="contacts"> Contacts </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="reviews"> Reviews </a>
                 </li>
               </ul>
@@ -113,6 +116,12 @@
               </li>
             </ul>
           </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="companyinformations">
+            <i class="menu-icon mdi mdi-information-outline"></i>
+            <span class="menu-title">Company Information</span>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="generalsettings">

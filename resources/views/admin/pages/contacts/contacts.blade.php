@@ -2,10 +2,10 @@
 @section('headerButton')
 <ul class="navbar-nav navbar-nav-left">
                     <li class="nav-item">
-                    <a href="addabout" class="nav-link">Add About</a>
+                    <a href="addcontact" class="nav-link">Add Contact</a>
                     </li>
                     <li class="nav-item active">
-                        <a href="#" class="nav-link">Abouts List</a>
+                        <a href="#" class="nav-link">Contacts List</a>
                     </li>
             </ul>
 @endsection

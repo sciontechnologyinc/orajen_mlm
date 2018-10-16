@@ -35,9 +35,11 @@
             </div>
             <div class="container contact-form">
                 <h3>Contact Us</h3>
-                <div class="phoneno"><i class="fa fa-mobile"></i>Phone No : 09985825746</div>
-                <div class="email"><i class="fa fa-envelope"></i>Email Address : orajenmarketing@gmail.com</div>
-                <div class="address"><i class="fa fa-map-marker"></i> Location : 08 Kasoy Street, Zone 1, North Signal Village, Taguig City</div>
+                @foreach($contacts as $contact)
+                <div class="phoneno"><i class="fa fa-mobile"></i>Phone No : {{ $contact->phoneno }}</div>
+                <div class="email"><i class="fa fa-envelope"></i>Email Address : {{ $contact->emailaddress }}</div>
+                <div class="address"><i class="fa fa-map-marker"></i> Location : {{ $contact->location }}</div>
+                @endforeach
                 <div class="locationmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d682.7889625422396!2d121.05838400737777!3d14.516941422370236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8b52fb026a1%3A0x656793209e39ef6e!2sZone+1%2C+8+Kasoy+St%2C+Manila%2C+1630+Metro+Manila!5e0!3m2!1sen!2sph!4v1536089025541" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
             </div>
 </div>
