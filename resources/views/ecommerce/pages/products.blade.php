@@ -151,14 +151,12 @@
                     </h5>
                   </a>
                 </div>
-
+@foreach($products as $product)
                 <!-- Card body -->
                 <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne"
                   data-parent="#accordion">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                    squid. 3 wolf moon officia aute,
-                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  {{ $product->productdescription }}
                   </div>
                 </div>
               </div>
@@ -180,9 +178,7 @@
                 <!-- Card body -->
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                    squid. 3 wolf moon officia aute,
-                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  {{ $product->productdetails }}
                   </div>
                 </div>
               </div>
@@ -214,7 +210,7 @@
               <!-- Accordion card -->
             </div>
             <!--/.Accordion wrapper-->
-
+@endforeach
             <!-- Add to Cart -->
             <div class="card-body">
               <div class="text-center right">
