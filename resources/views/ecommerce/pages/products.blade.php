@@ -123,7 +123,7 @@
 
                 <!-- Card header -->
                 <div class="card-header" role="tab" id="headingTwo">
-                  <a class="product-a" class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+                  <a class="product-a" class="collapse" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo">
                     <h5 class="mb-0">
                       Description <i class="fa fa-angle-down rotate-icon"></i>
@@ -132,7 +132,7 @@
                 </div>
 
                 <!-- Card body -->
-                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
                   {{ $product->productdescription }}
                   </div>
@@ -145,7 +145,7 @@
 
                 <!-- Card header -->
                 <div class="card-header" role="tab" id="headingThree">
-                  <a class="product-a" class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
+                  <a class="product-a" class="collapse" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
                     aria-controls="collapseThree">
                     <h5 class="mb-0">
                       Details <i class="fa fa-angle-down rotate-icon"></i>
@@ -154,10 +154,10 @@
                 </div>
 
                 <!-- Card body -->
-                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree"
                   data-parent="#accordion">
                   <div class="card-body">
-                  {{ $product->productdetails }}
+                  {{ $product->serving }}
                   </div>
                 </div>
 
