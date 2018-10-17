@@ -432,8 +432,8 @@ li.nav-item.active {
 }
 
 .product-img img {
-    width: 100% !important;
-    height: 100% !important;
+    width: 50% !important;
+    height: 50% !important;
 }
 
 .sidebar .nav .nav-item.active>.nav-link {
@@ -572,4 +572,21 @@ button.file-upload-browse.btn.btn-info {
 
 i.fa.fa-sign-out.side {
     padding: 0px !important;
+}
+
+button.delete-btn {
+    background: none;
+    color: red;
+    margin: 0px !important;
+    /* padding: 0px !important; */
+    padding: 0px 10px !important;
+}
+
+a.edit-btn {
+    padding: 0px 10px;
+}
+
+a.edit-btn:hover {
+    /* border-bottom: 0px !important; */
+    text-decoration: none;
 }
