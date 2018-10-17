@@ -25,17 +25,15 @@
   <div class="gallery">
   <h2 class="pnr">PROMOTIONS & REWARDS</h2>
    <section class="customer-logos slider">
-      <div class="slide"><img src="/images/reward1.jpg"></div>
-      <div class="slide"><img src="/images/reward2.jpg"></div>
-      <div class="slide"><img src="/images/reward3.jpg"></div>
-      <div class="slide"><img src="/images/reward4.jpg"></div>
-      <div class="slide"><img src="/images/reward5.jpg"></div>
-      <div class="slide"><img src="/images/reward6.jpg"></div>
-      <div class="slide"><img src="/images/reward7.jpg"></div>
-      <div class="slide"><img src="/images/reward8.jpg"></div>
+   @foreach($promotions as $promotion)
+
+      <div class="slide"><img src="{{asset('storage/uploads/'.$promotion->photo)}}"></div>
+@endforeach
+      
    </section>
    </div>
 </div>
+
 
 <div class="section-video">
   <div class="sv-overlay">

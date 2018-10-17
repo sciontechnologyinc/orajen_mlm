@@ -57,6 +57,10 @@ Route::get('ecommercecontact', function () {
 
 Route::resource('ecommerceproducts','EcommerceProductController');
 
+Route::resource('ecommercehome','EcommercePromotionController');
+Route::resource('','EcommercePromotionController');
+
+
 
 Route::get('newmember', function () {
     return view('marketingPlan.pages.newmember');
@@ -79,6 +83,11 @@ Route::get('addproduct', function () {
     return view('admin.pages.products.addproduct');
 });
 Route::resource('products', 'ProductController');
+
+Route::get('addpromo', function () {
+    return view('admin.pages.promotions.addpromo');
+});
+Route::resource('promotions', 'PromotionController');
 
 Route::get('sales', function () {
     return view('admin.pages.mainsales');
