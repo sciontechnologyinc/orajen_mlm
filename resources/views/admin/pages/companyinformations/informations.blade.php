@@ -13,7 +13,7 @@
 <div class="main-panel">
     <div class="content-wrapper">
 
-    <div class="um-img">
+    <!-- <div class="um-img">
     <img src="/images/undermaintenance-img.png" alt="">
     </div>
 
@@ -22,8 +22,8 @@
 
     <div class="company-logo"><img src="/img/logo.png" alt=""></div>
     <div class="page-desc">Our website is coming soon. </div>
-    <div class="page-desc1">"This page will show, create, edit and delete products."</div>
-    <!-- <div class="col-lg-12 grid-margin stretch-card">
+    <div class="page-desc1">"This page will show, create, edit and delete products."</div> -->
+    <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">ORAJEN Products</h4>
@@ -32,132 +32,53 @@
                       <thead>
                         <tr>
                           <th>
-                            Product #
+                            #
                           </th>
                           <th>
-                            Product Name
+                            Company Background
                           </th>
                           <th>
-                            Product Image
+                            Mission
                           </th>
                           <th>
-                            Product Details
+                            Vision
                           </th>
                           <th>
-                            Value
-                          </th>
-                          <th>
-                            Serving
+                            Action
                           </th>
                         </tr>
                       </thead>
                       <tbody>
+                      @foreach($abouts as $index => $about)
                         <tr>
                           <td>
-                            20001
+                            {{$index +1}}
                           </td>
                           <td>
-                            ORAJEN SOAP
+                          {{$about->companybackground}}                            
                           </td>
                           <td>
-                            <div class="product-img">
-                                <img src="/images/default-product.png" alt="">
-                            </div>
+                          {{$about->mission}}                            
                           </td>
                           <td>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                          {{$about->vision}}                            
                           </td>
                           <td>
-                            Php 500.00
-                          </td>
-                          <td>
-                            Per Piece
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            20002
-                          </td>
-                          <td>
-                            ORAJEN SUPPLEMENT
-                          </td>
-                          <td>
-                            <div class="product-img">
-                                <img src="/images/default-product.png" alt="">
-                            </div>
-                          </td>
-                          <td>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                          </td>
-                          <td>
-                            Php 2,480.00
-                          </td>
-                          <td>
-                            Per Container
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            20003
-                          </td>
-                          <td>
-                            ORAJEN COLOGNES
-                          </td>
-                          <td>
-                            <div class="product-img">
-                                <img src="/images/default-product.png" alt="">
-                            </div>
-                          </td>
-                          <td>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                          </td>
-                          <td>
-                            Php 380.00
-                          </td>
-                          <td>
-                            Per Container
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            20004
-                          </td>
-                          <td>
-                            ORAJEN COFFEE
-                          </td>
-                          <td>
-                            <div class="product-img">
-                                <img src="/images/default-product.png" alt="">
-                            </div>
-                          </td>
-                          <td>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                          </td>
-                          <td>
-                            Php 480.00
-                          </td>
-                          <td>
-                            Per Box
+                          <div class="form-group" style="display:inline-flex">
+                          <a rel="tooltip" title="Edit" class="btn btn-success btn-sm mr-1" href="companyinformations/{!! $about->id !!}/edit"><i class="fa fa-edit"></i></a>
+                          {!! Form::open(['id' => 'deleteForm', 'method' => 'DELETE', 'url' => '/companyinformations/' . $about->id]) !!}
+                          {{ Form::button('<i class="fa fa-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-sm', 'rel' => 'tooltip', 'title' => 'Delete'] )  }}
+                          {!! Form::close() !!}
+                          </div>
                           </td>
                         </tr>
                       </tbody>
+                      @endforeach
                     </table>
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
     </div>
 </div>
 @endsection

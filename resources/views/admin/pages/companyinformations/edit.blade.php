@@ -5,7 +5,7 @@
                     <a href="#" class="nav-link">Add Company Info</a>
                     </li>
                     <li class="nav-item">
-                        <a href="companyinformations" class="nav-link">Company Info List</a>
+                        <a href="informations" class="nav-link">Company Info List</a>
                     </li>
             </ul>
 @endsection
@@ -27,27 +27,27 @@
         </ul>
     </div>
  @endif
- {!! Form::open(['id' => 'dataForm', 'url' => '/companyinformations', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+ {!! Form::open(['id' => 'dataForm', 'method' => 'PATCH', 'url' => '/companyinformations/' . $about->id, 'enctype' => 'multipart/form-data']) !!}
     <div class="content-wrapper">
     <div class="col-12">
                   <div class="card">
                     <div class="card-body">
                       <h4 class="card-title">Product</h4>
                       <p class="card-description">
-                        Add a Company Info
+                        Edit Company Info
                       </p>
                       <form class="forms-sample">
                         <div class="form-group">
                           {!!Form::label('companybackground', 'Company Background', array('class' => 'form-control-label'))!!}
-                          {!!Form::text('companybackground',null, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                          {!!Form::text('companybackground',$about->companybackground, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                         </div>
                         <div class="form-group">
                           {!!Form::label('mission', 'Mission', array('class' => 'form-control-label'))!!}
-                          {!!Form::text('mission',null, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                          {!!Form::text('mission',$about->mission, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                         </div>
                         <div class="form-group">
                           {!!Form::label('vision', 'Vision', array('class' => 'form-control-label'))!!}
-                          {!!Form::text('vision',null, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                          {!!Form::text('vision',$about->vision, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                         </div>
                         {!!Form::submit('Submit', ['id' => 'addForm','class' => 'btn btn-success mr-2']) !!}
                         <button class="btn btn-light">Cancel</button>

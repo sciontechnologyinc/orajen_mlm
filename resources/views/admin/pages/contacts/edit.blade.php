@@ -2,10 +2,10 @@
 @section('headerButton')
           <ul class="navbar-nav navbar-nav-left">
                     <li class="nav-item active">
-                    <a href="#" class="nav-link">Add Company Info</a>
+                    <a href="#" class="nav-link">Add Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="companyinformations" class="nav-link">Company Info List</a>
+                        <a href="contacts" class="nav-link">Contact us List</a>
                     </li>
             </ul>
 @endsection
@@ -27,28 +27,29 @@
         </ul>
     </div>
  @endif
- {!! Form::open(['id' => 'dataForm', 'url' => '/companyinformations', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+ {!! Form::open(['id' => 'dataForm', 'method' => 'PATCH', 'url' => '/contacts/' . $contact->id, 'enctype' => 'multipart/form-data']) !!}
     <div class="content-wrapper">
     <div class="col-12">
                   <div class="card">
                     <div class="card-body">
                       <h4 class="card-title">Product</h4>
                       <p class="card-description">
-                        Add a Company Info
+                        Add a Contact
                       </p>
                       <form class="forms-sample">
                         <div class="form-group">
-                          {!!Form::label('companybackground', 'Company Background', array('class' => 'form-control-label'))!!}
-                          {!!Form::text('companybackground',null, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                          {!!Form::label('phoneno', 'Phone No.', array('class' => 'form-control-label'))!!}
+                          {!!Form::number('phoneno',$contact->phoneno, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                         </div>
                         <div class="form-group">
-                          {!!Form::label('mission', 'Mission', array('class' => 'form-control-label'))!!}
-                          {!!Form::text('mission',null, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                          {!!Form::label('emailaddress', 'E-Mail Address', array('class' => 'form-control-label'))!!}
+                          {!!Form::email('emailaddress',$contact->emailaddress, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                         </div>
                         <div class="form-group">
-                          {!!Form::label('vision', 'Vision', array('class' => 'form-control-label'))!!}
-                          {!!Form::text('vision',null, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                          {!!Form::label('location', 'Location', array('class' => 'form-control-label'))!!}
+                          {!!Form::text('location',$contact->location, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                         </div>
+
                         {!!Form::submit('Submit', ['id' => 'addForm','class' => 'btn btn-success mr-2']) !!}
                         <button class="btn btn-light">Cancel</button>
                       </form>
@@ -59,12 +60,11 @@
                   <br>
                   <br>
                   <br>
-                  <br>
+                  <br>                  
                   <br>
         </div>
     </div>
     {!! Form::close() !!}
 </div>
-
 @endsection()
 
