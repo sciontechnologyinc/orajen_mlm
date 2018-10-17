@@ -101,7 +101,7 @@
 
                 <!-- Card header -->
                 <div class="card-header" role="tab" id="headingOne">
-                  <a class="product-a" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <a class="product-a" data-toggle="collapse" href="#collapse1{{ $product->id }}" aria-expanded="true" aria-controls="collapse1{{ $product->id }}">
                     <h5 class="mb-0">
                       Product Code <i class="fa fa-angle-down rotate-icon"></i>
                     </h5>
@@ -109,7 +109,7 @@
                 </div>
       
                 <!-- Card body -->
-                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne"
+                <div id="collapse1{{ $product->id }}" class="collapse show" role="tabpanel" aria-labelledby="headingOne"
                   data-parent="#accordion">
                   <div class="card-body">
                   {{ $product->productcode }}
@@ -123,8 +123,8 @@
 
                 <!-- Card header -->
                 <div class="card-header" role="tab" id="headingTwo">
-                  <a class="product-a" class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">
+                  <a class="product-a" class="collapsed" data-toggle="collapse" href="#collapse2{{ $product->id }}" aria-expanded="false"
+                    aria-controls="collapse2{{ $product->id }}">
                     <h5 class="mb-0">
                       Description <i class="fa fa-angle-down rotate-icon"></i>
                     </h5>
@@ -132,7 +132,7 @@
                 </div>
 
                 <!-- Card body -->
-                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div id="collapse2{{ $product->id }}" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
                   {{ $product->productdescription }}
                   </div>
@@ -145,8 +145,8 @@
 
                 <!-- Card header -->
                 <div class="card-header" role="tab" id="headingThree">
-                  <a class="product-a" class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">
+                  <a class="product-a" class="collapsed" data-toggle="collapse" href="#collapse3{{ $product->id }}" aria-expanded="false"
+                    aria-controls="collapse3{{ $product->id }}">
                     <h5 class="mb-0">
                       Details <i class="fa fa-angle-down rotate-icon"></i>
                     </h5>
@@ -154,7 +154,7 @@
                 </div>
 
                 <!-- Card body -->
-                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                <div id="collapse3{{ $product->id }}" class="collapse" role="tabpanel" aria-labelledby="headingThree"
                   data-parent="#accordion">
                   <div class="card-body">
                   {{ $product->productdetails }}

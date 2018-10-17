@@ -15,9 +15,9 @@ class CreateAboutsTable extends Migration
     {
         Schema::create('abouts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('companybackground');
-            $table->string('mission');
-            $table->string('vision');
+            $table->text('companybackground');
+            $table->text('mission');
+            $table->text('vision');
             $table->timestamps();
         });
     }
