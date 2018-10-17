@@ -99,7 +99,7 @@ class ContactController extends Controller
     public function edit($id)
     {
         $contact = Contact::find($id);
-        return view('about/edit', ['about' => $about]);
+        return view('admin.pages.contacts.edit', ['contact' => $contact]);
     }
 
     /**

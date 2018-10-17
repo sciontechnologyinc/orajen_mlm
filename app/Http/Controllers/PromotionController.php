@@ -95,7 +95,7 @@ class PromotionController extends Controller
     public function edit($id)
     {
         $promotion = Promotion::find($id);
-        return view('promotion/edit', ['promotion' => $promotion]);
+        return view('admin.pages.promotions.edit', ['promotion' => $promotion]);
     }
 
     /**

@@ -5,7 +5,7 @@
                     <a href="#" class="nav-link">Add Promo</a>
                     </li>
                     <li class="nav-item">
-                        <a href="promotions" class="nav-link">Promotions List</a>
+                        <a href="products" class="nav-link">Promotions List</a>
                     </li>
             </ul>
 @endsection
@@ -27,14 +27,14 @@
         </ul>
     </div>
  @endif
- {!! Form::open(['id' => 'dataForm', 'url' => '/promotions', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+ {!! Form::open(['id' => 'dataForm', 'method' => 'PATCH', 'url' => '/promotions/' . $promotion->id, 'enctype' => 'multipart/form-data']) !!}
     <div class="content-wrapper">
     <div class="col-12">
                   <div class="card">
                     <div class="card-body">
                       <h4 class="card-title">Promo</h4>
                       <p class="card-description">
-                        Add a Promo
+                        Edit a Promo
                       </p>
                       <form class="forms-sample">
                         

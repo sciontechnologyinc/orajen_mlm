@@ -2,10 +2,10 @@
 @section('headerButton')
           <ul class="navbar-nav navbar-nav-left">
                     <li class="nav-item active">
-                    <a href="#" class="nav-link">Add Promo</a>
+                    <a href="#" class="nav-link">Add Product</a>
                     </li>
                     <li class="nav-item">
-                        <a href="promotions" class="nav-link">Promotions List</a>
+                        <a href="products" class="nav-link">Products List</a>
                     </li>
             </ul>
 @endsection
@@ -27,18 +27,40 @@
         </ul>
     </div>
  @endif
- {!! Form::open(['id' => 'dataForm', 'url' => '/promotions', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+ {!! Form::open(['id' => 'dataForm', 'method' => 'PATCH', 'url' => '/products/' . $product->id, 'enctype' => 'multipart/form-data']) !!}
     <div class="content-wrapper">
     <div class="col-12">
                   <div class="card">
                     <div class="card-body">
-                      <h4 class="card-title">Promo</h4>
+                      <h4 class="card-title">Product</h4>
                       <p class="card-description">
-                        Add a Promo
+                        Edit a Product
                       </p>
                       <form class="forms-sample">
-                        
-
+                        <div class="form-group">
+                          {!!Form::label('productcode', 'Product Code', array('class' => 'form-control-label'))!!}
+                          {!!Form::text('productcode',$product->productcode, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                        </div>
+                        <div class="form-group">
+                          {!!Form::label('productname', 'Product Name', array('class' => 'form-control-label'))!!}
+                          {!!Form::text('productname',$product->productname, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                        </div>
+                        <div class="form-group">
+                          {!!Form::label('productdescription', 'Product Description', array('class' => 'form-control-label'))!!}
+                          {!!Form::text('productdescription',$product->productdescription, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                        </div>
+                        <div class="form-group">
+                          {!!Form::label('productdetails', 'Product Details', array('class' => 'form-control-label'))!!}
+                          {!!Form::text('productdetails',$product->productdetails, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                        </div>
+                        <div class="form-group">
+                          {!!Form::label('value', 'Value', array('class' => 'form-control-label'))!!}
+                          {!!Form::text('value',$product->value, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                        </div>
+                        <div class="form-group">
+                          {!!Form::label('serving', 'Serving', array('class' => 'form-control-label'))!!}
+                          {!!Form::text('serving',$product->serving, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                        </div>
                           <div class="form-group">
                           {!!Form::label('photo', 'Photo', array('class' => 'form-control-label'))!!}
                               <div class="row">
@@ -49,9 +71,6 @@
                                 <p class="image_view"></p><img src="">
                               </div>
                         </div>
-                        <br>
-                        <br>
-                        <br>
                         {!!Form::submit('Submit', ['id' => 'addForm','class' => 'btn btn-success mr-2']) !!}
                         <button class="btn btn-light">Cancel</button>
                       </form>

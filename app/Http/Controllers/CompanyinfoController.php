@@ -99,7 +99,7 @@ class CompanyinfoController extends Controller
     public function edit($id)
     {
         $about = Companyinfo::find($id);
-        return view('companyinformations/edit', ['about' => $about]);
+        return view('admin.pages.companyinformations.edit', ['about' => $about]);
     }
 
     /**
