@@ -158,7 +158,6 @@
                   // Do nothing!
               }
           })
-            
     })
 </script>
 @endsection
