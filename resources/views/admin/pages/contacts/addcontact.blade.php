@@ -2,10 +2,10 @@
 @section('headerButton')
           <ul class="navbar-nav navbar-nav-left">
                     <li class="nav-item active">
-                    <a href="#" class="nav-link">Add About</a>
+                    <a href="#" class="nav-link">Add Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="products" class="nav-link">About us List</a>
+                        <a href="contacts" class="nav-link">Contact us List</a>
                     </li>
             </ul>
 @endsection
@@ -27,19 +27,19 @@
         </ul>
     </div>
  @endif
- {!! Form::open(['id' => 'dataForm', 'url' => '/abouts', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+ {!! Form::open(['id' => 'dataForm', 'url' => '/contacts', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
     <div class="content-wrapper">
     <div class="col-12">
                   <div class="card">
                     <div class="card-body">
                       <h4 class="card-title">Product</h4>
                       <p class="card-description">
-                        Add a Product
+                        Add a Contact
                       </p>
                       <form class="forms-sample">
                         <div class="form-group">
                           {!!Form::label('phoneno', 'Phone No.', array('class' => 'form-control-label'))!!}
-                          {!!Form::text('phoneno',null, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
+                          {!!Form::number('phoneno',null, ['placeholder' => '', 'class' => 'form-control col-lg-12', 'required' => '' ])!!}
                         </div>
                         <div class="form-group">
                           {!!Form::label('emailaddress', 'E-Mail Address', array('class' => 'form-control-label'))!!}
@@ -55,6 +55,13 @@
                       </form>
                     </div>
                   </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>                  
+                  <br>
         </div>
     </div>
     {!! Form::close() !!}
