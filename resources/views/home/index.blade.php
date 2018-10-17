@@ -114,6 +114,11 @@
                 <label for="productVoucher" class="col-xl-4">Payout</label>
                 <input type="text" class="form-control col-xl-8 col-sm-12" id="payout" readonly>
                 <input type="hidden" class="form-control col-xl-8 col-sm-12" id="userno" value="{{ Auth::user()->id }}">
+              </div class="form-group form-inline">
+                <button class="btn btn-primary form-control col-xl-6 col-sm-6" id="requestPayout">Request Payout</button>
+              <div>
+
+
               </div>
             </div>
           </div>
@@ -128,6 +133,7 @@
 
 @section('scripts')
 <script>
+
     $(document).ready(function(){
             $.get('/dashboard/'+$('#userno').val(), function(response)
                 {
@@ -143,6 +149,16 @@
                   $('#passUp').val(data.passup);
                   $('#globalPool').val(data.globalpool);
                 }, 'json');
+                
+          $('#requestPayout').click(function(){
+            var payout = $('#payout').val();
+            if (confirm('Are you sure you want to request Payout ? Amount: P'+ payout)) {
+                  // Save it!
+              } else {
+                  // Do nothing!
+              }
+          })
+            
     })
 </script>
 @endsection
