@@ -129,7 +129,7 @@
 
                                                 {!!Form::submit('Approve Payout', ['class' => 'btn btn-primary btn-return  col-lg-14']) !!}
                                                 
-                                                @elseif($payout->status == 'Returned')
+                                                @elseif($payout->status == 'Approved')
                                                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                                                 <div class="modal-dialog modal-sm" role="document">
                                                 <div class="modal-content">
@@ -156,11 +156,11 @@
 
                                                         <div class="panel-body">
                                                         @if($payout->status == 'Pending')
-                                                        <input type="text" name="status" id="status" class="status" value="Returned">
-                                                        @elseif($payout->status == 'Returned')
-                                                        <input type="text" name="status" id="status" class="status" value="Pending">
+                                                        <input type="text" name="status" id="status" class="status" value="Approved">
+                                                        @elseif($payout->status == 'Approved')
+                                                        <input type="text" name="status" id="status" class="status" value="Approved">
                                                         @else
-                                                        <input type="text" name="status" id="status" class="status" value="Returned">
+                                                        <input type="text" name="status" id="status" class="status" value="Approved">
                                                         @endif
     
                                                          {!! Form::close() !!}                                                  
