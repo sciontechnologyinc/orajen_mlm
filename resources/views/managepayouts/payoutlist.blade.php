@@ -156,11 +156,11 @@
 
                                                         <div class="panel-body">
                                                         @if($payout->status == 'Pending')
-                                                        <input type="text" name="status" id="status" class="status" value="Approved">
+                                                        <input type="hidden" name="status" id="status" class="status" value="Approved">
                                                         @elseif($payout->status == 'Approved')
-                                                        <input type="text" name="status" id="status" class="status" value="Approved">
+                                                        <input type="hidden" name="status" id="status" class="status" value="Approved">
                                                         @else
-                                                        <input type="text" name="status" id="status" class="status" value="Approved">
+                                                        <input type="hidden" name="status" id="status" class="status" value="Approved">
                                                         @endif
     
                                                          {!! Form::close() !!}                                                  
