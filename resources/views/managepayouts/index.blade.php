@@ -1,4 +1,14 @@
 @extends('admin.master.template')
+@section('headerButton')
+<ul class="navbar-nav navbar-nav-left">
+                    <li class="nav-item">
+                    <a href="updatemember" class="nav-link">Update Member</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="managepayout" class="nav-link">Request Payout List</a>
+                    </li>
+            </ul>
+@endsection
 
 @section('content')
 <div class="main-panel">
@@ -15,7 +25,7 @@
 
               <div class="form-group form-inline">
                     <label for="productVoucher" class="col-xl-2">Member</label>
-                    <select name="username" class="form-control form-control col-xl-8 col-sm-12">
+                    <select name="username"  class="form-control form-control col-xl-8 col-sm-12 name">
                             <option value="" disabled="true">Select a Sponsor</option>
                             <option value="main">Main Account ({{auth()->user()->name}})</option>
                             @foreach($users as $user)
@@ -26,12 +36,12 @@
 
               <div class="form-group form-inline">
                 <label for="productVoucher" class="col-xl-2">Net Income</label>
-                <input type="text" class="form-control col-xl-8 col-sm-12" id="netincome"> 
+                <input type="text" class="form-control col-xl-8 col-sm-12 netincome" id="netincome"> 
               </div>
 
               <div class="form-group form-inline">
                 <label for="productVoucher" class="col-xl-2">Payout</label>
-                <input type="text" class="form-control col-xl-8 col-sm-12" id="payout">
+                <input type="text" class="form-control col-xl-8 col-sm-12 payout" id="payout">
               </div>
 
               <button class="btn-primary" class="saveIncome" id="saveIncome">Update Member</button>
@@ -47,30 +57,48 @@
 @endsection
 
 @section('scripts')
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
+  $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+
+
     $(document).ready(function(){
-        $('[name="username"]').change(function(){
-            $.ajax({
-                    headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    url: '/users/'+$('[name="username"]').val(),
-                    dataType : 'json',
-                    type: 'POST',
-                    data: {},
-                    contentType: false,
-                    processData: false,
-                    success:function(response) {
-                        $('#netincome').val(response.username[0].netincome);
-                        $('#payout').val(response.username[0].payout);
-                    }
-                });
-            });
+      $('.name').change(function() {
+      var NameId = $('.name').val();
+      $.ajax({
+          headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          },
+          url: '/getname/' + NameId,
+          dataType : 'json',
+          type: 'POST',
+          data: {},
+          contentType: false,
+          processData: false,
+          success:function(response) {
+               $('.netincome').val(response.users[0]);
+               $('.payout').val(response.users[0]);
+               console.log(response);
+               $.ajax({
+                      headers: {
+                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                      },
+                      url:'/updatename/'+$('.name').val(),
+                      method:"POST",  
+                      data:{},                              
+                      success: function( data ) {
+                           console.log(data);
+                      }
+                  }); 
+          }
+     });
+  });
 
         $('#saveIncome').click(function(){
             console.log('jetro macalipay');
@@ -89,6 +117,6 @@
                 }
             });
         })
-    })
+    });
 </script>
 @endsection

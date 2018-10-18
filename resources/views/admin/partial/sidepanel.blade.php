@@ -30,7 +30,7 @@
                   <a class="nav-link" href="{{ url('codes')}}"> Generate Code </a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="{{ url('managepayout')}}"> Manage Payout </a>
+                <a class="nav-link" href="{{ url('managepayouts')}}"> Manage Payout </a>
                 </li>
               </ul>
             </div>
