@@ -247,6 +247,10 @@ Route::get('adminaccount', function () {
 Route::get('/changePassword','ChangepasswordController@showChangePasswordForm');
 
 Route::post('/changepassword','ChangepasswordController@changePassword')->name('changePassword');
+
+Route::get('/changeInformation','ChangepasswordController@showChangeInformationForm');
+
+Route::post('/changeinformation','ChangepasswordController@changeInformation')->name('changeInformation');
  
 Auth::routes();
 
