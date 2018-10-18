@@ -71,6 +71,7 @@
     $(document).ready(function(){
       $('.name').change(function() {
       var NameId = $('.name').val();
+      console.log(NameId);
       $.ajax({
           headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -79,23 +80,11 @@
           dataType : 'json',
           type: 'POST',
           data: {},
-          contentType: false,
-          processData: false,
           success:function(response) {
-               $('.netincome').val(response.users[0]);
-               $('.payout').val(response.users[0]);
+               $('.netincome').val(response.users[0].netincome);
+               $('.payout').val(response.users[0].payout);
                console.log(response);
-               $.ajax({
-                      headers: {
-                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                      },
-                      url:'/updatename/'+$('.name').val(),
-                      method:"POST",  
-                      data:{},                              
-                      success: function( data ) {
-                           console.log(data);
-                      }
-                  }); 
+           
           }
      });
   });
