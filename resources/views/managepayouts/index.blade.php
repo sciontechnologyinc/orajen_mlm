@@ -101,7 +101,6 @@
   });
 
         $('#saveIncome').click(function(){
-            console.log('jetro macalipay');
             $.ajax({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

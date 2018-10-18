@@ -26,6 +26,7 @@ Route::post('/getname/{name}','ManagePayoutController@getName');
 Route::post('/updatename/{name}','ManagePayoutController@updateName');
 Route::post('users/{id}', 'ManagePayoutController@show');
 Route::post('updateusers/{id}', 'ManagePayoutController@updateuser');
+Route::post('approved/{id}', 'ManagePayoutController@approved');
 
 
 Route::resource('managepayouts', 'ManagePayoutController');
@@ -246,6 +247,10 @@ Route::get('adminaccount', function () {
 Route::get('/changePassword','ChangepasswordController@showChangePasswordForm');
 
 Route::post('/changepassword','ChangepasswordController@changePassword')->name('changePassword');
+
+Route::get('/changeInformation','ChangepasswordController@showChangeInformationForm');
+
+Route::post('/changeinformation','ChangepasswordController@changeInformation')->name('changeInformation');
  
 Auth::routes();
 

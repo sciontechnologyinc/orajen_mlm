@@ -31,9 +31,9 @@ class ManagePayoutController extends Controller
     {
         $payouts = Payout::orderBy('id')->get();
         $user = User::where('name', $nameid)->update(request()->all());
-
-
-        
+        $data = $request->validate([
+            'gcashnumber' => 'required',
+        ]);
     }
 
     /**
@@ -112,15 +112,18 @@ class ManagePayoutController extends Controller
     }
     public function updateuser($id)
     {
-
         $users = User::orderBy('id')->get();
         $payouts = Payout::orderBy('id')->get();
         $income = User::where('id', $id)->update(request()->all());
         return view('managepayouts.payoutlist',['users' => $users,'payouts' => $payouts]);
-
-        
     }
 
+    public function approved($id)
+    {
+        $payouts = Payout::orderBy('id')->get();
+        $payout = Payout::where('id', $id)->update(request()->all());
+        return view('managepayouts.payoutlist', ['payouts' => $payouts]);
+    }
     /**
      * Remove the specified resource from storage.
      *

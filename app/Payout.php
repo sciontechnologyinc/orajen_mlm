@@ -10,6 +10,7 @@ class Payout extends Model
     protected $fillable =  ['name',
                             'gcashnumber',
                             'netincome',
-                            'payout'
+                            'payout',
+                            'date'
                         ];
 }

@@ -18,17 +18,12 @@ class CreatePayoutsTable extends Migration
             $table->string('name')->default('Michael');
             $table->string('gcashnumber')->default('093993912');
             $table->string('status')->default('Pending');
+            $table->string('date');
             $table->decimal('netincome', 19, 2)->default(0);
             $table->decimal('payout', 19, 2)->default(0);
             $table->timestamps();
         });
-        DB::table('payouts')->insert(
-            array(
-                array('name' => 'Orajen','gcashnumber' => '093993912','netincome' => '712','payout' => '712'),
-            )
-        );
     }
-
     /**
      * Reverse the migrations.
      *
