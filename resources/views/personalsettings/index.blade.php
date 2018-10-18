@@ -50,7 +50,7 @@
 
                         <div class="form-group">
                         <label for="categorydesc">Current password</label>
-                        <input id="current-password" type="password" placeholder="Current Password" class="form-control" name="current-password" required>
+                        <input id="current-password" type="password" placeholder="Current Password" class="form-control" name="current-password">
                                     @if ($errors->has('current-password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('current-password') }}</strong>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="form-group">
                         <label for="categorydesc">Set new password</label>
-                        <input id="new-password" type="password" placeholder="New Password" class="form-control" name="new-password" required>
+                        <input id="new-password" type="password" placeholder="New Password" class="form-control" name="new-password">
  
                                     @if ($errors->has('new-password'))
                                         <span class="help-block">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="form-group">
                         <label for="categorydesc">Confirm new password</label>
-                        <input id="new-password-confirm" type="password" placeholder="Confirm new password" class="form-control" name="new-password_confirmation" required>
+                        <input id="new-password-confirm" type="password" placeholder="Confirm new password" class="form-control" name="new-password_confirmation">
                         </div>
 
 
