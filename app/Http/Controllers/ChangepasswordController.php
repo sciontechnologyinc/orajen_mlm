@@ -138,7 +138,55 @@ class ChangepasswordController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = $request->all();
+        $data = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'photo' => 'image|nullable|max:1999'
+
+            
+        ]);
+        if($request->hasFile('photo')){
+            
+            $filenameWithExt = $request->file('photo')->getClientOriginalName();
+
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+            $extension = $request->file('photo')->getClientOriginalExtension();
+
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            
+            $path = $request->file('photo')->storeAs('public/uploads', $fileNameToStore);
+        }else{
+            $fileNameToStore = 'user_icon.png';
+        }
+ 
+        if (!(Hash::check($request->get('current-password'), Auth::user()->password))) {
+            // The passwords matches
+            return redirect()->back()->with("error","Your current password does not matches with the password you provided. Please try again.");
+        }
+ 
+        if(strcmp($request->get('current-password'), $request->get('new-password')) == 0){
+            //Current password and new password are same
+            return redirect()->back()->with("error","New Password cannot be same as your current password. Please choose a different password.");
+        }
+ 
+        $validatedData = $request->validate([
+            'current-password' => 'required',
+            'new-password' => 'required|string|min:6|confirmed',
+        ]);
+        
+ 
+        //Change Password
+        $user = Auth::user();
+        $user->password = bcrypt($request->get('new-password'));
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+        $user->photo = $fileNameToStore;
+        $user->save();
+
+ 
+        return redirect()->back()->with("success","Profile changed successfully !");
     }
 
     /**

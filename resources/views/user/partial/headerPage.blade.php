@@ -16,8 +16,11 @@
         <li class="nav-item dropdown d-none d-xl-inline-block">
           <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
             <span class="profile-text">Hello, {{ Auth::user()->name }}!</span>
-            <img class="img-xs rounded-circle" src="{{asset('storage/uploads/'. Auth::user()->photo)}}" alt="Profile image">
-            
+           @if( Auth::user()->photo )
+           <img class="img-xs rounded-circle" src="{{asset('storage/uploads/'. Auth::user()->photo)}}" alt="Profile image">&nbsp;
+           @else
+           <img class="img-xs rounded-circle" src="{{asset('storage/uploads/user_icon.png')}}" />
+           @endif
           </a>
           <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
             <a class="dropdown-item p-0">
