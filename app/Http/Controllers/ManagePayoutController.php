@@ -35,7 +35,6 @@ class ManagePayoutController extends Controller
             'gcashnumber' => 'required',
         ]);
     }
-
     /**
      * Show the form for creating a new resource.
      *

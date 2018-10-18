@@ -11,9 +11,9 @@
         <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
         <link rel="stylesheet" href="vendors/css/vendor.bundle.addons.css">
 
-           <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- endinject -->
         <!-- plugin css for this page -->
         <!-- End plugin css for this page -->
@@ -41,6 +41,12 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
+    <script>
+        $(document).ready(function(){
+            $('.mobileLogo').click(function(){
+                 $( "#sidebar" ).toggleClass( 'sidebar-offcanvas', 'remove' );
+            })
+        })
+    </script>
     @yield('scripts')
 </html>
