@@ -41,8 +41,8 @@ class ChangepasswordController extends Controller
     public function changePassword(Request $request){
         $user = $request->all();
         $data = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
+            'name' => 'nullable',
+            'email' => 'email',
             'photo' => 'image|nullable|max:1999'
 
             
@@ -73,8 +73,8 @@ class ChangepasswordController extends Controller
         }
  
         $validatedData = $request->validate([
-            'current-password' => 'required',
-            'new-password' => 'required|string|min:6|confirmed',
+            'current-password' => 'string|min:6|',
+            'new-password' => 'string|min:6|confirmed',
         ]);
         
  
@@ -140,8 +140,8 @@ class ChangepasswordController extends Controller
     {
         $user = $request->all();
         $data = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
+            'name' => 'nullable',
+            'email' => 'email',
             'photo' => 'image|nullable|max:1999'
 
             
@@ -172,8 +172,8 @@ class ChangepasswordController extends Controller
         }
  
         $validatedData = $request->validate([
-            'current-password' => 'required',
-            'new-password' => 'required|string|min:6|confirmed',
+            'current-password' => 'string|min:6|',
+            'new-password' => 'string|min:6|confirmed',
         ]);
         
  
