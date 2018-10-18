@@ -56,7 +56,6 @@
 </div>
 @endsection
 
-<<<<<<< HEAD
 @section('scripts')
 <script>
   $(document).ready(function(){
@@ -83,66 +82,4 @@
      })
   })
 </script>
-=======
-
-<!-- Modal -->                                   
-                                                {!! Form::open(['id' => 'dataForm', 'method' => 'PATCH', 'url' => '/managepayouts/' . $payout->id ]) !!}
-                                                @if($payout->status == 'Pending')
-                                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                                                <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                <div class="row">
-                                                <div class="col-sm-12 text-center">
-                                                <section class="panel">
-                                                <h2 class="panel-heading">
-                                                <center class="text-danger">Manage Payout!!</center>
-                                                </h2>
-
-
-                                                {!!Form::submit('Approve Payout', ['class' => 'btn btn-primary btn-return  col-lg-14']) !!}
-                                                
-                                                @elseif($payout->status == 'Approved')
-                                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                                                <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                <div class="row">
-                                                <div class="col-sm-12 text-center">
-                                                
-                                                <section class="panel">
-                                                <h2 class="panel-heading">
-                                                <center class="text-danger">Manage Payout!!</center>
-                                                </h2>
-                                                {!!Form::submit('Change to Pending', ['class' => 'btn btn-primary btn-return  col-lg-14']) !!}
-                                                @else
-         
-                                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                                                <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                <div class="row">
-                                                <div class="col-sm-12 text-center">
-                                                <section class="panel">
-                                                <h2 class="panel-heading">
-                                                <center class="text-danger">Manage Payout!!</center>
-                                                </h2>
-                                                @endif
-
-                                                        <div class="panel-body">
-                                                        @if($payout->status == 'Pending')
-                                                        <input type="hidden" name="status" id="status" class="status" value="Approved">
-                                                        @elseif($payout->status == 'Approved')
-                                                        <input type="hidden" name="status" id="status" class="status" value="Approved">
-                                                        @else
-                                                        <input type="hidden" name="status" id="status" class="status" value="Approved">
-                                                        @endif
-    
-                                                         {!! Form::close() !!}                                                  
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
- 
->>>>>>> 5dac99384042e119a616f58bf35f5bec94168ba1
 @endsection
