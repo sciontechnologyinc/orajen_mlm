@@ -47,7 +47,7 @@
                         <input id="phto" name="photo"  class="photo" type="file" accept="image/x-png,image/gif,image/jpeg" value="{{Auth::user()->photo}}">
                         </div>
 
-
+                        <h4 class="card-title">Optional</h4>
                         <div class="form-group">
                         <label for="categorydesc">Current password</label>
                         <input id="current-password" type="password" placeholder="Current Password" class="form-control" name="current-password">
