@@ -4,7 +4,7 @@
         <img src="{!! asset('img/logo.png') !!}" alt="logo" />
         <span>Orajen Marketing Inc.</span>
       </a>
-      <a class="navbar-brand brand-logo-mini" href="index.html">
+      <a class="navbar-brand brand-logo-mini" href="#">
         <img src="{!! asset('images/logo-mini.svg') !!}" alt="logo" />
       </a>  
     </div>
