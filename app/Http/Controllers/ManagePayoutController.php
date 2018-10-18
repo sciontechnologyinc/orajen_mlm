@@ -15,7 +15,6 @@ class ManagePayoutController extends Controller
     public function index()
     {
         $payouts = Payout::orderBy('id')->get();    
-
         return view('managepayouts.payoutlist', ['payouts' => $payouts]);
         
     }

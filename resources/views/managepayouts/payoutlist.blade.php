@@ -9,7 +9,9 @@
                     </li>
             </ul>
 @endsection
+
 @section('content')
+
 <div class="main-panel">
     <div class="content-wrapper">
 
@@ -23,6 +25,7 @@
     <div class="company-logo"><img src="/img/logo.png" alt=""></div>
     <div class="page-desc">Our website is coming soon. </div>
     <div class="page-desc1">"This page will show, create, edit and delete products."</div> -->
+    
     <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -85,66 +88,32 @@
                           <td>
                           Pending
                           </td>
+                          <td>
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Manage Payout</button>
+                          </button>
+                          </div>
+                          </td>
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
  
-                          <td class="numeric text-right" data-title="Action">
-                                    @if($payout->status == 'Pending')
-                                    <a data-toggle="modal"  data-target="#{{$payout->id}}" class="btn btn-xs btn-info btn-returned"><span class="text-success fa fa-check" title="Make action"></span></a>
-                                    @elseif($payout->status == 'Returned')
-                                    <a data-toggle="modal"  data-target="#{{$payout->id}}" class="btn btn-xs btn-info btn-returned"><span class="text-danger fa fa-times" title="Make action"></span></a>&nbsp;
-                                    @else   
-                                    <a data-toggle="modal"  data-target="#{{$payout->id}}" class="btn btn-xs btn-info btn-returned"><span class="text-success fa fa-check" title="Make action"></span></a>&nbsp;
-                                    @endif
-                                    </td>
-                                                                                    
-                                        <!-- Small modal -->
-                                                @if($payout->status == 'Pending')
-                                                <div class="modal fade" id="{{$payout->id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                                                <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                <div class="row">
-                                                <div class="col-sm-12 text-center">
-                                                <section class="panel">
-                                                <h2 class="panel-heading">
-                                                <center class="text-danger">Click below button if only the book is returned! Not otherwise!!</center>
-                                                </h2>
-
-
-                                                {!!Form::submit('Approve Payout', ['class' => 'btn btn-primary btn-return  col-lg-14']) !!}
-
-                                                @elseif($payout->status == 'Returned')
-                                                <div class="modal fade" id="{{$payout->id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                                                <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                <div class="row">
-                                                <div class="col-sm-12 text-center">
-                                                
-                                                <section class="panel">
-                                                <h2 class="panel-heading">
-                                                <center class="text-danger">Click below button if you want to change the book to pending! Not otherwise!!</center>
-                                                </h2>
-
-                                                {!!Form::submit('Approve Payout', ['class' => 'btn btn-primary btn-return  col-lg-14']) !!}
-                                                @endif
-
-                                                <div class="modal fade" id="{{$payout->id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                                                <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                <div class="row">
-                                                <div class="col-sm-12 text-center">
-                                                <section class="panel">
-                                                <h2 class="panel-heading">
-                                                <center class="text-danger">Click below button if only the book is returned! Not otherwise!!</center>
-                                                </h2>
-
-                                               {!! Form::close() !!}  
-                                               </div>
-                                                    </section>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                  <td>    
                         </tr>
                       </tbody>
                       @endforeach
@@ -155,4 +124,10 @@
             </div>
     </div>
 </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 @endsection
