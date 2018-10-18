@@ -43,7 +43,7 @@
                         {!!Form::text('gcashnumber',Auth::user()->gcashnumber, ['placeholder' => 'G-Cash #', 'class' => 'form-control' ])!!}
                         </div>
                         <div class="form-group">
-                        <label for="categorydesc">Photo</label><br>
+                        <label for="categorydesc">Profile Picture</label><br>
                         <input id="phto" name="photo"  class="photo" type="file" accept="image/x-png,image/gif,image/jpeg" value="{{Auth::user()->photo}}">
                         </div>
 
