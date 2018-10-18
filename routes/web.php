@@ -25,10 +25,10 @@ Route::post('/insertpayout','ManagePayoutController@add');
 Route::post('/getname/{name}','ManagePayoutController@getName');
 Route::post('/updatename/{name}','ManagePayoutController@updateName');
 Route::post('users/{id}', 'ManagePayoutController@show');
-Route::post('updateusers/{id}', 'ManagePayoutController@update');
+Route::post('updateusers/{id}', 'ManagePayoutController@updateuser');
 
 
-Route::get('managepayout', 'ManagePayoutController@index');
+Route::resource('managepayouts', 'ManagePayoutController');
 Route::get('updatemember', 'ManagePayoutController@create');
 Route::post('members/display', 'MemberController@display');
 Route::post('members/get/{id}', 'MemberController@get');

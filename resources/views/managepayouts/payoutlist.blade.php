@@ -85,8 +85,14 @@
                           <td>
                           Date
                           </td>
-                          <td>
-                          Pending
+                          <td class="numeric text-center" id="status" data-title="Status">
+                                    @if($payout->status == 'Pending')
+                                    <span class="fa fa-times text-danger">&nbsp;<strong>{{ $payout->status }}</strong></span>   &nbsp;
+                                    @elseif($payout->status == 'Returned')
+                                    <span class="fa fa-check text-success">&nbsp;<strong>{{ $payout->status }}</strong></span>  &nbsp;
+                                    @else   
+                                    <span class="fa fa-check text-success">&nbsp;<strong>{{ $payout->status }}</strong> </span>
+                                    @endif
                           </td>
                           <td>
                           <div class="btn-group">
@@ -107,24 +113,63 @@
 </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+<!-- Modal -->                                   
+                                                {!! Form::open(['id' => 'dataForm', 'method' => 'PATCH', 'url' => '/managepayouts/' . $payout->id ]) !!}
+                                                @if($payout->status == 'Pending')
+                                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                                                <div class="modal-dialog modal-sm" role="document">
+                                                <div class="modal-content">
+                                                <div class="row">
+                                                <div class="col-sm-12 text-center">
+                                                <section class="panel">
+                                                <h2 class="panel-heading">
+                                                <center class="text-danger">Manage Payout!!</center>
+                                                </h2>
 
-          <!-- Modal content-->
-          <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+
+                                                {!!Form::submit('Approve Payout', ['class' => 'btn btn-primary btn-return  col-lg-14']) !!}
+                                                
+                                                @elseif($payout->status == 'Returned')
+                                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                                                <div class="modal-dialog modal-sm" role="document">
+                                                <div class="modal-content">
+                                                <div class="row">
+                                                <div class="col-sm-12 text-center">
+                                                
+                                                <section class="panel">
+                                                <h2 class="panel-heading">
+                                                <center class="text-danger">Manage Payout!!</center>
+                                                </h2>
+                                                {!!Form::submit('Change to Pending', ['class' => 'btn btn-primary btn-return  col-lg-14']) !!}
+                                                @else
+         
+                                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                                                <div class="modal-dialog modal-sm" role="document">
+                                                <div class="modal-content">
+                                                <div class="row">
+                                                <div class="col-sm-12 text-center">
+                                                <section class="panel">
+                                                <h2 class="panel-heading">
+                                                <center class="text-danger">Manage Payout!!</center>
+                                                </h2>
+                                                @endif
+
+                                                        <div class="panel-body">
+                                                        @if($payout->status == 'Pending')
+                                                        <input type="text" name="status" id="status" class="status" value="Returned">
+                                                        @elseif($payout->status == 'Returned')
+                                                        <input type="text" name="status" id="status" class="status" value="Pending">
+                                                        @else
+                                                        <input type="text" name="status" id="status" class="status" value="Returned">
+                                                        @endif
+    
+                                                         {!! Form::close() !!}                                                  
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
  
 @endsection
