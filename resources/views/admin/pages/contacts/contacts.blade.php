@@ -65,9 +65,9 @@
                           </td>
                           <td>
                           <div class="form-group" style="display:inline-flex">
-                          <a rel="tooltip" title="Edit" class="edit-btn" href="contacts/{!! $contact->id !!}/edit"><i class="fa fa-edit"></i></a>
+                          <a rel="tooltip" title="Edit" class="edit-btn" href="contacts/{!! $contact->id !!}/edit">Edit</a>
                           {!! Form::open(['id' => 'deleteForm', 'method' => 'DELETE', 'url' => '/contacts/' . $contact->id]) !!}
-                          {{ Form::button('<i class="fa fa-trash"></i>', ['type' => 'submit', 'class' => 'delete-btn', 'rel' => 'tooltip', 'title' => 'Delete'] )  }}
+                          {{ Form::button('Delete', ['type' => 'submit', 'class' => 'delete-btn', 'rel' => 'tooltip', 'title' => 'Delete'] )  }}
                           {!! Form::close() !!}
                         </div>
                           </td>
