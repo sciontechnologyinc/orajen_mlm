@@ -26,6 +26,7 @@ Route::post('/getname/{name}','ManagePayoutController@getName');
 Route::post('/updatename/{name}','ManagePayoutController@updateName');
 Route::post('users/{id}', 'ManagePayoutController@show');
 Route::post('updateusers/{id}', 'ManagePayoutController@updateuser');
+Route::post('approved/{id}', 'ManagePayoutController@approved');
 
 
 Route::resource('managepayouts', 'ManagePayoutController');

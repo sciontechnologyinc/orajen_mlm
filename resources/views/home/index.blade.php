@@ -183,8 +183,10 @@
          console.log(data);
               var gcash = data.users[0].gcashnumber;
               var name = data.users[0].name;
-               var payout= $('#payout').val();
-
+              var payout= $('#payout').val();
+              var fullDate = new Date();
+              var twoDigitMonth = ((fullDate.getMonth().length+1) === 1)? (fullDate.getMonth()+1) :(fullDate.getMonth()+1);
+              var currentDate = fullDate.getDate() + "/" + twoDigitMonth + "/" + fullDate.getFullYear();
                $.ajax({
                 headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -195,7 +197,8 @@
                         name:name,
                         payout:payout,
                         gcashnumber:gcash,
-                        netincome:'123'
+                        netincome:'123',
+                        date:currentDate,
                  },
                  success:function(data){
 
