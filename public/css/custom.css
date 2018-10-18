@@ -9,7 +9,7 @@ a.navbar-brand.brand-logo span {
     margin: auto;
 }
 
-a.nav-link i{
+a.nav-link i {
     color: #e49d00 !important;
 }
 
@@ -21,8 +21,8 @@ a.nav-link:hover i {
     display: block !important;
 }
 
-.d-none{
-    display:block !important;
+.d-none {
+    display: block !important;
 }
 
 .add-member-shortcut {
@@ -79,11 +79,11 @@ a.nav-link:hover i {
 }
 
 .isShow {
-	display:none;
+    display: none;
 }
 
-.member-title i{
-    margin:auto;
+.member-title i {
+    margin: auto;
     cursor: pointer;
 }
 
@@ -91,12 +91,12 @@ nav#sidebar {
     position: fixed;
 }
 
-.add-member-shortcut{
+.add-member-shortcut {
     transition: .5s;
     transform: scale(0);
 }
 
-.add-member-shortcut.showed{
+.add-member-shortcut.showed {
     transform: scale(1) !important;
 }
 
@@ -134,7 +134,7 @@ nav#sidebar {
     height: calc(100% - 63px);
     display: none;
     transition: 0.5s;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .main-panel {
@@ -164,7 +164,7 @@ nav#sidebar {
     margin: 10px 0px;
 }
 
-.newmember-button button{
+.newmember-button button {
     margin: 0px;
 }
 

@@ -57,10 +57,6 @@ a.nav-link:hover i {
     display: flex;
 }
 
-.main-panel {
-    margin-left: 255px !important;
-}
-
 @media screen and (max-width:991px) {
     .main-panel {
         margin-left: 0px !important;
@@ -108,10 +104,6 @@ a.nav-link:hover i {
 .member-title i {
     margin: auto;
     cursor: pointer;
-}
-
-nav#sidebar {
-    position: fixed;
 }
 
 .add-member-shortcut {
