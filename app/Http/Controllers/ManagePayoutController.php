@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Payout;
 class ManagePayoutController extends Controller
 {
     /**
@@ -13,9 +14,26 @@ class ManagePayoutController extends Controller
      */
     public function index()
     {
-        $users = User::orderBy('id')->get();    
+        $payouts = Payout::orderBy('id')->get();    
 
-        return view('managepayout.index', ['users' => $users]);
+        return view('managepayouts.payoutlist', ['payouts' => $payouts]);
+        
+    }
+
+
+
+    public function getName($name)
+    {
+        $NameId = User::where("id", $name)->select('name','netincome','payout','gcashnumber')->get();
+        return response()->json(['success' => true, 'users' => $NameId]);
+    }
+
+    public function updateName($nameid)
+    {
+        $payouts = Payout::orderBy('id')->get();
+        $user = User::where('name', $nameid)->update(request()->all());
+
+
         
     }
 
@@ -26,9 +44,16 @@ class ManagePayoutController extends Controller
      */
     public function create()
     {
-        //
+        $users = User::orderBy('id')->get();    
+        return view('managepayouts.index', ['users' => $users]);
+        
     }
 
+    public function add(Request $request)
+    {
+
+        $payout = Payout::create(request()->all());
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -37,7 +62,7 @@ class ManagePayoutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -73,8 +98,9 @@ class ManagePayoutController extends Controller
     public function update($id)
     {
         $users = User::orderBy('id')->get();
+        $payouts = Payout::orderBy('id')->get();
         $income = User::where('id', $id)->update(request()->all());
-        return view('managepayout.index',['users' => $users]);
+        return view('managepayouts.payoutlist',['users' => $users,'payouts' => $payouts]);
     }
 
     /**

@@ -16,16 +16,20 @@ Route::get('', function () {
 });
 Route::resource('dashboard','DashboardController');
 
-Route::resource('/home','EcommerceController');
+Route::resource('home','EcommerceController');
 
 //crud
 Route::get('members', 'ManagePayoutController@index');
 Route::get('member', 'MemberController@index');
+Route::post('/insertpayout','ManagePayoutController@add');
+Route::post('/getname/{name}','ManagePayoutController@getName');
+Route::post('/updatename/{name}','ManagePayoutController@updateName');
 Route::post('users/{id}', 'ManagePayoutController@show');
 Route::post('updateusers/{id}', 'ManagePayoutController@update');
 
 
 Route::get('managepayout', 'ManagePayoutController@index');
+Route::get('updatemember', 'ManagePayoutController@create');
 Route::post('members/display', 'MemberController@display');
 Route::post('members/get/{id}', 'MemberController@get');
 Route::post('members/edit', 'MemberController@edit');
